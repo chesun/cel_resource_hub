@@ -5,8 +5,9 @@ site_description: >-
   workflow guidance for the people who inherit them.
 site_author: California Education Lab, UC Davis
 
-# Set after the GitHub repo + Pages site exist:
-# site_url: https://chesun.github.io/cel_resource_hub/
+# Canonical URL (GitHub-native project-pages URL; also served at
+# christinasun.net/cel_resource_hub/ via the account custom domain).
+site_url: https://chesun.github.io/cel_resource_hub/
 
 repo_url: https://github.com/chesun/cel_resource_hub
 repo_name: chesun/cel_resource_hub
