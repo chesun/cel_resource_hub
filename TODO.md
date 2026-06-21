@@ -3,12 +3,11 @@
 Last updated: 2026-06-21
 
 ## Active (doing now)
-- [ ] Provide source facts to fill the `TODO`s (see Up Next) — blocks accurate repo pages
+- (nothing blocking — core hub is live; remaining items are content fill-in)
 
 ## Up Next
-- [ ] Add `calpads` repo URL + description (not present locally; needs source facts)
-- [ ] Confirm `csac_2024` and `ccylc_2025` descriptions and status; expand what **CCYLC** stands for
-- [ ] Confirm each repo's visibility (public/private) and note it on the repo index
+- [ ] When the `calpads` repo is created, add its URL + visibility + entry-point file to `repositories/calpads.md`
+- [ ] Confirm partner organization(s) for `csac_2024` (needed when adding its README)
 - [ ] Optional: switch `site_url` to `https://christinasun.net/cel_resource_hub/` if the custom domain should be canonical (currently set to the github.io URL, which 301-redirects there)
 
 ## Waiting On
@@ -28,3 +27,6 @@ Last updated: 2026-06-21
 - [x] Create public GitHub repo `chesun/cel_resource_hub`, push — 2026-06-21
 - [x] Enable GitHub Pages (gh-pages branch); site live at chesun.github.io/cel_resource_hub/ → christinasun.net/cel_resource_hub/ — 2026-06-21
 - [x] Set `site_url` in `mkdocs.yml` — 2026-06-21
+- [x] Confirm repo visibility for all repos (csac_2024 private; rest public) — 2026-06-21
+- [x] Fill CCYLC = Cesar Chavez Youth Leadership Conference; describe as post-conference survey analysis — 2026-06-21
+- [x] Confirm `csac_2024` has no README (local + GitHub); reframe `calpads` as planned single-do-file project — 2026-06-21

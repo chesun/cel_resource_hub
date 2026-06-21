@@ -28,6 +28,12 @@ and port the useful research-workflow infrastructure (logging, ADRs, hooks, agen
 - GitHub Pages enabled (gh-pages branch); deploy workflow green.
 - Live and verified (HTTP 200 on landing + deep pages): <https://christinasun.net/cel_resource_hub/> (github.io URL 301-redirects to the account custom domain).
 
+## Update — repo facts filled in (2026-06-21)
+
+- Verified via GitHub API: `csac_2024` is private with **no README** (confirmed local + remote); all other repos public; `va_consolidated`/`csac`/`csac2025` have READMEs, `ccylc_2025` does not.
+- User-provided facts: **CCYLC = Cesar Chavez Youth Leadership Conference** (lightweight post-conference survey analysis); **calpads** has no repo yet (planned), was ~1 month of work, essentially one do file.
+- Updated repo index (added Access column), `ccylc-2025.md`, `calpads.md`, `csac-2024.md`, and the CCYLC nav label.
+
 ## Open questions / blockers
 
 - Need from user: `calpads` URL + description; `csac_2024`/`ccylc_2025` descriptions + status; what CCYLC stands for; repo visibility; Scribe paths; custodian + lab-IT contacts.

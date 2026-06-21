@@ -1,21 +1,21 @@
-# CCYLC 2025 — `ccylc_2025`
+# Cesar Chavez Youth Leadership Conference 2025 — `ccylc_2025`
 
-Analysis code for the **CCYLC 2025** project at the California Education Lab.
+A lightweight analysis of the survey data fielded **after the Cesar Chavez Youth Leadership
+Conference (CCYLC)** in 2025.
 
 | | |
 |---|---|
-| **GitHub** | <https://github.com/chesun/ccylc_2025> |
-| **Runs on (Scribe)** | _TODO: confirm Scribe path_ |
+| **GitHub** | <https://github.com/chesun/ccylc_2025> (public) |
+| **Runs on (Scribe)** | _TODO: confirm Scribe path (if it runs on Scribe)_ |
 | **Entry point** | `do/main.do` (Stata) |
-| **Status** | _TODO: confirm_ |
-| **Start with** | _No README upstream yet — see folder map below_ |
+| **Status** | Small/one-off analysis; no README in the repo |
+| **Start with** | This page + the folder map below (no upstream README) |
 
 ## What it is
 
-!!! todo "Description needed"
-    This repo has **no top-level README**. Based on its structure it is a standard Stata
-    analysis pipeline. Please confirm what **CCYLC** stands for, the project description,
-    the partner organization(s), and the current status.
+A small, post-conference survey analysis. Data was collected from participants after the 2025
+Cesar Chavez Youth Leadership Conference; this repo holds the lightweight Stata pipeline that
+processes and analyzes it.
 
 ## Folder map (derived from the repo)
 
@@ -27,7 +27,7 @@ ccylc_2025/
 │   ├── macros.doh    # shared macros
 │   ├── clean/        # data cleaning
 │   └── explore/      # ad-hoc / exploratory
-├── dta/              # datasets (likely gitignored / Scribe-only)
+├── dta/              # datasets (Scribe-only / gitignored)
 └── log/              # Stata logs
 ```
 
@@ -35,6 +35,6 @@ ccylc_2025/
 
 - **Christina Sun** — author (`christinasun101@gmail.com` / `ucsun@ucdavis.edu`).
 
-!!! todo "Recommended next step"
-    Give this repo a short `README.md` (or `HANDOFF.md`) modeled on
-    [`va_consolidated`](va-consolidated.md) so it can be inherited without tribal knowledge.
+!!! tip "Optional next step"
+    Because this is a small project, a short `README.md` (a paragraph on the data source and
+    how to run `do/main.do`) would be enough to make it self-explanatory.
