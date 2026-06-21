@@ -22,6 +22,12 @@ and port the useful research-workflow infrastructure (logging, ADRs, hooks, agen
 - `mkdocs build --strict` → passes.
 - Hook tests: destructive-action-guard 71 passed; stop_hooks_lib 22 passed.
 
+## Shipped
+
+- Public repo created: <https://github.com/chesun/cel_resource_hub> (2 atomic commits + a site_url commit).
+- GitHub Pages enabled (gh-pages branch); deploy workflow green.
+- Live and verified (HTTP 200 on landing + deep pages): <https://christinasun.net/cel_resource_hub/> (github.io URL 301-redirects to the account custom domain).
+
 ## Open questions / blockers
 
 - Need from user: `calpads` URL + description; `csac_2024`/`ccylc_2025` descriptions + status; what CCYLC stands for; repo visibility; Scribe paths; custodian + lab-IT contacts.
