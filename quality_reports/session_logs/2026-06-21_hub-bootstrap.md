@@ -39,6 +39,11 @@ and port the useful research-workflow infrastructure (logging, ADRs, hooks, agen
 - `calpads` repo now exists (public, <https://github.com/chesun/calpads>, also local). Derived from its README: a Stata CALPADS EOY1 Course-Completion cleaning pipeline (2013–14 to 2017–18), entry point `do/master.do` (toggles default OFF), ships a full handoff README. Rewrote `calpads.md` and the index row from facts.
 - `csac_2024` README is being drafted by the author → page/index updated from "no README" to "README being drafted".
 
+## Update — csac_2024 README drafted (2026-06-21)
+
+- Read the drafted README: it is the CSAC / C2C 2024 graduating senior survey (CEL + CSAC + C2C), backing two published 2024 reports; entry point `do/main.do` (mid-buildout); runs on Scribe. Filled the hub page + index row from these facts.
+- Verified the README is **local-only**: not git-tracked, not committed, not on GitHub. Flagged on the page (link 404s until pushed) and in TODO (author to commit + push).
+
 ## Open questions / blockers
 
 - Need from user: `calpads` URL + description; `csac_2024`/`ccylc_2025` descriptions + status; what CCYLC stands for; repo visibility; Scribe paths; custodian + lab-IT contacts.

@@ -6,7 +6,7 @@ Last updated: 2026-06-21
 - (nothing blocking — core hub is live; remaining items are content fill-in)
 
 ## Up Next
-- [ ] Link `csac_2024`'s README from its hub page once the author finishes drafting it
+- [ ] Author to **commit + push** `csac_2024`'s drafted README (currently local-only) so the hub link resolves
 - [ ] Optional: switch `site_url` to `https://christinasun.net/cel_resource_hub/` if the custom domain should be canonical (currently set to the github.io URL, which 301-redirects there)
 
 ## Waiting On
