@@ -1,0 +1,16 @@
+# MkDocs build output
+site/
+
+# Python virtual environment
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Hook runtime state (machine-local logs)
+.claude/state/*.log
+.claude/state/*.log.old
+.claude/state/*.json

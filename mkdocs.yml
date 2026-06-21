@@ -1,0 +1,80 @@
+site_name: CEL Resource Hub
+site_description: >-
+  Offboarding and workflow resource hub for the California Education Lab (UC Davis)
+  — one place that links to the lab's code repositories and collects reusable
+  workflow guidance for the people who inherit them.
+site_author: California Education Lab, UC Davis
+
+# Set after the GitHub repo + Pages site exist:
+# site_url: https://chesun.github.io/cel_resource_hub/
+
+repo_url: https://github.com/chesun/cel_resource_hub
+repo_name: chesun/cel_resource_hub
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - content.action.edit
+    - search.suggest
+    - search.highlight
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Repositories:
+      - repositories/index.md
+      - Common Core Value-Added (va_consolidated): repositories/va-consolidated.md
+      - CALPADS: repositories/calpads.md
+      - CSAC 2023 Survey (csac): repositories/csac.md
+      - CSAC 2024 Survey (csac_2024): repositories/csac-2024.md
+      - CSAC 2025 Survey (csac2025): repositories/csac-2025.md
+      - CCYLC 2025 (ccylc_2025): repositories/ccylc-2025.md
+  - Workflow Tips:
+      - workflow-tips/index.md
+      - Git for newcomers: workflow-tips/git-for-newcomers.md
+      - Scribe & SSH setup: workflow-tips/scribe-ssh-setup.md
+      - Data safety: workflow-tips/data-safety.md
+      - Reproducible pipelines: workflow-tips/reproducible-pipelines.md
+      - Claude Code intro: workflow-tips/claude-code-intro.md
+  - Resources:
+      - resources/index.md
+      - Contacts: resources/contacts.md
+      - Tools & access: resources/tools.md
