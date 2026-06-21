@@ -6,8 +6,7 @@ Last updated: 2026-06-21
 - (nothing blocking — core hub is live; remaining items are content fill-in)
 
 ## Up Next
-- [ ] When the `calpads` repo is created, add its URL + visibility + entry-point file to `repositories/calpads.md`
-- [ ] Confirm partner organization(s) for `csac_2024` (needed when adding its README)
+- [ ] Link `csac_2024`'s README from its hub page once the author finishes drafting it
 - [ ] Optional: switch `site_url` to `https://christinasun.net/cel_resource_hub/` if the custom domain should be canonical (currently set to the github.io URL, which 301-redirects there)
 
 ## Waiting On
@@ -16,7 +15,7 @@ Last updated: 2026-06-21
 ## Backlog
 - [ ] Fill workflow-tip stubs (git, Scribe/SSH, data safety, reproducible pipelines, Claude Code)
 - [ ] Fill resource stubs (contacts table, tools & access)
-- [ ] Add short `README.md`/`HANDOFF.md` to `csac_2024` and `ccylc_2025` (modeled on `va_consolidated`)
+- [ ] Add a short `README.md` to `ccylc_2025` (modeled on `va_consolidated`); `csac_2024` README is being drafted by the author
 - [ ] Decide whether `csac2025`'s minimal README should be expanded or point to its `CLAUDE.md`
 - [ ] Delete the old `cel_offboard` folder (the stray `claude-research-workflow` clone) once happy
 
@@ -29,4 +28,5 @@ Last updated: 2026-06-21
 - [x] Set `site_url` in `mkdocs.yml` — 2026-06-21
 - [x] Confirm repo visibility for all repos (csac_2024 private; rest public) — 2026-06-21
 - [x] Fill CCYLC = Cesar Chavez Youth Leadership Conference; describe as post-conference survey analysis — 2026-06-21
-- [x] Confirm `csac_2024` has no README (local + GitHub); reframe `calpads` as planned single-do-file project — 2026-06-21
+- [x] Confirm `csac_2024` has no README (local + GitHub) → now README being drafted by author — 2026-06-21
+- [x] Wire in `calpads` repo (now public at chesun/calpads): CALPADS EOY1 Course-Completion cleaning, entry `do/master.do` — 2026-06-21

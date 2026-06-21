@@ -34,6 +34,11 @@ and port the useful research-workflow infrastructure (logging, ADRs, hooks, agen
 - User-provided facts: **CCYLC = Cesar Chavez Youth Leadership Conference** (lightweight post-conference survey analysis); **calpads** has no repo yet (planned), was ~1 month of work, essentially one do file.
 - Updated repo index (added Access column), `ccylc-2025.md`, `calpads.md`, `csac-2024.md`, and the CCYLC nav label.
 
+## Update — calpads repo created + csac_2024 README in progress (2026-06-21)
+
+- `calpads` repo now exists (public, <https://github.com/chesun/calpads>, also local). Derived from its README: a Stata CALPADS EOY1 Course-Completion cleaning pipeline (2013–14 to 2017–18), entry point `do/master.do` (toggles default OFF), ships a full handoff README. Rewrote `calpads.md` and the index row from facts.
+- `csac_2024` README is being drafted by the author → page/index updated from "no README" to "README being drafted".
+
 ## Open questions / blockers
 
 - Need from user: `calpads` URL + description; `csac_2024`/`ccylc_2025` descriptions + status; what CCYLC stands for; repo visibility; Scribe paths; custodian + lab-IT contacts.
