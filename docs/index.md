@@ -39,6 +39,14 @@ or is the lab's data-management custodian or IT contact. We assume you:
 
     [:octicons-arrow-right-24: Browse repositories](repositories/index.md)
 
+-   :material-clipboard-check: **Offboarding standards**
+
+    ---
+
+    What "offboarding-ready" means for a CEL repo — the handoff checklist and README template.
+
+    [:octicons-arrow-right-24: Offboarding standards](offboarding/index.md)
+
 -   :material-lightbulb-on: **Workflow tips**
 
     ---

@@ -7,6 +7,8 @@ Last updated: 2026-06-21
 
 ## Up Next
 - [ ] Author to **commit + push** `csac_2024`'s drafted README (currently local-only) so the hub link resolves
+- [ ] Bring `ccylc_2025` up to the offboarding standard (handoff README + per-file I/O map, master do file, verified Scribe run) — handled directly from this hub
+- [ ] Decide Google Docs hosting approach (sensitivity triage; public-safe → Markdown in hub, sensitive → private store + link), then add "Related documents" sections to repo pages
 - [ ] Optional: switch `site_url` to `https://christinasun.net/cel_resource_hub/` if the custom domain should be canonical (currently set to the github.io URL, which 301-redirects there)
 
 ## Waiting On
@@ -30,3 +32,5 @@ Last updated: 2026-06-21
 - [x] Fill CCYLC = Cesar Chavez Youth Leadership Conference; describe as post-conference survey analysis — 2026-06-21
 - [x] Confirm `csac_2024` has no README (local + GitHub) → now README being drafted by author — 2026-06-21
 - [x] Wire in `calpads` repo (now public at chesun/calpads): CALPADS EOY1 Course-Completion cleaning, entry `do/master.do` — 2026-06-21
+- [x] Fill `csac_2024` page from drafted README (CSAC/C2C 2024 survey); flag README not yet pushed — 2026-06-21
+- [x] Add Offboarding Standards section (checklist + handoff README template), derived from va_consolidated — 2026-06-21

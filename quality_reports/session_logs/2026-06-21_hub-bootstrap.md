@@ -44,6 +44,12 @@ and port the useful research-workflow infrastructure (logging, ADRs, hooks, agen
 - Read the drafted README: it is the CSAC / C2C 2024 graduating senior survey (CEL + CSAC + C2C), backing two published 2024 reports; entry point `do/main.do` (mid-buildout); runs on Scribe. Filled the hub page + index row from these facts.
 - Verified the README is **local-only**: not git-tracked, not committed, not on GitHub. Flagged on the page (link 404s until pushed) and in TODO (author to commit + push).
 
+## Update — offboarding standards added (2026-06-21)
+
+- Added `docs/offboarding/` section: standards/checklist (`index.md`) + handoff README template (`readme-template.md`), derived from va_consolidated. Core requirements: single master do file, handoff README with per-file input/output map, completed Scribe run, code/data separation, reproducible inputs, automated checks, decision records, contacts, cold-read acceptance test. Scaled by project size.
+- Wired into nav + landing-page card.
+- Google Docs preservation: noted in the standards with the public-repo sensitivity caveat (triage: public-safe → Markdown in hub; sensitive → private store + link). Awaiting user decision on approach before adding per-project "Related documents" links.
+
 ## Open questions / blockers
 
 - Need from user: `calpads` URL + description; `csac_2024`/`ccylc_2025` descriptions + status; what CCYLC stands for; repo visibility; Scribe paths; custodian + lab-IT contacts.
