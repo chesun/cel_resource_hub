@@ -46,16 +46,19 @@ on Scribe, drag it back the same way.
 
 With git, the laptop and Scribe never talk to each other directly — they each sync through
 **GitHub, which sits in the middle as the *remote*.** You push your code up to GitHub from the
-laptop; Scribe pulls it down. Logs and any Scribe-side edits travel back the same way.
+laptop; Scribe pulls it down. Logs, tables, figures, and any other Scribe-side changes travel
+back the same way — everything *except* the restricted `data/` and intermediate `estimates/`,
+which never leave the server (the [pre-push hook](#protecting-data-on-the-server-the-pre-push-hook)
+enforces that).
 
 ```mermaid
 flowchart LR
     L["Your laptop<br/>write and commit .do code"]
     G[("GitHub<br/>remote / middleman")]
-    S["Scribe<br/>run in batch, commit logs"]
+    S["Scribe<br/>run in batch; commit<br/>logs, tables, figures"]
     L -- "git push" --> G
     G -- "git pull" --> S
-    S -- "git push (logs)" --> G
+    S -- "git push (outputs)" --> G
     G -- "git pull" --> L
 ```
 
@@ -95,7 +98,8 @@ for the commands, common errors, and a glossary.
 !!! note "Where I actually use this"
     So far I've only set Method B up for **`va_consolidated`** — that project consolidates several
     predecessor pipelines into one, and it's complex enough that the version history and a
-    committed-log audit trail are well worth git's overhead. It's worked really well there. For
+    committed audit trail of logs and outputs are well worth git's overhead. It's worked really
+    well there. For
     simpler, lower-velocity projects I still reach for FileZilla (Method A): no point taking on
     git's learning curve and auth setup when a drag-and-drop will do. Pick by how much the project
     churns.

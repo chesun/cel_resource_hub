@@ -89,4 +89,12 @@ Changes:
 Scope guard held: featured the pre-push hook + gitignore pairing; left out sparse-checkout
 internals / DVC / LFS (va_consolidated operator depth). `mkdocs build --strict` → exit 0, no
 warnings; `class="mermaid"` block + the new anchor confirmed in built HTML; Material JS bundle
-confirmed to carry the Mermaid integration.
+confirmed to carry the Mermaid integration. Committed `9915015`; pushed.
+
+**Correction (same day):** user confirmed the diagram renders, but flagged that the Scribe push
+carries **tables and figures**, not only logs. Verified against va_consolidated: `figures/` is
+tracked (many committed figure PDFs); the `.gitignore` explicitly air-gaps only `data/` +
+`estimates/` ("never push from Scribe to remote"). Broadened the diagram (Scribe node + edge →
+"logs, tables, figures" / "outputs") and the intro sentence, and added the clarification that
+everything flows back *except* `data/`/`estimates/` (which the pre-push hook enforces). Strict
+build clean; mermaid block intact.
