@@ -1,7 +1,7 @@
 # Editing Stata in VSCode
 
 Write your Stata code on your **laptop**, in a real editor, and save it to `.do` files. Then
-[sync it to Scribe](local-server-sync.md) and [run it in batch](scribe-ssh-setup.md). This
+[sync it to Scribe](local-server-sync.md) and [run it in batch](working-on-scribe.md). This
 page explains why, and how to set up the editor.
 
 !!! warning "The habit I'd gently push back on"
@@ -31,11 +31,15 @@ page explains why, and how to set up the editor.
    whole `do/` tree and can search across it.
 4. **Turn on autosave** (`File → Auto Save`) so edits are never sitting unsaved in a buffer.
 
-!!! tip "You don't run Stata inside VSCode"
-    Because the data lives only on Scribe, you don't execute the analysis on your laptop. VSCode
-    is for *writing and saving* `.do` files; the run happens on Scribe in batch. (If you happen
-    to have Stata installed locally for syntax-only testing, that's fine — but the authoritative
-    run is always the Scribe batch run.)
+!!! tip "You don't run Stata inside VSCode (for lab work)"
+    Because the data lives only on Scribe, you don't execute the analysis on your laptop — VSCode
+    is for *writing and saving* `.do` files, and the run happens on Scribe in batch.
+
+    You *can* wire VSCode to run Stata locally through its command-line interface (a couple of
+    extensions let you send a line or selection to a local Stata install). For lab workflows that's
+    only really useful for testing code locally before sending it to Scribe — the authoritative run
+    is always the Scribe batch run. I can expand this section if there's real interest in the
+    local-run setup.
 
 ## The edit → run loop
 
@@ -50,7 +54,7 @@ This is the day-to-day rhythm once VSCode is set up:
 !!! info "What about the GUI for quick exploration?"
     Sometimes you genuinely want an interactive session to poke at the data. You can run the
     Stata GUI on the server over X11 forwarding — see
-    [Scribe & SSH setup → Running Stata: batch vs GUI](scribe-ssh-setup.md#running-stata-batch-vs-gui)
+    [Working on Scribe → Running Stata: batch vs GUI](working-on-scribe.md#running-stata-batch-vs-gui)
     for how, and its costs. The rule of thumb: explore interactively if you must, but **anything
     you want to keep goes into a saved `.do` file.**
 </content>

@@ -41,7 +41,7 @@ from laptop to Scribe, and you move code changes back. You never copy data the o
 
     Batch mode (`-b`) writes a `.log`/`.smcl` file and survives nothing else — but the *script*
     is saved, so a dropped connection costs you nothing. See
-    [Scribe & SSH setup](scribe-ssh-setup.md) for `nohup` (long runs) and the GUI alternative.
+    [Working on Scribe](working-on-scribe.md) for `nohup` (long runs) and the GUI alternative.
 4. **Read the log** that the run produced (`log/...`). Fix, and go back to step 1.
 5. **When the change is good, commit it** so the next person inherits it — see
    [Git for newcomers](git-for-newcomers.md).
@@ -75,6 +75,6 @@ once. That's the whole reason I work this way; your mileage may vary.
 !!! tip "Where to go next"
     - [Editing Stata in VSCode](editing-stata-vscode.md) — the editor setup
     - [Local ↔ server sync](local-server-sync.md) — FileZilla vs git, with costs
-    - [Scribe & SSH setup](scribe-ssh-setup.md) — connecting and running (batch and GUI)
+    - [Working on Scribe](working-on-scribe.md) — connecting and running (batch, GUI, screen)
     - [gitignore setup for data security](gitignore-setup.md) — keep data out of GitHub
 </content>

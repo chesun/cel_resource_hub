@@ -13,6 +13,7 @@ Last updated: 2026-06-21
 
 ## Waiting On
 - [ ] From Christina: Scribe run paths per project (to verify end-to-end runs)
+- [ ] From Christina: links to the GUI guides (Windows Xming + PuTTY; Mac XQuartz) to wire into `working-on-scribe.md`, and whether they're OK to link from this public hub
 
 ## Backlog
 - [ ] **Comprehensive "Downloads & setup" page** — links to download useful apps (VSCode, an SSH / file-transfer client, etc.) and step-by-step install tips, including how to install Claude Code. Design the scope/structure first; likely consolidates with `resources/tools.md` and `workflow-tips/claude-code-intro.md`. (Idea captured — think it through before building.)

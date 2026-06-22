@@ -103,4 +103,18 @@ update the hub page, commit and push.
 - Removed the per-page **edit button** (`content.action.edit`, present since the initial scaffold)
   — not wanted on a personal hub. Then, since Contacts was down to one line, folded it into the
   **Resources** landing page and deleted the standalone `contacts.md` + its nav entry.
+
+## Follow-up 4 (same day) — nav links + Scribe page rebuild
+
+- **Nav**: section index pages didn't read as clickable — swapped `navigation.sections` →
+  `navigation.expand` (everything stays expanded, but section titles now render as real links via
+  `navigation.indexes`).
+- **editing-stata-vscode** callout: now notes you *can* run Stata locally from VSCode via its CLI
+  (only useful for local testing in lab workflows); offered to expand if there's interest.
+- **Renamed** `scribe-ssh-setup.md` → `working-on-scribe.md` (covers setup *and* running jobs);
+  updated all links + the nav title.
+- **GUI section**: replaced my generic X11 steps with pointers to the lab's existing guides —
+  Windows (Xming + PuTTY, standard onboarding doc) and Mac (XQuartz). Links are `TODO` pending
+  their locations.
+- **Added a `screen` section** for keeping server sessions alive across disconnects.
 - `mkdocs build --strict` re-run clean; committed + pushed both repos.

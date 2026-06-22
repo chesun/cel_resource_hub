@@ -14,7 +14,7 @@ what's useful and leave the rest.
 - [**The recommended workflow**](recommended-workflow.md) — the overview that ties everything together: where you write code, how it gets to Scribe, and how it runs.
 - [**Editing Stata in VSCode**](editing-stata-vscode.md) — write `.do` files locally in a real editor instead of typing into the server's interactive Stata GUI (which loses work when the connection drops).
 - [**Local ↔ server sync**](local-server-sync.md) — the two ways to move code between laptop and Scribe (FileZilla vs git), with the benefits and costs of each.
-- [**Scribe & SSH setup**](scribe-ssh-setup.md) — getting an account, connecting, and running Stata on the lab server (batch vs GUI).
+- [**Working on Scribe**](working-on-scribe.md) — getting an account, connecting, running Stata (batch vs GUI), and keeping jobs alive with `screen`.
 
 ## Keeping data safe
 

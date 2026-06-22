@@ -33,7 +33,7 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
-    - navigation.sections
+    - navigation.expand
     - navigation.indexes
     - navigation.top
     - search.suggest
@@ -78,7 +78,7 @@ nav:
       - The recommended workflow: workflow-tips/recommended-workflow.md
       - Editing Stata in VSCode: workflow-tips/editing-stata-vscode.md
       - Local ↔ server sync: workflow-tips/local-server-sync.md
-      - Scribe & SSH setup: workflow-tips/scribe-ssh-setup.md
+      - Working on Scribe: workflow-tips/working-on-scribe.md
       - Data safety: workflow-tips/data-safety.md
       - gitignore setup for data security: workflow-tips/gitignore-setup.md
       - Git for newcomers: workflow-tips/git-for-newcomers.md
