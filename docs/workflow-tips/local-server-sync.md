@@ -23,9 +23,10 @@ Here's how I think about both so you can pick deliberately.
 
 ## Method A — FileZilla (manual transfer)
 
-Connect FileZilla to `Scribe.ssds.ucdavis.edu` with your SSH username and password, navigate
-to the project folder, and drag the changed `.do` files across. To save a change made on
-Scribe, drag it back the same way.
+In FileZilla, open **Site Manager → New Site**: Protocol **SFTP**, Host `Scribe.ssds.ucdavis.edu`,
+Logon Type **Ask for Password**, and your **Kerberos** username. Connect (with the DSS VPN on),
+navigate to the project folder, and drag the changed `.do` files across. To save a change made
+on Scribe, drag it back the same way.
 
 **Costs to keep in mind:**
 

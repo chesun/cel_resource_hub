@@ -117,4 +117,22 @@ update the hub page, commit and push.
   Windows (Xming + PuTTY, standard onboarding doc) and Mac (XQuartz). Links are `TODO` pending
   their locations.
 - **Added a `screen` section** for keeping server sessions alive across disconnects.
+
+## Follow-up 5 (same day) — integrated the lab onboarding guides
+
+Read the four lab guides under `cel_offboard/master_supporting_docs/lab_guides/` (XStata-on-Windows,
+Scribe How-To, using-screen, useful-unix-commands) and folded the useful, hub-relevant content into
+`working-on-scribe.md` (+ `tools.md`, `local-server-sync.md`):
+
+- **DSS VPN** requirement (OpenVPN Connect → `vpn.dss.ucdavis.edu`, Kerberos login) — was missing.
+- **`go_sbac`** group-permissions step after each login — lab-specific, was missing.
+- Kerberos login clarified; GUI binaries confirmed (`xstata-mp` / `xstata-se`).
+- Real GUI steps — Mac (XQuartz, `ssh -Y`) and Windows (Xming + PuTTY: X11 forwarding + MIT-Magic-Cookie-1).
+- screen recovery (`screen -D` / `-wipe` / `-X -S <s> quit`); SSH `ServerAliveInterval` keepalive.
+- FileZilla SFTP / Site Manager / Ask-for-Password / Kerberos details on the sync page.
+- VPN + X-server rows added to `tools.md`; access checklist now leads with the VPN.
+
+**Preservation flag:** the source `.docx` guides live in `cel_offboard` (the clone slated for
+deletion). Their text is now distilled into the hub, but the originals — especially the illustrated
+Windows walkthrough (screenshots) — aren't hosted yet. Preserve/publish before deleting that folder.
 - `mkdocs build --strict` re-run clean; committed + pushed both repos.

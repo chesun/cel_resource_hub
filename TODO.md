@@ -19,7 +19,7 @@ Last updated: 2026-06-21
 - [ ] **Comprehensive "Downloads & setup" page** — links to download useful apps (VSCode, an SSH / file-transfer client, etc.) and step-by-step install tips, including how to install Claude Code. Design the scope/structure first; likely consolidates with `resources/tools.md` and `workflow-tips/claude-code-intro.md`. (Idea captured — think it through before building.)
 - [ ] Expand `resources/tools.md` (or fold it into the Downloads & setup page above); fill remaining `TODO`s (canonical host string, etc.)
 - [ ] Decide whether `csac2025`'s minimal README should be expanded or point to its `CLAUDE.md`
-- [ ] Delete the old `cel_offboard` folder (the stray `claude-research-workflow` clone) once happy
+- [ ] Delete the old `cel_offboard` folder (the stray `claude-research-workflow` clone) once happy — **first preserve `master_supporting_docs/lab_guides/`** (source `.docx` onboarding guides, incl. the illustrated Windows XStata walkthrough); their text is distilled into the hub but the originals/screenshots aren't hosted yet
 
 ## Done (recent)
 - [x] Expand Workflow Tips into a comprehensive guide (recommended-workflow overview + VSCode, local↔server sync, gitignore-for-data, batch-vs-GUI); reframe to a personal-project voice — 2026-06-21
