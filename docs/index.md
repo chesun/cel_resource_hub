@@ -51,7 +51,7 @@ or is the lab's data-management custodian or IT contact. We assume you:
 
     ---
 
-    Reusable how-tos: git for newcomers, Scribe & SSH, keeping data safe, reproducible pipelines.
+    The recommended end-to-end workflow (edit locally, sync, run on Scribe) plus how-tos: VSCode, git, Scribe & SSH, and keeping data safe.
 
     [:octicons-arrow-right-24: Workflow tips](workflow-tips/index.md)
 

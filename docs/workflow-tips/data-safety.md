@@ -14,7 +14,9 @@ etc.). That data must never reach GitHub or a personal laptop.
 ## How the separation is built in
 
 - **`data/`, `estimates/`, `output/`, `log/` are gitignored.** Those folders exist only on
-  Scribe at runtime; they are not in the GitHub repo.
+  Scribe at runtime; they are not in the GitHub repo. The mechanism — what to put in
+  `.gitignore`, how to verify nothing leaked, and what to do if data was committed by accident
+  — has its own page: [gitignore setup for data security](gitignore-setup.md).
 - **Scripts read raw data from Scribe and write outputs only inside the project folder** —
   the "self-contained sandbox" principle. New code should save to project-local paths, never
   back into raw-data locations.

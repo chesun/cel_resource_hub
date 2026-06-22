@@ -73,9 +73,13 @@ nav:
       - Handoff README template: offboarding/readme-template.md
   - Workflow Tips:
       - workflow-tips/index.md
-      - Git for newcomers: workflow-tips/git-for-newcomers.md
+      - The recommended workflow: workflow-tips/recommended-workflow.md
+      - Editing Stata in VSCode: workflow-tips/editing-stata-vscode.md
+      - Local ↔ server sync: workflow-tips/local-server-sync.md
       - Scribe & SSH setup: workflow-tips/scribe-ssh-setup.md
       - Data safety: workflow-tips/data-safety.md
+      - gitignore setup for data security: workflow-tips/gitignore-setup.md
+      - Git for newcomers: workflow-tips/git-for-newcomers.md
       - Reproducible pipelines: workflow-tips/reproducible-pipelines.md
       - Claude Code intro: workflow-tips/claude-code-intro.md
   - Resources:
