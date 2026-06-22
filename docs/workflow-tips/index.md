@@ -15,6 +15,7 @@ what's useful and leave the rest.
 - [**Editing Stata in VSCode**](editing-stata-vscode.md) — write `.do` files locally in a real editor instead of typing into the server's interactive Stata GUI (which loses work when the connection drops).
 - [**Local ↔ server sync**](local-server-sync.md) — the two ways to move code between laptop and Scribe (FileZilla vs git), with the benefits and costs of each.
 - [**Working on Scribe**](working-on-scribe.md) — getting an account, connecting, running Stata (batch vs GUI), and keeping jobs alive with `screen`.
+- [**Stata GUI on Windows**](xstata-gui-windows.md) — illustrated Xming + PuTTY walkthrough for running the Stata GUI from a Windows machine.
 
 ## Keeping data safe
 

@@ -79,6 +79,7 @@ nav:
       - Editing Stata in VSCode: workflow-tips/editing-stata-vscode.md
       - Local ↔ server sync: workflow-tips/local-server-sync.md
       - Working on Scribe: workflow-tips/working-on-scribe.md
+      - Stata GUI on Windows: workflow-tips/xstata-gui-windows.md
       - Data safety: workflow-tips/data-safety.md
       - gitignore setup for data security: workflow-tips/gitignore-setup.md
       - Git for newcomers: workflow-tips/git-for-newcomers.md

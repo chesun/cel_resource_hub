@@ -87,8 +87,8 @@ and the [Xming](https://sourceforge.net/projects/xming/) X server, then:
    remote authentication protocol to **MIT-Magic-Cookie-1**. (Optionally save this as a session.)
 4. With the DSS VPN connected, click **Open**, log in, run `go_sbac`, then `xstata-mp`.
 
-(The lab's full illustrated walkthrough — "How to use XStata GUI on Windows" — has a screenshot
-for each PuTTY step.)
+See the full illustrated walkthrough (a screenshot for each PuTTY step):
+**[Stata GUI on Windows (Xming + PuTTY)](xstata-gui-windows.md)**.
 
 !!! warning "Good for a look, not for writing code"
     The GUI over X11 is handy for eyeballing the data, but it's a poor place to *write* your
@@ -126,6 +126,5 @@ it.)
     `screen -X -S <session> quit`.
 
 !!! todo "To add"
-    - Publish the lab's full illustrated Windows GUI walkthrough (PuTTY screenshots) as a page and link it here.
     - Where each project lives on Scribe (cross-link from each repo's detail page).
     - Troubleshooting: `stata-mp not found`, wrong working directory (`r(601)`), missing SSC package (`r(199)`).
