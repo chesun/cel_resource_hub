@@ -2,7 +2,7 @@
 
 Practical pointers for getting set up and getting in touch.
 
-- [**Tools & access**](tools.md) — the software you need (Stata, an SSH / file-transfer client, git) and how to get access to Scribe.
+- [**Tools & access**](tools.md) — what to download (the VPN, VSCode, an SSH / file-transfer client, git) with links to each, plus how to get access to Scribe.
 
 ## Contact
 

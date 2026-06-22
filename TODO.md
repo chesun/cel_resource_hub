@@ -14,12 +14,11 @@ Last updated: 2026-06-21
 - [ ] From Christina: Scribe run paths per project (to verify end-to-end runs)
 
 ## Backlog
-- [ ] **Comprehensive "Downloads & setup" page** — links to download useful apps (VSCode, an SSH / file-transfer client, etc.) and step-by-step install tips, including how to install Claude Code. Design the scope/structure first; likely consolidates with `resources/tools.md` and `workflow-tips/claude-code-intro.md`. (Idea captured — think it through before building.)
-- [ ] Expand `resources/tools.md` (or fold it into the Downloads & setup page above); fill remaining `TODO`s (canonical host string, etc.)
 - [ ] Decide whether `csac2025`'s minimal README should be expanded or point to its `CLAUDE.md`
 - [ ] Delete the old `cel_offboard` folder (the stray `claude-research-workflow` clone) once happy — **first preserve `master_supporting_docs/lab_guides/`** (source `.docx` onboarding guides, incl. the illustrated Windows XStata walkthrough); their text is distilled into the hub but the originals/screenshots aren't hosted yet
 
 ## Done (recent)
+- [x] Expanded `resources/tools.md` into a downloads + setup hub (Essentials / Situational tables, official download links for every tool, cross-links to each how-to); folded in the "Downloads & setup" backlog idea; confirmed host string already canonical. One underivable item (Stata licensing on Scribe) remains a visible page TODO — 2026-06-21
 - [x] `ccylc_2025` offboarding complete; repo archived (per its README, the Scribe run was recorded 2026-06-21) — 2026-06-21
 - [x] Published the illustrated XStata-on-Windows (Xming + PuTTY) guide; integrated the lab onboarding guides into Working on Scribe — 2026-06-21
 - [x] Offboarding standard updated: dropped the cold-read requirement; run logs tracked in git (PII-scrubbed) — 2026-06-21
