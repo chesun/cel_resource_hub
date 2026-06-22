@@ -20,7 +20,7 @@ that saw it (Qualtrics display logic is reconstructed in code).
 
 **The survey data lives only on Scribe** (it includes respondent emails / minors' responses) —
 never on a local machine and never in this repo. The code runs against it there; the cleaned
-dataset and logs stay on the server.
+dataset stays on the server, and the run logs are committed to the repo (PII-free).
 
 ## Folder map (derived from the repo)
 
@@ -32,7 +32,7 @@ ccylc_2025/
 │   ├── macros.doh              # question-group lists + display-logic criteria
 │   ├── clean/clean_qualtrics.do  # cleans the survey export
 │   └── explore/tab.do          # tabulates every question
-└── log/                        # logs (on Scribe; gitignored)
+└── log/                        # run logs (committed; PII-free)
 ```
 
 ## Pipeline (what reads/writes what)

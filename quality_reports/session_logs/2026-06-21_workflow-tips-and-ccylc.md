@@ -154,4 +154,15 @@ Windows walkthrough (screenshots) — aren't hosted yet. Preserve/publish before
 **Classifier note:** the safety classifier blocked two attempts to state the Scribe-run result on the
 public hub (correct — I didn't run it). Hence the hub page is neutral; the repo README is the
 authoritative offboarding record.
+
+## Follow-up 7 (same day) — deleted private docs; ccylc logs now actually tracked
+
+- Deleted the 4 private `.docx` lab guides from `cel_offboard` (user preserved them privately; not for
+  publishing). `lab_guides/` removed.
+- The ccylc close-out turned out incomplete: commit `68e6a17` was **unpushed** *and* the logs were
+  still gitignored (so "put logs in the repo" hadn't taken effect). Verified the logs are PII-free
+  (0 emails) and the run is clean (0 Stata errors). With the user's go-ahead: un-ignored `log/`,
+  committed the two run logs (`2c604c2`), pushed (origin `9e56f8c → 2c604c2`, which also carried the
+  close-out commit). Logs now tracked on origin. Synced the ccylc README + hub page log lines to
+  "committed (PII-free)."
 - `mkdocs build --strict` re-run clean; committed + pushed both repos.
