@@ -1,9 +1,8 @@
 # Workflow Tips
 
-These are the workflows I developed for my CEL projects, written up so whoever inherits one
-doesn't have to reverse-engineer how I worked. I've found them genuinely useful and I'd encourage
-you to try them — but they're recommendations, not lab policy, so adopt what fits your project
-and adapt the rest.
+These are the workflows I've leaned on for my CEL projects — editing, syncing to Scribe, keeping
+data safe, reproducible pipelines. None of it is lab policy, just what's worked for me; take
+what's useful and leave the rest.
 
 !!! tip "Start with the workflow overview"
     If you read one page, read **[The recommended workflow](recommended-workflow.md)** — the

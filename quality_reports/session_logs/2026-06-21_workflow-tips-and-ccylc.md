@@ -84,4 +84,10 @@ update the hub page, commit and push.
 - **Homepage / voice tone** dialed back from too-casual to confident-but-humble: it now states the
   workflows have real value and encourages adoption, while keeping them as recommendations rather
   than lab policy.
+
+## Follow-up 3 (same day) — shorter, warmer, broader audience
+
+- Trimmed the homepage opener to a shorter, warmer voice (the value-pitch paragraph collapsed to
+  one casual line) and broadened the stated audience beyond project successors to GSRs/labmates
+  generally. Aligned the workflow-tips and README openers + "who this is for" the same way.
 - `mkdocs build --strict` re-run clean; committed + pushed both repos.

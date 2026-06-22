@@ -1,9 +1,9 @@
 # CEL Resource Hub
 
 A hub I (**Christina Sun**) built while offboarding from the **California Education Lab (UC
-Davis)**. It links the CEL code repositories I'm handing off and documents the workflows I
-developed for building and running them. I think they're genuinely useful and worth adopting —
-but they're my recommendations, not official lab policy, so take what helps and adapt the rest.
+Davis)**. It links the CEL code repositories I'm handing off and collects the workflows I've
+leaned on for getting research done here. None of it is official lab policy — just what's worked
+for me; take what's useful and leave the rest.
 
 The content lives in [`docs/`](docs/) and is published as a [MkDocs Material](https://squidfunk.github.io/mkdocs-material/)
 site via GitHub Pages.
@@ -15,10 +15,10 @@ site via GitHub Pages.
 
 ## Who this is for
 
-Whoever **inherits one of my CEL projects** — an incoming researcher, PI, or successor — plus
-the lab's data-management custodian and IT. The typical reader is comfortable with **Stata**,
-may **never have used git or Claude Code**, and runs analysis on the lab's **Scribe server over
-SSH**. See [`docs/index.md`](docs/index.md) for the full framing.
+Anyone working in the lab — whoever inherits one of my CEL projects, a GSR or labmate getting set
+up on Scribe, or the data-management custodian and IT. The typical reader is comfortable with
+**Stata**, may **never have used git or Claude Code**, and runs analysis on the lab's **Scribe
+server over SSH**. See [`docs/index.md`](docs/index.md) for the full framing.
 
 ---
 

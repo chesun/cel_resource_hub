@@ -1,28 +1,25 @@
 # CEL Resource Hub
 
-I'm **Christina Sun**, and I built this hub while offboarding from the **California Education
-Lab (UC Davis)**. It links the CEL code repositories I'm handing off and documents the workflows
-I developed for building and running them over my years here.
+I'm **Christina Sun**, and I put this hub together while offboarding from the **California
+Education Lab (UC Davis)**. It links the CEL code repositories I'm handing off and collects the
+workflows I've leaned on for getting research done here.
 
-I think these workflows have real value — they've kept my work reproducible and saved me from a
-lot of avoidable mistakes — and I'd encourage whoever inherits this work to adopt them. At the
-same time, they're my recommendations, not official lab policy: you know your own project and
-constraints best, so take what helps and adapt the rest.
+None of it is official lab policy — it's just what's worked for me, shared in case it's useful to
+you too.
 
-If you've just inherited one of my CEL projects and don't know where to start, you're in the
-right place.
+Whether you've inherited one of my projects or you're a GSR just trying to get something running
+on Scribe, I hope there's something here for you.
 
 ---
 
 ## Who this is for
 
-You most likely **inherited one of my CEL projects** — an incoming researcher or successor — or
-you're the lab's data-management custodian or IT contact. I assume you:
+Maybe you **inherited one of my CEL projects**, or you're a **GSR or labmate** getting set up on
+Scribe, or you're the lab's data-management custodian or IT contact. I assume you:
 
 - are comfortable with **Stata**,
-- may have **never used git or Claude Code**,
-- run analysis on the lab's **Scribe server over SSH**, and
-- need to *reproduce* or make a *small change* to an existing pipeline, not rebuild it from scratch.
+- may have **never used git or Claude Code**, and
+- run analysis (or are about to) on the lab's **Scribe server over SSH**.
 
 !!! note "Why a personal hub?"
     My projects get handed off when I leave, and often there's no named successor at the time —
