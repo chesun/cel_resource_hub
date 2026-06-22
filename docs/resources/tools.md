@@ -16,7 +16,7 @@ What you need installed and how to get access to run a CEL pipeline.
 
 ## Access checklist for a new person
 
-1. [ ] **Scribe SSH account** — request from lab IT (see [Contacts](contacts.md)).
+1. [ ] **Scribe SSH account** — request from your lab's IT contact.
 2. [ ] **Access to the project folder on Scribe** — confirm with the data custodian.
 3. [ ] **GitHub access** to the relevant repo(s) — if any are private.
 4. [ ] **Stata packages installed** on your Scribe account — each repo lists what it needs.

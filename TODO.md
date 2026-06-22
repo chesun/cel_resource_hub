@@ -7,21 +7,24 @@ Last updated: 2026-06-21
 
 ## Up Next
 - [ ] Author to **commit + push** `csac_2024`'s drafted README (currently local-only) so the hub link resolves
-- [ ] Bring `ccylc_2025` up to the offboarding standard (handoff README + per-file I/O map, master do file, verified Scribe run) — handled directly from this hub
+- [ ] Finish `ccylc_2025` offboarding: handoff README + per-file I/O map ✅, `do/main.do` wired to run the full pipeline ✅ — **remaining: a verified end-to-end Scribe run + cold-read test** (needs Scribe access)
 - [ ] Decide Google Docs hosting approach (sensitivity triage; public-safe → Markdown in hub, sensitive → private store + link), then add "Related documents" sections to repo pages
 - [ ] Optional: switch `site_url` to `https://christinasun.net/cel_resource_hub/` if the custom domain should be canonical (currently set to the github.io URL, which 301-redirects there)
 
 ## Waiting On
-- [ ] From Christina: Scribe run paths per project; custodian (Kramer?) email; lab-IT contact + escalation path
+- [ ] From Christina: Scribe run paths per project (to verify end-to-end runs)
 
 ## Backlog
-- [ ] Fill workflow-tip stubs (git, Scribe/SSH, data safety, reproducible pipelines, Claude Code)
-- [ ] Fill resource stubs (contacts table, tools & access)
-- [ ] Add a short `README.md` to `ccylc_2025` (modeled on `va_consolidated`); `csac_2024` README is being drafted by the author
+- [ ] **Comprehensive "Downloads & setup" page** — links to download useful apps (VSCode, an SSH / file-transfer client, etc.) and step-by-step install tips, including how to install Claude Code. Design the scope/structure first; likely consolidates with `resources/tools.md` and `workflow-tips/claude-code-intro.md`. (Idea captured — think it through before building.)
+- [ ] Expand `resources/tools.md` (or fold it into the Downloads & setup page above); fill remaining `TODO`s (canonical host string, etc.)
 - [ ] Decide whether `csac2025`'s minimal README should be expanded or point to its `CLAUDE.md`
 - [ ] Delete the old `cel_offboard` folder (the stray `claude-research-workflow` clone) once happy
 
 ## Done (recent)
+- [x] Expand Workflow Tips into a comprehensive guide (recommended-workflow overview + VSCode, local↔server sync, gitignore-for-data, batch-vs-GUI); reframe to a personal-project voice — 2026-06-21
+- [x] `ccylc_2025`: handoff README + per-file I/O map; wire `do/main.do` to run the full pipeline — 2026-06-21
+- [x] Simplify Contacts to just my contact (drop lab-personnel table + partner orgs) — 2026-06-21
+- [x] Render Material icons (add `pymdownx.emoji`) — 2026-06-21
 - [x] Scaffold MkDocs Material site + repository index + detail pages — 2026-06-21
 - [x] Port workflow infrastructure (hooks, rules, ADRs, logging, docs-writer/critic) — 2026-06-21
 - [x] Verify strict build + hook tests pass — 2026-06-21

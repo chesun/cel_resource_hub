@@ -24,9 +24,7 @@ Scribe, or you're the lab's data-management custodian or IT contact. I assume yo
 !!! note "Why a personal hub?"
     My projects get handed off when I leave, and often there's no named successor at the time —
     so the documentation has to stand on its own. I'd rather write down how I actually work than
-    leave you to reverse-engineer it. The one thing I'm firm about (and that *isn't* a personal
-    preference) is keeping confidential student data on Scribe and out of GitHub — see
-    [Data safety](workflow-tips/data-safety.md).
+    leave you to reverse-engineer it.
 
 ---
 

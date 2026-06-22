@@ -90,4 +90,14 @@ update the hub page, commit and push.
 - Trimmed the homepage opener to a shorter, warmer voice (the value-pitch paragraph collapsed to
   one casual line) and broadened the stated audience beyond project successors to GSRs/labmates
   generally. Aligned the workflow-tips and README openers + "who this is for" the same way.
+- Dropped the "data safety is the one thing that isn't a personal preference" editorializing from
+  the homepage note, the tips index blurb, and the data-safety opener — it's universal lab policy
+  and doesn't need singling out. ADR-0003 amended to match.
+- Fixed `:material-*:` icon shortcodes rendering as literal text on the homepage cards: added the
+  `pymdownx.emoji` extension (Material 9.7.6 → `material.extensions.emoji.twemoji`/`to_svg`) to
+  `mkdocs.yml`. Confirmed the built HTML now emits the icon SVG instead of the literal `:...:`.
+- Simplified the Contacts page to just my contact (questions about the repos / workflow help);
+  removed the lab-personnel table (custodian, IT, PI, co-author) and the partner-orgs section —
+  this is a personal project, not a lab directory. De-linked the two "see Contacts" pointers
+  (scribe-ssh-setup, tools) that had expected lab-IT info there.
 - `mkdocs build --strict` re-run clean; committed + pushed both repos.

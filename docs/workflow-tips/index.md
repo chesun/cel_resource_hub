@@ -18,7 +18,7 @@ what's useful and leave the rest.
 
 ## Keeping data safe
 
-- [**Data safety**](data-safety.md) — keeping confidential student data on Scribe and out of GitHub. This is the one page here that *isn't* a personal preference — it's a hard requirement.
+- [**Data safety**](data-safety.md) — keeping confidential student data on Scribe and out of GitHub, and how the repos enforce it.
 - [**gitignore setup for data security**](gitignore-setup.md) — the concrete `.gitignore`, how to verify nothing leaked, and what to do if data was committed by accident.
 
 ## Reference

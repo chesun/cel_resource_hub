@@ -9,9 +9,9 @@ right Stata setup live only there, so my pipelines run on Scribe, not on a lapto
 
 ## One-time setup
 
-1. **Get an SSH account** from CEL lab IT (see [Contacts](../resources/contacts.md)). They
-   issue a username; the host is `Scribe.ssds.ucdavis.edu`. Password-prompt SSH is fine — no
-   `~/.ssh/config` alias or key setup is required.
+1. **Get an SSH account** from CEL lab IT. They issue a username; the host is
+   `Scribe.ssds.ucdavis.edu`. Password-prompt SSH is fine — no `~/.ssh/config` alias or key
+   setup is required.
 2. **Get your code onto Scribe** by transferring the repo into the project folder
    (FileZilla, `scp -r`, `rsync`, drag-and-drop — operator's choice). Do **not** copy the
    `.git/` folder onto Scribe.
