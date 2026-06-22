@@ -1,10 +1,10 @@
 # Resources
 
-Practical pointers for getting set up and finding the right person.
+Practical pointers for getting set up and getting in touch.
 
-- [**Contacts**](contacts.md) — how to reach me with questions about the repos or the workflow.
-- [**Tools & access**](tools.md) — the software you need (Stata, an SSH/file-transfer client, git) and how to get access to Scribe.
+- [**Tools & access**](tools.md) — the software you need (Stata, an SSH / file-transfer client, git) and how to get access to Scribe.
 
-!!! info "Status: outlines"
-    These pages are seeded with what's known and marked `TODO` where lab-specific details are
-    still needed.
+## Contact
+
+Questions about the repos or the workflow? Email me — **Christina Sun**,
+`christinasun101@gmail.com` / `ucsun@ucdavis.edu`.

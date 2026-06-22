@@ -100,4 +100,7 @@ update the hub page, commit and push.
   removed the lab-personnel table (custodian, IT, PI, co-author) and the partner-orgs section —
   this is a personal project, not a lab directory. De-linked the two "see Contacts" pointers
   (scribe-ssh-setup, tools) that had expected lab-IT info there.
+- Removed the per-page **edit button** (`content.action.edit`, present since the initial scaffold)
+  — not wanted on a personal hub. Then, since Contacts was down to one line, folded it into the
+  **Resources** landing page and deleted the standalone `contacts.md` + its nav entry.
 - `mkdocs build --strict` re-run clean; committed + pushed both repos.

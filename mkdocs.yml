@@ -36,7 +36,6 @@ theme:
     - navigation.sections
     - navigation.indexes
     - navigation.top
-    - content.action.edit
     - search.suggest
     - search.highlight
     - toc.follow
@@ -87,5 +86,4 @@ nav:
       - Claude Code intro: workflow-tips/claude-code-intro.md
   - Resources:
       - resources/index.md
-      - Contacts: resources/contacts.md
       - Tools & access: resources/tools.md
