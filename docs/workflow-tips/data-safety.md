@@ -27,9 +27,10 @@ etc.). That data must never reach GitHub or a personal laptop.
   back into raw-data locations.
 - **`git pull` brings down code, never data** — which is the main safety argument for using
   git over manual file transfer.
-- **Some repos add a push guard** that blocks any `git push` carrying a data file off the
-  server (you may see `refusing to push — restricted data files...` — that's the guard
-  working).
+- **A pre-push hook can block data egress** — armed on the Scribe clone, it refuses any
+  `git push` carrying a `data/`/`estimates/` file off the server (you may see
+  `refusing to push — restricted data files...` — that's the guard working). See
+  [the pre-push hook](local-server-sync.md#protecting-data-on-the-server-the-pre-push-hook).
 
 ## Things that should never be committed
 

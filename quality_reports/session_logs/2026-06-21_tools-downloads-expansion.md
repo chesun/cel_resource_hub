@@ -60,3 +60,33 @@ Added to `git-for-newcomers.md`:
 Scoped deliberately: no pull requests / issues / Actions / branching (repos push straight to
 `main`). Reused `../repositories/index.md` instead of re-listing repos. `mkdocs build --strict`
 → exit 0, no warnings; both new in-page anchors confirmed present in the rendered HTML.
+Committed `9a3bc98`; pushed to origin/main.
+
+## Follow-up — local-server-sync.md: middleman diagram, va_consolidated context, data hook
+
+User asked to revise the sync page's Method B: (1) show GitHub as the middleman remote with a
+visual diagram; (2) note it's so far only implemented for `va_consolidated` (complex
+consolidation; works well); (3) document the data-protection git hook, which lives **on the
+server**. Sourced the hook details from `va_consolidated/.githooks/pre-push` + the handoff doc
+`2026-05-26_scribe-git-stata-workflow-learnings.md` (three-layer isolation, hook file-vs-config,
+canonical setup). Plan: `quality_reports/plans/2026-06-21_sync-page-middleman-and-data-hook.md`.
+
+Changes:
+
+- **`mkdocs.yml`** — enabled Mermaid via a `pymdownx.superfences` custom fence (Material 9.7.6
+  renders natively).
+- **`local-server-sync.md`** — Method B now opens with the **GitHub-as-middleman** framing + a
+  Mermaid flowchart (laptop ⇄ GitHub ⇄ Scribe; nothing moves laptop↔Scribe directly). Added a
+  "Where I actually use this" note (va_consolidated-only so far; FileZilla still the default for
+  simpler projects) and a **"Protecting data on the server: the pre-push hook"** subsection:
+  gitignore = guard 1, the pre-push hook = guard 2, armed on the Scribe clone via
+  `git config core.hooksPath .githooks`, with the deliberate trip-test and the `--no-verify`
+  override. Reconciled the Method A `.git/`-tip contradiction (git *is* on Scribe in Method B)
+  and added a shared-server PAT-scoping caveat (token cached plaintext in `~/.git-credentials`).
+- **`data-safety.md` + `gitignore-setup.md`** — pointed their vague "push guard" mentions at the
+  new subsection.
+
+Scope guard held: featured the pre-push hook + gitignore pairing; left out sparse-checkout
+internals / DVC / LFS (va_consolidated operator depth). `mkdocs build --strict` → exit 0, no
+warnings; `class="mermaid"` block + the new anchor confirmed in built HTML; Material JS bundle
+confirmed to carry the Mermaid integration.
