@@ -1,9 +1,9 @@
 # CEL Resource Hub
 
-A personal hub I (**Christina Sun**) built while offboarding from the **California Education
-Lab (UC Davis)**. It links the CEL code repositories I'm handing off and writes up the workflows
-I use to build and run them. It's *what I do and why I think it works* — recommendations from
-one researcher, not official lab documentation.
+A hub I (**Christina Sun**) built while offboarding from the **California Education Lab (UC
+Davis)**. It links the CEL code repositories I'm handing off and documents the workflows I
+developed for building and running them. I think they're genuinely useful and worth adopting —
+but they're my recommendations, not official lab policy, so take what helps and adapt the rest.
 
 The content lives in [`docs/`](docs/) and is published as a [MkDocs Material](https://squidfunk.github.io/mkdocs-material/)
 site via GitHub Pages.

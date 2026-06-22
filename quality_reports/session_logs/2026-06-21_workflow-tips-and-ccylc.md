@@ -76,9 +76,12 @@ update the hub page, commit and push.
   opinion-owning voice across `index.md`, `workflow-tips/*`, `offboarding/*`, `README.md`, and the
   mkdocs `site_description`: "here's what I do and why I think it works — your call." Kept the
   data-confidentiality rule firm and explicitly flagged as the one non-preference.
-- **ccylc raw data purged** (user: "all raw data is removed and purged"). Rewrote the ccylc README
-  and hub page to remove every `dta/`/raw-data reference and reframe the repo as a **code archive**:
-  the do-files document the cleaning/tabulation logic, but the data (PII) is gone, so the pipeline
-  can't be re-run without re-obtaining the Qualtrics export. Updated status everywhere
-  (repositories index, ccylc page, README).
+- **ccylc data is Scribe-only** (user clarified "removed and purged" = removed from *local*; the
+  data lives on the server). Removed every `dta/`/raw-data path reference from the ccylc README and
+  hub page, and framed the repo as a runnable Scribe pipeline whose data and logs live only on
+  Scribe — never local, never committed. (A first pass mistakenly called it a purged "code archive";
+  corrected once the user clarified.)
+- **Homepage / voice tone** dialed back from too-casual to confident-but-humble: it now states the
+  workflows have real value and encourages adoption, while keeping them as recommendations rather
+  than lab policy.
 - `mkdocs build --strict` re-run clean; committed + pushed both repos.

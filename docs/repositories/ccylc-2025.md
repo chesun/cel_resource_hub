@@ -8,7 +8,7 @@ Conference (CCYLC)** in 2025.
 | **GitHub** | <https://github.com/chesun/ccylc_2025> (public) |
 | **Runs on (Scribe)** | `/home/research/ca_ed_lab/projects/ccylc` |
 | **Entry point** | `do/main.do` — runs the full pipeline (`settings` → `clean` → `explore`) |
-| **Status** | Offboarding — code archive (survey data purged); handoff `README.md` written |
+| **Status** | Offboarding; handoff `README.md` written |
 | **Start with** | The repo's [`README.md`](https://github.com/chesun/ccylc_2025#readme) — the per-file I/O map is there |
 
 ## What it is
@@ -18,9 +18,9 @@ guardians, and school staff) after the 2025 youth leadership conference. The cod
 Qualtrics export into a labeled analysis dataset and tabulates every question by the population
 that saw it (Qualtrics display logic is reconstructed in code).
 
-**The survey data has since been purged** (it included respondent emails / minors' responses),
-so the repo now stands as a **code archive** — the cleaned dataset, logs, and any tables/figures
-are not retained.
+**The survey data lives only on Scribe** (it includes respondent emails / minors' responses) —
+never on a local machine and never in this repo. The code runs against it there; the cleaned
+dataset and logs stay on the server.
 
 ## Folder map (derived from the repo)
 
@@ -32,27 +32,28 @@ ccylc_2025/
 │   ├── macros.doh              # question-group lists + display-logic criteria
 │   ├── clean/clean_qualtrics.do  # cleans the survey export
 │   └── explore/tab.do          # tabulates every question
-└── log/                        # logs (gitignored; not retained)
+└── log/                        # logs (on Scribe; gitignored)
 ```
 
-## Pipeline (what it read/wrote when it ran)
+## Pipeline (what reads/writes what)
 
-The data files below have been purged; this documents the code's logic.
+The data files all live on Scribe (never local); this maps what the code reads and writes there.
 
-| Step | Read | Wrote |
+| Step | Reads | Writes |
 |---|---|---|
-| `clean/clean_qualtrics.do` | the Qualtrics survey export (value + label) **[external; purged]** | a cleaned analysis dataset + clean log |
+| `clean/clean_qualtrics.do` | the Qualtrics survey export, value + label (on Scribe) **[external]** | a cleaned analysis dataset + clean log |
 | `explore/tab.do` | the cleaned dataset (+ `do/macros.doh`) | a tabulation log |
 
 !!! note "`do/main.do` runs the full pipeline"
     The entry point sources `settings.do`, then runs `clean/clean_qualtrics.do` and
-    `explore/tab.do` in order. Because the survey data has been purged, it can no longer run
-    as-is — reproducing the analysis would require re-obtaining the original Qualtrics export.
+    `explore/tab.do` in order — so `stata-mp -b do do/main.do` reproduces the analysis on Scribe.
+    It hasn't yet been re-run end-to-end since the wiring; that verifying run is the remaining
+    offboarding step.
 
-!!! danger "Survey data purged (it held PII)"
-    The Qualtrics export included **respondent emails** and minors' responses. That's why it was
-    purged and never lived in GitHub — and why it must never be committed if it is ever
-    re-obtained. See [Data safety](../workflow-tips/data-safety.md).
+!!! danger "Confidential survey data (Scribe only)"
+    The Qualtrics export includes **respondent emails** and minors' responses. It lives only on
+    Scribe — never on a local machine, never in GitHub — and must never be committed. See
+    [Data safety](../workflow-tips/data-safety.md).
 
 ## Who to ask
 
@@ -62,9 +63,7 @@ The data files below have been purged; this documents the code's logic.
 
 - [x] Handoff `README.md` with per-file I/O map — written in the repo.
 - [x] `main.do` wired to run the full pipeline (`settings` → `clean` → `explore`).
-- [x] Confidential data purged (PII); repo reduced to a code archive.
-
-The usual end-to-end server run and cold-read acceptance tests no longer apply here — the data
-is gone, so the pipeline can't be re-run without re-obtaining the export.
+- [ ] Completed end-to-end server run recorded.
+- [ ] Cold-read test by a non-author on Scribe.
 
 See the [offboarding standards](../offboarding/index.md) for what each item means.

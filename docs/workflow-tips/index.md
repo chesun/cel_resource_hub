@@ -1,8 +1,9 @@
 # Workflow Tips
 
-These are the workflows I use on my CEL projects, written up so whoever inherits one doesn't
-have to reverse-engineer how I worked. They're my personal habits and opinions — *here's what I
-do and why I think it helps*, not lab policy. Take what's useful to you and leave the rest.
+These are the workflows I developed for my CEL projects, written up so whoever inherits one
+doesn't have to reverse-engineer how I worked. I've found them genuinely useful and I'd encourage
+you to try them — but they're recommendations, not lab policy, so adopt what fits your project
+and adapt the rest.
 
 !!! tip "Start with the workflow overview"
     If you read one page, read **[The recommended workflow](recommended-workflow.md)** — the

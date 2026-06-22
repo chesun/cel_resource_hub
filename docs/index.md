@@ -1,13 +1,13 @@
 # CEL Resource Hub
 
-Hi — I'm **Christina Sun**. I built this hub as a personal project while offboarding from the
-**California Education Lab (UC Davis)**. It links the CEL code repositories I'm leaving behind
-and writes up the workflows I developed for building and running them.
+I'm **Christina Sun**, and I built this hub while offboarding from the **California Education
+Lab (UC Davis)**. It links the CEL code repositories I'm handing off and documents the workflows
+I developed for building and running them over my years here.
 
-One honest note on what this is: **this is not official lab documentation.** Every workflow here
-is one I put together myself, for my own projects. So read these pages as *"here's what I do,
-and why I think it works"* — recommendations from one researcher, not lab policy. Take what's
-useful and ignore the rest.
+I think these workflows have real value — they've kept my work reproducible and saved me from a
+lot of avoidable mistakes — and I'd encourage whoever inherits this work to adopt them. At the
+same time, they're my recommendations, not official lab policy: you know your own project and
+constraints best, so take what helps and adapt the rest.
 
 If you've just inherited one of my CEL projects and don't know where to start, you're in the
 right place.
