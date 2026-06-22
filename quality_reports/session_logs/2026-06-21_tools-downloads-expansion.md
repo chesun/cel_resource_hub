@@ -28,8 +28,8 @@ every tool — folding in the backlog "Downloads & setup page" idea rather than 
 - **Host string already canonical** — audited every page; all use `Scribe.ssds.ucdavis.edu`
   consistently (the only variant is an explicitly-flagged *older* form in a screenshot caption in
   `xstata-gui-windows.md`). The backlog "canonical host string" item needed no fix.
-- The only genuinely underivable detail (Stata licensing on Scribe — how access is granted) stays
-  as a visible page `TODO`, per `no-assumptions.md`.
+- Initially left a Stata-licensing page `TODO`; user clarified everyone has Scribe access so it's
+  irrelevant — removed it (and the now-empty "To add" admonition).
 
 ## Verify + ship
 

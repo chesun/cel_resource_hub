@@ -35,6 +35,3 @@ Work top to bottom — each step depends on the one above it.
 3. [ ] **Access to the project folder on Scribe** — confirm with the data custodian.
 4. [ ] **GitHub access** to the relevant repo(s) — only needed if any are private (just `csac_2024` is).
 5. [ ] **Stata packages installed** on your Scribe account — each repo lists what it needs.
-
-!!! todo "To add"
-    - Stata licensing details on Scribe (how access is granted).
