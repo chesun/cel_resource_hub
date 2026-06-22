@@ -7,7 +7,7 @@ Conference (CCYLC)** in 2025.
 |---|---|
 | **GitHub** | <https://github.com/chesun/ccylc_2025> (public) |
 | **Runs on (Scribe)** | `/home/research/ca_ed_lab/projects/ccylc` |
-| **Entry point** | `do/main.do` — **currently a stub** (see note below) |
+| **Entry point** | `do/main.do` — runs the full pipeline (`settings` → `clean` → `explore`) |
 | **Status** | Offboarding; handoff `README.md` drafted |
 | **Start with** | The repo's [`README.md`](https://github.com/chesun/ccylc_2025#readme) — the per-file I/O map is there |
 
@@ -26,7 +26,7 @@ figures in the repo.
 ```
 ccylc_2025/
 ├── do/
-│   ├── main.do                 # entry point (stub — see note)
+│   ├── main.do                 # entry point — runs settings -> clean -> explore
 │   ├── settings.do             # defines $projdir
 │   ├── macros.doh              # question-group lists + display-logic criteria
 │   ├── clean/clean_qualtrics.do  # raw export -> cleaned .dta
@@ -44,11 +44,10 @@ ccylc_2025/
 | `clean/clean_qualtrics.do` | `dta/raw/ccylc_export_value.csv`, `dta/raw/ccylc_export_label.csv` (Qualtrics exports) | `dta/cln/ccylc_2025_clean.dta` |
 | `explore/tab.do` | `dta/cln/ccylc_2025_clean.dta` (+ `do/macros.doh`) | `log/explore/tab.txt` |
 
-!!! warning "`do/main.do` doesn't run the pipeline yet"
-    The entry point currently only `cd`s to the project folder and sources `settings.do` — it
-    does **not** call the cleaning or tabulation steps. To reproduce the analysis today, run
-    `settings.do` → `clean/clean_qualtrics.do` → `explore/tab.do` in order (the README §2 gives
-    the commands). Wiring `main.do` to call them is the recommended next offboarding step.
+!!! note "`do/main.do` runs the full pipeline"
+    The entry point sources `settings.do`, then runs `clean/clean_qualtrics.do` and
+    `explore/tab.do` in order — so `stata-mp -b do do/main.do` reproduces the analysis. It has
+    not yet been run end-to-end on Scribe; that verifying run is the remaining offboarding step.
 
 !!! danger "Confidential raw data"
     The Qualtrics export includes **respondent emails** and minors' responses. It lives only on
@@ -62,7 +61,7 @@ ccylc_2025/
 ## Offboarding status
 
 - [x] Handoff `README.md` with per-file I/O map — drafted in the repo.
-- [ ] `main.do` wired to run the full pipeline.
+- [x] `main.do` wired to run the full pipeline (`settings` → `clean` → `explore`).
 - [ ] Completed end-to-end server run recorded.
 - [ ] Cold-read test by a non-author on Scribe.
 

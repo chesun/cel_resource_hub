@@ -59,3 +59,13 @@ update the hub page, commit and push.
 
 - `mkdocs build --strict` on the hub before committing.
 - Commits: hub (tips guide + nav; ccylc page + index) and ccylc_2025 (README); push both.
+
+## Follow-up (same day)
+
+- User approved wiring `do/main.do`. Wired it to source `settings.do` then run
+  `clean/clean_qualtrics.do` and `explore/tab.do` in order (invocations mirror each sub-do's
+  documented usage header; `$projdir` comes from `settings.do`). Synced the README (§2, §4, §8)
+  and the hub ccylc page to drop the stub warning and check off the "wire main.do" item.
+- Not verified on Scribe (no local Stata/data) — the end-to-end server run remains the open
+  acceptance step. A derive-don't-guess advisory false-positived on `$projdir` / the relative
+  `do/settings.do` path (runtime-resolved, cross-repo cwd); confirmed correct, not silenced.
