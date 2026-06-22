@@ -36,4 +36,27 @@ every tool — folding in the backlog "Downloads & setup page" idea rather than 
 - `mkdocs build --strict` → **exit 0, no link/nav warnings** (PASS). Cross-link anchors reused
   verbatim from existing working pages.
 - Also backfilled the stale `quality_reports/plans/INDEX.md` (was missing the workflow-tips plan).
-- Next: commit the hub changes.
+- Committed (`0621587`) + the licensing-TODO removal (`9a41558`); pushed both to origin/main.
+
+## Follow-up — git vs GitHub + GitHub-usage basics
+
+User asked to add git-vs-GitHub framing and how to use GitHub. Audited `git-for-newcomers.md`:
+it taught the git *commands* well but never defined git vs GitHub, and GitHub-the-platform was
+thin (PAT was one cryptic error-table line; no access/web-download guidance). User chose to keep
+it on the **one existing page** (not a new page). Plan:
+`quality_reports/plans/2026-06-21_git-vs-github-and-usage.md`.
+
+Added to `git-for-newcomers.md`:
+
+- **"git vs GitHub"** concept section (2-row table: git = local tool / GitHub = website) +
+  pointer to the Repositories index for the repo list.
+- **"Getting access & a copy from GitHub"** — public vs private (`csac_2024` the only private),
+  how to request access, and two ways to grab a copy (web **Code → Download ZIP** for non-git
+  folks, or clone).
+- **"Pushing: GitHub wants a token, not your password"** — a real 4-step Personal Access Token
+  walkthrough + a credential-helper tip; the error-table row now cross-refs it.
+- Glossary gained **git / GitHub / repository / personal access token** rows.
+
+Scoped deliberately: no pull requests / issues / Actions / branching (repos push straight to
+`main`). Reused `../repositories/index.md` instead of re-listing repos. `mkdocs build --strict`
+→ exit 0, no warnings; both new in-page anchors confirmed present in the rendered HTML.

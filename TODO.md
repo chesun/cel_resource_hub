@@ -18,6 +18,7 @@ Last updated: 2026-06-21
 - [ ] Delete the old `cel_offboard` folder (the stray `claude-research-workflow` clone) once happy — **first preserve `master_supporting_docs/lab_guides/`** (source `.docx` onboarding guides, incl. the illustrated Windows XStata walkthrough); their text is distilled into the hub but the originals/screenshots aren't hosted yet
 
 ## Done (recent)
+- [x] `git-for-newcomers.md`: added a "git vs GitHub" concept section, a "Getting access & a copy from GitHub" section (web Download-ZIP + private-repo access), and a real Personal Access Token walkthrough (expanded from the cryptic error-table line); glossary + error-table cross-ref updated — 2026-06-21
 - [x] Expanded `resources/tools.md` into a downloads + setup hub (Essentials / Situational tables, official download links for every tool, cross-links to each how-to); folded in the "Downloads & setup" backlog idea; confirmed host string already canonical. Removed the Stata-licensing TODO — everyone has Scribe access, so it's irrelevant — 2026-06-21
 - [x] `ccylc_2025` offboarding complete; repo archived (per its README, the Scribe run was recorded 2026-06-21) — 2026-06-21
 - [x] Published the illustrated XStata-on-Windows (Xming + PuTTY) guide; integrated the lab onboarding guides into Working on Scribe — 2026-06-21
