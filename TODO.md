@@ -7,13 +7,11 @@ Last updated: 2026-06-21
 
 ## Up Next
 - [ ] Author to **commit + push** `csac_2024`'s drafted README (currently local-only) so the hub link resolves
-- [ ] Finish `ccylc_2025` offboarding: handoff README + per-file I/O map ✅, `do/main.do` wired to run the full pipeline ✅ — **remaining: a verified end-to-end Scribe run + cold-read test** (needs Scribe access)
 - [ ] Decide Google Docs hosting approach (sensitivity triage; public-safe → Markdown in hub, sensitive → private store + link), then add "Related documents" sections to repo pages
 - [ ] Optional: switch `site_url` to `https://christinasun.net/cel_resource_hub/` if the custom domain should be canonical (currently set to the github.io URL, which 301-redirects there)
 
 ## Waiting On
 - [ ] From Christina: Scribe run paths per project (to verify end-to-end runs)
-- [ ] From Christina: links to the GUI guides (Windows Xming + PuTTY; Mac XQuartz) to wire into `working-on-scribe.md`, and whether they're OK to link from this public hub
 
 ## Backlog
 - [ ] **Comprehensive "Downloads & setup" page** — links to download useful apps (VSCode, an SSH / file-transfer client, etc.) and step-by-step install tips, including how to install Claude Code. Design the scope/structure first; likely consolidates with `resources/tools.md` and `workflow-tips/claude-code-intro.md`. (Idea captured — think it through before building.)
@@ -22,6 +20,9 @@ Last updated: 2026-06-21
 - [ ] Delete the old `cel_offboard` folder (the stray `claude-research-workflow` clone) once happy — **first preserve `master_supporting_docs/lab_guides/`** (source `.docx` onboarding guides, incl. the illustrated Windows XStata walkthrough); their text is distilled into the hub but the originals/screenshots aren't hosted yet
 
 ## Done (recent)
+- [x] `ccylc_2025` offboarding complete; repo archived (per its README, the Scribe run was recorded 2026-06-21) — 2026-06-21
+- [x] Published the illustrated XStata-on-Windows (Xming + PuTTY) guide; integrated the lab onboarding guides into Working on Scribe — 2026-06-21
+- [x] Offboarding standard updated: dropped the cold-read requirement; run logs tracked in git (PII-scrubbed) — 2026-06-21
 - [x] Expand Workflow Tips into a comprehensive guide (recommended-workflow overview + VSCode, local↔server sync, gitignore-for-data, batch-vs-GUI); reframe to a personal-project voice — 2026-06-21
 - [x] `ccylc_2025`: handoff README + per-file I/O map; wire `do/main.do` to run the full pipeline — 2026-06-21
 - [x] Simplify Contacts to just my contact (drop lab-personnel table + partner orgs) — 2026-06-21

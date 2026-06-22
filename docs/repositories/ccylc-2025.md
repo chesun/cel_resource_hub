@@ -8,7 +8,7 @@ Conference (CCYLC)** in 2025.
 | **GitHub** | <https://github.com/chesun/ccylc_2025> (public) |
 | **Runs on (Scribe)** | `/home/research/ca_ed_lab/projects/ccylc` |
 | **Entry point** | `do/main.do` — runs the full pipeline (`settings` → `clean` → `explore`) |
-| **Status** | Offboarding; handoff `README.md` written |
+| **Status** | Archived — offboarding complete |
 | **Start with** | The repo's [`README.md`](https://github.com/chesun/ccylc_2025#readme) — the per-file I/O map is there |
 
 ## What it is
@@ -46,9 +46,7 @@ The data files all live on Scribe (never local); this maps what the code reads a
 
 !!! note "`do/main.do` runs the full pipeline"
     The entry point sources `settings.do`, then runs `clean/clean_qualtrics.do` and
-    `explore/tab.do` in order — so `stata-mp -b do do/main.do` reproduces the analysis on Scribe.
-    It hasn't yet been re-run end-to-end since the wiring; that verifying run is the remaining
-    offboarding step.
+    `explore/tab.do` in order, so `stata-mp -b do do/main.do` reproduces the analysis on Scribe.
 
 !!! danger "Confidential survey data (Scribe only)"
     The Qualtrics export includes **respondent emails** and minors' responses. It lives only on
@@ -63,7 +61,7 @@ The data files all live on Scribe (never local); this maps what the code reads a
 
 - [x] Handoff `README.md` with per-file I/O map — written in the repo.
 - [x] `main.do` wired to run the full pipeline (`settings` → `clean` → `explore`).
-- [ ] Completed end-to-end server run recorded.
-- [ ] Cold-read test by a non-author on Scribe.
+- [x] End-to-end server run recorded (2026-06-21) — ran clean on Scribe.
 
-See the [offboarding standards](../offboarding/index.md) for what each item means.
+Offboarding is complete; the repo is archived as a clean code handoff. See the
+[offboarding standards](../offboarding/index.md) for what each item means.

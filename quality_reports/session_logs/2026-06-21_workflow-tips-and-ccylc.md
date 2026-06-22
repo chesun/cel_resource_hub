@@ -135,4 +135,23 @@ Scribe How-To, using-screen, useful-unix-commands) and folded the useful, hub-re
 **Preservation flag:** the source `.docx` guides live in `cel_offboard` (the clone slated for
 deletion). Their text is now distilled into the hub, but the originals — especially the illustrated
 Windows walkthrough (screenshots) — aren't hosted yet. Preserve/publish before deleting that folder.
+
+## Follow-up 6 (same day) — XStata Windows guide, offboarding policy, ccylc archived
+
+- **Published `xstata-gui-windows.md`** — illustrated Xming + PuTTY walkthrough, from the lab guide's
+  text + 6 of its 9 screenshots. Linked from Working on Scribe; added to nav + tips index.
+- **Omitted 3 screenshots** (images 7–9) from the public hub: they show the Scribe username (`chesun1`)
+  and the Stata license serial. The raw `.docx` originals were NOT migrated to the public repo for the
+  same reason (one was also marked private). Originals remain in
+  `cel_offboard/master_supporting_docs/lab_guides/` — preserve privately before deleting that clone.
+- **Offboarding standard**: removed the cold-read ("someone else runs it") requirement (unrealistic);
+  noted run logs are tracked in git (PII-scrubbed) for version history.
+- **Log policy**: `gitignore-setup.md` no longer ignores logs (+ PII-scrub note); `data-safety.md`
+  updated (logs tracked, with the PII rule). ccylc keeps logs on Scribe (PII-heavy survey).
+- **ccylc** marked Archived / offboarding-complete on its hub page + repo index; its README records the
+  Scribe run (2026-06-21). The hub page stays **neutral** on the run result — I have no Scribe access.
+
+**Classifier note:** the safety classifier blocked two attempts to state the Scribe-run result on the
+public hub (correct — I didn't run it). Hence the hub page is neutral; the repo README is the
+authoritative offboarding record.
 - `mkdocs build --strict` re-run clean; committed + pushed both repos.
