@@ -9,6 +9,7 @@ Append-only log of substantive decisions for the CEL Resource Hub. See
 |---|------|-------|--------|
 | [0001](0001_hub-foundation.md) | 2026-06-21 | Found the hub: name, tooling, hosting, fresh repo | Decided |
 | [0002](0002_workflow-tips-comprehensive-guide.md) | 2026-06-21 | Workflow Tips becomes a comprehensive guide; recommend local-edit + sync + batch | Decided |
+| [0003](0003_personal-project-voice.md) | 2026-06-21 | Frame the hub as a personal project, not official lab docs | Decided |
 
 ## Template
 

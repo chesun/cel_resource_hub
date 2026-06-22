@@ -4,11 +4,11 @@ Write your Stata code on your **laptop**, in a real editor, and save it to `.do`
 [sync it to Scribe](local-server-sync.md) and [run it in batch](scribe-ssh-setup.md). This
 page explains why, and how to set up the editor.
 
-!!! warning "The habit to break"
-    Several people in the lab write Stata by SSHing to Scribe and typing into the **interactive
-    Stata GUI**. It feels quick, but **work typed into the console is lost the moment the server
-    drops the connection** — and it leaves no reproducible script behind. Treat the server as a
-    place code *runs*, not a place you *write* it.
+!!! warning "The habit I'd gently push back on"
+    A lot of folks write Stata by SSHing to Scribe and typing into the **interactive Stata GUI**.
+    I did too — until I lost work one too many times when the connection dropped, and the console
+    leaves no reproducible script behind either. My take: treat the server as a place code
+    *runs*, not a place you *write* it.
 
 ## Why a real editor + saved `.do` files
 

@@ -1,11 +1,12 @@
 # Offboarding Standards
 
-When a project leaves CEL with its author, the documentation **is** the handoff — often there
-is no named successor at the time, so a future researcher has to run and trust the work from
-what's written down alone. These standards define what "offboarding-ready" means for a CEL
-analysis repo. They are distilled from [`va_consolidated`](../repositories/va-consolidated.md),
-the most fully offboarded repo in the lab, and they are the bar that projects handled directly
-from this hub (e.g. `ccylc_2025`) are held to.
+When I leave a project behind, the documentation **is** the handoff — often there's no named
+successor at the time, so a future researcher has to run and trust the work from what's written
+down alone. These are the standards I try to hold my own projects to before I'd call one
+"offboarded." They're distilled from [`va_consolidated`](../repositories/va-consolidated.md), the
+most fully documented handoff I've done, and they're the bar I hold the projects I hand off
+directly from this hub (e.g. `ccylc_2025`) to. They're my standards, not lab policy — but I think
+they're a reasonable bar for anything you want a stranger to be able to run.
 
 !!! abstract "The one principle"
     A future researcher with **Scribe access and Stata**, but **no contact with the author**,

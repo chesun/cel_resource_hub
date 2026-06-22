@@ -69,3 +69,16 @@ update the hub page, commit and push.
 - Not verified on Scribe (no local Stata/data) — the end-to-end server run remains the open
   acceptance step. A derive-don't-guess advisory false-positived on `$projdir` / the relative
   `do/settings.do` path (runtime-resolved, cross-repo cwd); confirmed correct, not silenced.
+
+## Follow-up 2 (same day) — voice reorientation + ccylc data purge
+
+- **Reframed the whole hub as a personal project, not official lab docs** (ADR-0003). First-person,
+  opinion-owning voice across `index.md`, `workflow-tips/*`, `offboarding/*`, `README.md`, and the
+  mkdocs `site_description`: "here's what I do and why I think it works — your call." Kept the
+  data-confidentiality rule firm and explicitly flagged as the one non-preference.
+- **ccylc raw data purged** (user: "all raw data is removed and purged"). Rewrote the ccylc README
+  and hub page to remove every `dta/`/raw-data reference and reframe the repo as a **code archive**:
+  the do-files document the cleaning/tabulation logic, but the data (PII) is gone, so the pipeline
+  can't be re-run without re-obtaining the Qualtrics export. Updated status everywhere
+  (repositories index, ccylc page, README).
+- `mkdocs build --strict` re-run clean; committed + pushed both repos.

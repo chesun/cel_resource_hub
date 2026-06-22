@@ -1,8 +1,8 @@
 # Local ↔ server sync
 
 Your code is written on your laptop and runs on Scribe, so it has to move between the two.
-There are **two ways the lab uses**, and they trade off simplicity against safety and history.
-This page lays out both so you can pick deliberately.
+There are **two ways I move code**, and they trade off simplicity against safety and history.
+Here's how I think about both so you can pick deliberately.
 
 !!! info "Direction matters"
     You sync **code** laptop → Scribe, and code changes Scribe → laptop. You **never** move
@@ -37,7 +37,8 @@ Scribe, drag it back the same way.
 
 !!! tip "Do not copy `.git/` to Scribe"
     If you transfer the repo folder, exclude the `.git/` directory. GitHub credentials don't
-    belong on the restricted server (per the lab's [data-separation decision](data-safety.md)).
+    belong on the restricted server — it's the [data-separation principle](data-safety.md) I
+    stick to.
 
 ## Method B — git
 
@@ -64,9 +65,8 @@ git push origin main
 pushing), and occasional merge/rebase conflicts. See [Git for newcomers](git-for-newcomers.md)
 for the commands, common errors, and a glossary.
 
-!!! note "Either is acceptable; git is recommended"
-    The lab's standard is that the file-transfer mechanism is operator's choice — both work.
-    But git is the recommended default because it gives you history and a structural barrier
-    against data leaving the server. Use FileZilla when you just need a quick one-off and don't
-    want the git overhead.
+!!! note "Either works; I default to git"
+    I treat the transfer mechanism as a free choice — both work. I default to git because it
+    gives me history and a structural barrier against data leaving the server, and I fall back
+    to FileZilla for a quick one-off when I don't want the git overhead. Your call.
 </content>

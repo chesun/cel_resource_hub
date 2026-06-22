@@ -1,6 +1,7 @@
 # Data safety
 
-The single most important rule in the lab:
+The single most important rule — and unlike the rest of this hub, this one **isn't** a personal
+preference, it's a hard requirement for restricted student data:
 
 > **Code lives on GitHub. Confidential student data lives only on Scribe. The two never mix.**
 

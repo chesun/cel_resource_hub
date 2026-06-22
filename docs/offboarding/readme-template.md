@@ -1,9 +1,9 @@
 # Handoff README template
 
-Copy this skeleton into a project's `README.md` and fill it in. It is the shape the lab's
-offboarded repos already use ([`va_consolidated`](../repositories/va-consolidated.md),
+Copy this skeleton into a project's `README.md` and fill it in. It's the shape I use for the
+repos I offboard ([`va_consolidated`](../repositories/va-consolidated.md),
 [`calpads`](../repositories/calpads.md), [`csac_2024`](../repositories/csac-2024.md)). The
-load-bearing section is **§4, the per-file input/output map** — that is what lets the next
+load-bearing section is **§4, the per-file input/output map** — that's what lets the next
 person trace the pipeline.
 
 Keep the tone plain: assume Stata fluency, assume no git/Claude Code.

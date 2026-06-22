@@ -22,7 +22,7 @@ Download the updated files from the GitHub web page and drag them into the Scrib
 folder with **FileZilla** (or any transfer tool). To save a change, edit on Scribe and send
 the file back the same way. Nothing else to learn.
 
-### Option B — git (the workflow the lab uses)
+### Option B — git (what I use)
 
 ```bash
 cd /path/to/the/project/on/scribe

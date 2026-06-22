@@ -1,8 +1,8 @@
 # The recommended workflow
 
-This page is the end-to-end picture: how to make a change to a CEL pipeline safely and
-reproducibly, from your laptop to the Scribe server and back. The detail pages linked below
-go deeper on each step; read this one first.
+This is the workflow I settled on for making a change to a CEL pipeline safely and reproducibly,
+from my laptop to the Scribe server and back. It's what I do — the detail pages linked below go
+deeper on each step. Read this one first, then decide what's worth adopting.
 
 !!! abstract "The shape of it"
     **Write code locally → sync it to Scribe → run it in batch on Scribe → read the log →
@@ -55,10 +55,10 @@ from laptop to Scribe, and you move code changes back. You never copy data the o
   └───────────────────────────┘               └──────────────────────────┘
 ```
 
-## Why not just write code in Stata on the server?
+## Why I don't just write code in Stata on the server
 
-The common lab habit is to SSH in, open the Stata GUI, and type commands interactively. It
-feels fast, but it has three real costs:
+A lot of people work this way — SSH in, open the Stata GUI, type commands interactively. I did
+too, for a while. Three things pushed me off it:
 
 - **You lose work when the connection drops.** Anything typed into the interactive console
   that you didn't paste from a saved `.do` file is gone when the server cuts off or your laptop
@@ -70,7 +70,7 @@ feels fast, but it has three real costs:
   analysis. Ad-hoc console work breaks that.
 
 Writing in a saved `.do` file — in a real editor — and running it in batch fixes all three at
-once. That's the entire argument for this workflow.
+once. That's the whole reason I work this way; your mileage may vary.
 
 !!! tip "Where to go next"
     - [Editing Stata in VSCode](editing-stata-vscode.md) — the editor setup

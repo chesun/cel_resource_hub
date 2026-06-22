@@ -1,8 +1,8 @@
 site_name: CEL Resource Hub
 site_description: >-
-  Offboarding and workflow resource hub for the California Education Lab (UC Davis)
-  — one place that links to the lab's code repositories and collects reusable
-  workflow guidance for the people who inherit them.
+  A personal hub Christina Sun built while offboarding from the California Education
+  Lab (UC Davis): links to her CEL code repositories and the workflows she uses —
+  recommendations from one researcher, not official lab documentation.
 site_author: California Education Lab, UC Davis
 
 # Canonical URL (GitHub-native project-pages URL; also served at

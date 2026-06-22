@@ -1,12 +1,13 @@
 # Workflow Tips
 
-A practical guide to working on California Education Lab code, plus reusable tips. These pages
-exist so the same lessons don't have to be relearned by every person who inherits a project.
+These are the workflows I use on my CEL projects, written up so whoever inherits one doesn't
+have to reverse-engineer how I worked. They're my personal habits and opinions — *here's what I
+do and why I think it helps*, not lab policy. Take what's useful to you and leave the rest.
 
 !!! tip "Start with the workflow overview"
     If you read one page, read **[The recommended workflow](recommended-workflow.md)** — the
     end-to-end picture (edit locally → sync to Scribe → run in batch) that the other pages fill
-    in. New to the lab? It's the fastest way to a correct mental model.
+    in. It's the fastest way to see how I work and decide what's worth adopting.
 
 ## The workflow, end to end
 
@@ -17,7 +18,7 @@ exist so the same lessons don't have to be relearned by every person who inherit
 
 ## Keeping data safe
 
-- [**Data safety**](data-safety.md) — the rule that keeps confidential student data on Scribe and out of GitHub, and how the lab enforces it.
+- [**Data safety**](data-safety.md) — keeping confidential student data on Scribe and out of GitHub. This is the one page here that *isn't* a personal preference — it's a hard requirement.
 - [**gitignore setup for data security**](gitignore-setup.md) — the concrete `.gitignore`, how to verify nothing leaked, and what to do if data was committed by accident.
 
 ## Reference
@@ -27,9 +28,9 @@ exist so the same lessons don't have to be relearned by every person who inherit
 - [**Claude Code intro**](claude-code-intro.md) — what the `.claude/` folders and `CLAUDE.md` files are, and whether you need them (you don't, to run the analysis).
 
 !!! info "Status: actively filled in"
-    Several pages started as outlines distilled from the `va_consolidated` handoff. Sections
-    still marked `TODO` need a lab-specific detail (a contact, a host string) before they're
-    authoritative — the workflow guidance itself is ready to use.
+    Several pages started as outlines distilled from my `va_consolidated` handoff. Sections
+    still marked `TODO` need a detail I haven't filled in yet (a contact, a host string). The
+    workflow advice itself reflects how I actually work.
 
 ## The one rule worth memorizing
 

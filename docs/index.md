@@ -1,29 +1,35 @@
 # CEL Resource Hub
 
-A central place for the **California Education Lab (UC Davis)** that links to the lab's
-code repositories — especially **offboarding deliverables** — and collects reusable
-**workflow guidance** for the people who inherit and run them.
+Hi — I'm **Christina Sun**. I built this hub as a personal project while offboarding from the
+**California Education Lab (UC Davis)**. It links the CEL code repositories I'm leaving behind
+and writes up the workflows I developed for building and running them.
 
-If you have just taken over a CEL project and don't know where to start, you are in the
+One honest note on what this is: **this is not official lab documentation.** Every workflow here
+is one I put together myself, for my own projects. So read these pages as *"here's what I do,
+and why I think it works"* — recommendations from one researcher, not lab policy. Take what's
+useful and ignore the rest.
+
+If you've just inherited one of my CEL projects and don't know where to start, you're in the
 right place.
 
 ---
 
 ## Who this is for
 
-The typical reader **inherits a CEL project** — an incoming researcher, PI, or successor —
-or is the lab's data-management custodian or IT contact. We assume you:
+You most likely **inherited one of my CEL projects** — an incoming researcher or successor — or
+you're the lab's data-management custodian or IT contact. I assume you:
 
 - are comfortable with **Stata**,
 - may have **never used git or Claude Code**,
 - run analysis on the lab's **Scribe server over SSH**, and
 - need to *reproduce* or make a *small change* to an existing pipeline, not rebuild it from scratch.
 
-!!! note "Offboarding reality"
-    These projects are handed off when the original author **leaves the lab**. Often there
-    is no named successor at handoff time — the documentation *is* the last word. That is
-    why each repo aims to be runnable from its README/handoff doc alone, and why the
-    confidential student data always stays on Scribe while the code lives on GitHub.
+!!! note "Why a personal hub?"
+    My projects get handed off when I leave, and often there's no named successor at the time —
+    so the documentation has to stand on its own. I'd rather write down how I actually work than
+    leave you to reverse-engineer it. The one thing I'm firm about (and that *isn't* a personal
+    preference) is keeping confidential student data on Scribe and out of GitHub — see
+    [Data safety](workflow-tips/data-safety.md).
 
 ---
 
@@ -35,7 +41,7 @@ or is the lab's data-management custodian or IT contact. We assume you:
 
     ---
 
-    Every CEL code repository — links, server locations, status, and how to run each one.
+    Every CEL code repository I'm handing off — links, server locations, status, and how to run each one.
 
     [:octicons-arrow-right-24: Browse repositories](repositories/index.md)
 
@@ -43,7 +49,7 @@ or is the lab's data-management custodian or IT contact. We assume you:
 
     ---
 
-    What "offboarding-ready" means for a CEL repo — the handoff checklist and README template.
+    The bar I try to hold my own projects to before I leave them behind — my handoff checklist and README template.
 
     [:octicons-arrow-right-24: Offboarding standards](offboarding/index.md)
 
@@ -51,7 +57,7 @@ or is the lab's data-management custodian or IT contact. We assume you:
 
     ---
 
-    The recommended end-to-end workflow (edit locally, sync, run on Scribe) plus how-tos: VSCode, git, Scribe & SSH, and keeping data safe.
+    The workflows I use (edit locally, sync, run on Scribe) and the tools behind them: VSCode, git, Scribe & SSH, keeping data safe.
 
     [:octicons-arrow-right-24: Workflow tips](workflow-tips/index.md)
 
@@ -67,18 +73,17 @@ or is the lab's data-management custodian or IT contact. We assume you:
 
 ---
 
-## How the lab's repos are organized (the common pattern)
+## How I set up my repos (a pattern you'll see across mine)
 
-Most CEL analysis repos share the same shape, so once you learn one you can read them all:
+Most of my CEL analysis repos share the same shape, so once you learn one you can read them all:
 
 - All Stata code lives under `do/`, driven by a single entry point **`do/main.do`**.
 - File paths are defined in one place, **`do/settings.do`** (often branched by machine, e.g. Scribe vs. local).
 - Code and documentation live on **GitHub**; the confidential data lives only on **Scribe**.
 - The pipeline runs on Scribe with `stata-mp -b do do/main.do`.
 
-The [`va_consolidated`](repositories/va-consolidated.md) repo is the most fully documented
-example of this pattern (it ships a plain-English `HANDOFF.md`) and is a good model to read
-first.
+The [`va_consolidated`](repositories/va-consolidated.md) repo is my most fully documented example
+of this pattern (it ships a plain-English `HANDOFF.md`) and is a good one to read first.
 
 ---
 

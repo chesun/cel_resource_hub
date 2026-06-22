@@ -1,7 +1,7 @@
 # Scribe & SSH setup
 
-The lab's analysis runs on **Scribe**, the UC Davis SSDS server. The restricted data and the
-right Stata setup live only there, so pipelines run on Scribe, not on your laptop.
+My CEL analysis runs on **Scribe**, the UC Davis SSDS server — the restricted data and the
+right Stata setup live only there, so my pipelines run on Scribe, not on a laptop.
 
 !!! info "Status: seeded outline"
     Seeded from `va_consolidated`/`csac2025` notes. Confirm the host string and the IT

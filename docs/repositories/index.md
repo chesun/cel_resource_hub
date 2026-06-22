@@ -1,7 +1,7 @@
 # Repositories
 
-Every California Education Lab code repository tracked by this hub. Each row links to the
-GitHub repo and to a detail page with how-to-run notes, server location, and status.
+Every CEL code repository I'm handing off. Each row links to the GitHub repo and to a detail
+page with how-to-run notes, server location, and status.
 
 !!! warning "Access"
     **`csac_2024` is private**; the other GitHub repos are public. A private link only opens
@@ -14,7 +14,7 @@ GitHub repo and to a detail page with how-to-run notes, server location, and sta
 | CSAC 2023 Survey | [chesun/csac](https://github.com/chesun/csac) | Public | 2023 California high school senior survey (CSAC × CCC admin data) | Offboarding complete (per repo README) | [Details](csac.md) |
 | CSAC / C2C 2024 Survey | [chesun/csac_2024](https://github.com/chesun/csac_2024) | Private | 2024 CA graduating senior survey (CSAC + C2C); backs two published 2024 reports | Offboarding in progress; README drafted (not yet pushed) | [Details](csac-2024.md) |
 | CSAC 2025 Survey | [chesun/csac2025](https://github.com/chesun/csac2025) | Public | 2025 CA high school senior survey (CSAC + C2C; FAFSA/CADAA filers) | Active/offboarding | [Details](csac-2025.md) |
-| Cesar Chavez Youth Leadership Conference 2025 | [chesun/ccylc_2025](https://github.com/chesun/ccylc_2025) | Public | Lightweight analysis of post-conference survey data | Offboarding; handoff README drafted | [Details](ccylc-2025.md) |
+| Cesar Chavez Youth Leadership Conference 2025 | [chesun/ccylc_2025](https://github.com/chesun/ccylc_2025) | Public | Lightweight analysis of post-conference survey data | Offboarding — code archive (data purged) | [Details](ccylc-2025.md) |
 | CALPADS Course-Completion | [chesun/calpads](https://github.com/chesun/calpads) | Public | Stata cleaning pipeline over CALPADS EOY1 Course Completion extracts (2013–14 to 2017–18) | Offboarding; ships handoff README | [Details](calpads.md) |
 
 !!! note "Naming"

@@ -1,8 +1,9 @@
 # CEL Resource Hub
 
-A central, browsable hub for the **California Education Lab (UC Davis)** — one place
-that links to the lab's code repositories (especially offboarding deliverables) and
-collects reusable workflow guidance for the people who inherit and run them.
+A personal hub I (**Christina Sun**) built while offboarding from the **California Education
+Lab (UC Davis)**. It links the CEL code repositories I'm handing off and writes up the workflows
+I use to build and run them. It's *what I do and why I think it works* — recommendations from
+one researcher, not official lab documentation.
 
 The content lives in [`docs/`](docs/) and is published as a [MkDocs Material](https://squidfunk.github.io/mkdocs-material/)
 site via GitHub Pages.
@@ -14,10 +15,10 @@ site via GitHub Pages.
 
 ## Who this is for
 
-People who **inherit a CEL project** — an incoming researcher, PI, or successor — plus
-the lab's data-management custodian and lab IT. The typical reader is comfortable with
-**Stata**, may **never have used git or Claude Code**, and runs analysis on the lab's
-**Scribe server over SSH**. See [`docs/index.md`](docs/index.md) for the full framing.
+Whoever **inherits one of my CEL projects** — an incoming researcher, PI, or successor — plus
+the lab's data-management custodian and IT. The typical reader is comfortable with **Stata**,
+may **never have used git or Claude Code**, and runs analysis on the lab's **Scribe server over
+SSH**. See [`docs/index.md`](docs/index.md) for the full framing.
 
 ---
 
@@ -58,12 +59,12 @@ Source** to the `gh-pages` branch.
 
 ---
 
-## Status — first pass (2026-06-21)
+## Status (2026-06-21)
 
-This is the initial **skeleton**: site scaffold, a landing page, a repository index
-linking every offboard repo, and **outlined stubs** for the workflow-tips and resources
-guides. Open items are marked inline with `TODO` admonitions. Known gaps:
+Site scaffold, landing page, and a repository index linking every offboard repo. The
+**workflow-tips** section is now filled in as a comprehensive guide (edit-locally → sync → run
+on Scribe, plus VSCode/git/data-safety pages); `ccylc_2025` ships a handoff README. Remaining
+`TODO`s are marked inline. Known gaps:
 
-- `calpads` — GitHub URL / description still needed (repo is not in `~/github_repos` locally).
-- `csac_2024` and `ccylc_2025` — no upstream README; descriptions here are best-effort and need confirmation.
-- Workflow-tips and resources pages are outlines to be filled in.
+- A few `TODO`s in `resources/` (lab-IT contact, custodian email, the canonical host string).
+- `csac_2024` description is best-effort (private repo).
