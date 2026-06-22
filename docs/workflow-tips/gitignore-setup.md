@@ -13,9 +13,9 @@ slips through.
 
 ## A starter `.gitignore` for a CEL Stata repo
 
-Copy this into a file named `.gitignore` at the repo root. It blocks data, logs, and outputs
-that can echo data, plus the usual OS/editor cruft. (Adjust folder names to your repo — some
-use `dta/`, some use `data/`.)
+Copy this into a file named `.gitignore` at the repo root. It blocks data and data-bearing
+exports, plus the usual OS/editor cruft. (Adjust folder names to your repo — some use `dta/`,
+some use `data/`.) Note that **logs are deliberately *not* ignored** — see below.
 
 ```gitignore
 # ─────────────────────────────────────────────────────────────
@@ -26,12 +26,9 @@ dta/
 *.dta
 *.csv
 
-# Stata logs and outputs (regenerable; can echo data)
-log/
+# Data-bearing exports (can contain raw values)
 output/
 out/
-*.smcl
-*.log
 
 # OS / editor cruft
 .DS_Store
@@ -49,6 +46,13 @@ out/
 
     The `.gitkeep` stub is tracked; the real data files in the folder stay ignored.
 
+!!! info "Logs are tracked on purpose"
+    Run logs (`log/`, `*.smcl`, `*.log`) are **kept in git**, not ignored — they're a version
+    history of what ran and what broke at each point in time (the `va_consolidated` convention).
+    The one rule: a log must **not** contain PII. Don't `codebook` identifier crosswalks into a
+    log and don't print raw data rows; scrub before the run if a step would echo identifiers.
+    See [Data safety](data-safety.md).
+
 ## Confirm it's actually working
 
 Don't assume — check. From the repo root:
@@ -58,7 +62,8 @@ Don't assume — check. From the repo root:
 git status
 
 # 2. What does git actually track? Data files must NOT appear here.
-git ls-files | grep -iE '\.(dta|csv|smcl|log)$'   # expect: no output
+#    (logs ARE tracked, so check only for data formats)
+git ls-files | grep -iE '\.(dta|csv)$'             # expect: no output
 git ls-files data/ dta/                            # expect: only .gitkeep, if any
 ```
 

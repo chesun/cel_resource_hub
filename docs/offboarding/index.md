@@ -10,7 +10,7 @@ they're a reasonable bar for anything you want a stranger to be able to run.
 
 !!! abstract "The one principle"
     A future researcher with **Scribe access and Stata**, but **no contact with the author**,
-    can reproduce the analysis from the repo alone. Everything below serves that test.
+    can reproduce the analysis from the repo alone. Everything below serves that goal.
 
 ---
 
@@ -22,12 +22,11 @@ A repo is offboarding-ready when all of these are true:
 - [ ] **A handoff README.** Plain-language, written for someone comfortable with Stata but possibly new to git. It covers: what the repo is, the one command to run it, how to run part of it, where outputs land, what *not* to touch, where things are documented, what to do when something breaks, and who to contact.
 - [ ] **A per-file input/output map.** The README documents **every do file in the pipeline**: its purpose, its inputs, and its outputs. This is what lets the next person trace the dependency chain. (See the [README template](readme-template.md).)
 - [ ] **A completed server run.** The full pipeline has been run end-to-end on Scribe and verified — logs present for every step, no errors, and any automated checks pass. Record the date and runtime.
-- [ ] **Code/data separation.** Code, docs, and shippable tables/figures live on GitHub; restricted data lives only on Scribe. Data directories are gitignored. No credentials or PII in any tracked file.
+- [ ] **Code/data separation.** Code, docs, and shippable tables/figures live on GitHub; restricted data lives only on Scribe. Data directories are gitignored; run logs *are* tracked (PII scrubbed) for version history. No credentials or PII in any tracked file.
 - [ ] **Reproducible inputs.** Nothing is downloaded live at run time (pin a local copy instead); seeds are set; scripts write inside the repo's own output folders, not back into raw-data or predecessor locations.
 - [ ] **Automated sanity checks (where feasible).** A final step asserts the results are in-range (sample sizes, merge rates, value ranges) and **fails loudly** if an upstream change breaks something.
 - [ ] **Decision records.** The "why" behind load-bearing choices is written down (ADRs in `decisions/`, or a clearly-labeled section of the README for lightweight projects).
 - [ ] **Contacts.** The README names who to ask: the author (offboarding-era email), the data-management custodian, and lab IT.
-- [ ] **A cold-read test.** Someone who is *not* the author runs the pipeline from the README alone, on Scribe, and it works. This is the acceptance test — it catches the tacit knowledge the author didn't realize they were relying on.
 
 ---
 
