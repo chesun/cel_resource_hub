@@ -99,6 +99,10 @@ pushing), and occasional merge/rebase conflicts.
 
 ### Protecting data on the server: the pre-push hook
 
+Counterintuitively, git with these guards is **safer** for the data than manual transfer — the
+protection is structural, not a matter of remembering what not to drag (see
+[why “GitHub on the server” is safer, not scarier](git-for-newcomers.md#git-on-scribe-not-just-your-laptop)).
+
 Because git on Scribe pushes to a **public** GitHub repo, the real danger is a `git push` *from
 Scribe* accidentally carrying a restricted data file off the server. There are two independent
 guards, so a leak would take two deliberate overrides:

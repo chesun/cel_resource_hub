@@ -73,3 +73,6 @@ portfolio-nav-link discussion. caffeinate tip still flagged in-text as not Scrib
   carrying a data file off the server even when force-added; vs FileZilla where only your own attention
   stops a `dta/` drag. Links to the hook subsection + Data safety. Data-security framing stated firmly
   (it's the one lab standard); git setup stays personal voice. Build --strict exit 0, no content warnings.
+- **sync page — one-line mirror:** added a single framing sentence (+ pointer) to the pre-push-hook
+  subsection of local-server-sync.md: git-with-guards is structurally safer for the data than manual
+  transfer, linking to the git page's fuller "safer, not scarier" reframe. No content duplicated.
