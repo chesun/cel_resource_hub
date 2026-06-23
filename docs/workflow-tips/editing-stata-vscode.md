@@ -11,11 +11,11 @@ auto-indent as you type), then running it through the Stata binary in VSCode's *
 terminal**:
 
 <figure class="md-video">
-  <video autoplay muted loop playsinline controls poster="img/vscode-stata-demo-poster-v2.png">
+  <video muted loop playsinline preload="metadata" poster="img/vscode-stata-demo-poster-v2.png">
     <source src="img/vscode-stata-demo-v2.mp4" type="video/mp4">
     <a href="img/vscode-stata-demo-v2.mp4">Download the clip</a>.
   </video>
-  <figcaption>Editing a <code>.do</code> file in VSCode, then running it in the integrated terminal. (Auto-plays, silent, loops; pause anytime with the controls.)</figcaption>
+  <figcaption>Editing a <code>.do</code> file in VSCode, then running it in the integrated terminal. (Plays when it scrolls into view; click the video to pause.)</figcaption>
 </figure>
 
 !!! warning "The habit I'd gently push back on"

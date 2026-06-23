@@ -64,6 +64,9 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/video-scroll.js
+
 plugins:
   - search
   - open-in-new-tab        # external links open in a new tab (internal links unaffected)
