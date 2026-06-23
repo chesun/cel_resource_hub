@@ -1,6 +1,6 @@
 # TODO — CEL Resource Hub
 
-Last updated: 2026-06-21
+Last updated: 2026-06-22
 
 ## Active (doing now)
 - (nothing blocking — core hub is live; remaining items are content fill-in)
@@ -18,6 +18,7 @@ Last updated: 2026-06-21
 - [ ] Delete the old `cel_offboard` folder (the stray `claude-research-workflow` clone) once happy — **first preserve `master_supporting_docs/lab_guides/`** (source `.docx` onboarding guides, incl. the illustrated Windows XStata walkthrough); their text is distilled into the hub but the originals/screenshots aren't hosted yet
 
 ## Done (recent)
+- [x] Fixed a strawman in the "write locally vs. on the server" framing across `recommended-workflow.md`, `editing-stata-vscode.md`, and `working-on-scribe.md` — the alternative isn't "throwaway console commands with no saved script"; people write `.do` files in Stata's GUI editor on the server. Reframed the real trade-off as laptop editor + git + connection-independence vs. the server GUI editor — 2026-06-22
 - [x] `local-server-sync.md`: reframed Method B around **GitHub as the middleman** (added a Mermaid diagram; enabled mermaid in `mkdocs.yml`), noted Method B is so far only set up for `va_consolidated` (complex consolidation; works well) with FileZilla still the default for simpler projects, and documented the **pre-push data hook** armed on the Scribe clone (`core.hooksPath .githooks`, trip test, `--no-verify`). Reconciled the Method A `.git/` tip + added a shared-server token caveat; pointed data-safety/gitignore cross-links at the new subsection — 2026-06-21
 - [x] `git-for-newcomers.md`: added a "git vs GitHub" concept section, a "Getting access & a copy from GitHub" section (web Download-ZIP + private-repo access), and a real Personal Access Token walkthrough (expanded from the cryptic error-table line); glossary + error-table cross-ref updated — 2026-06-21
 - [x] Expanded `resources/tools.md` into a downloads + setup hub (Essentials / Situational tables, official download links for every tool, cross-links to each how-to); folded in the "Downloads & setup" backlog idea; confirmed host string already canonical. Removed the Stata-licensing TODO — everyone has Scribe access, so it's irrelevant — 2026-06-21

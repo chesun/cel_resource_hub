@@ -90,12 +90,12 @@ and the [Xming](https://sourceforge.net/projects/xming/) X server, then:
 See the full illustrated walkthrough (a screenshot for each PuTTY step):
 **[Stata GUI on Windows (Xming + PuTTY)](xstata-gui-windows.md)**.
 
-!!! warning "Good for a look, not for writing code"
-    The GUI over X11 is handy for eyeballing the data, but it's a poor place to *write* your
-    analysis: work typed into the console is lost if the connection drops, it's slow over the
-    network, and it leaves no reproducible script behind. Explore interactively if you want, but
-    anything you want to keep goes into a saved `.do` file and runs in batch — see
-    [Editing Stata in VSCode](editing-stata-vscode.md).
+!!! warning "Good for a look, not your main editor"
+    The GUI over X11 is handy for eyeballing data and poking at a few lines. You *can* write
+    `.do` files in its do-file editor, but it's a slow place to do real work — laggy over the
+    network, and a dropped connection takes whatever's unsaved in the buffer with it. I'd write in
+    [VSCode on my laptop](editing-stata-vscode.md) instead and keep the GUI for quick exploration;
+    anything worth keeping still lands in a saved `.do` file that runs in batch.
 
 ## Keeping a session alive: `screen`
 

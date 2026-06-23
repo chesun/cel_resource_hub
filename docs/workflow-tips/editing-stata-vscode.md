@@ -5,10 +5,11 @@ Write your Stata code on your **laptop**, in a real editor, and save it to `.do`
 page explains why, and how to set up the editor.
 
 !!! warning "The habit I'd gently push back on"
-    A lot of folks write Stata by SSHing to Scribe and typing into the **interactive Stata GUI**.
-    I did too — until I lost work one too many times when the connection dropped, and the console
-    leaves no reproducible script behind either. My take: treat the server as a place code
-    *runs*, not a place you *write* it.
+    A lot of folks write their `.do` files in **Stata's do-file editor on the server** (often via
+    the GUI over X11). That works — you still get saved scripts — but I'd nudge you to write on
+    your laptop instead: a real editor, git history, and editing that doesn't depend on a live
+    server connection. My take: treat the server as a place code *runs*, not the place you
+    *write* it.
 
 ## Why a real editor + saved `.do` files
 

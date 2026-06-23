@@ -55,22 +55,28 @@ from laptop to Scribe, and you move code changes back. You never copy data the o
   └───────────────────────────┘               └──────────────────────────┘
 ```
 
-## Why I don't just write code in Stata on the server
+## Why I write code on my laptop, not in the Stata GUI on the server
 
-A lot of people work this way — SSH in, open the Stata GUI, type commands interactively. I did
-too, for a while. Three things pushed me off it:
+A lot of people write their `.do` files in **Stata's do-file editor on the server** — SSH in
+(often with the GUI over X11), edit the do file there, run a few lines to test, then run the
+whole thing. That works, and it produces saved, reproducible scripts. I just prefer to write on
+my laptop and run on Scribe, for three reasons:
 
-- **You lose work when the connection drops.** Anything typed into the interactive console
-  that you didn't paste from a saved `.do` file is gone when the server cuts off or your laptop
-  sleeps. A batch run from a saved script can't lose your work — the script is the work.
-- **There's no record of what you did.** Interactive history is not a reproducible script.
-  The next person can't re-run "what you typed."
-- **It isn't reproducible.** The whole point of the `do/main.do` pattern (see
-  [Reproducible pipelines](reproducible-pipelines.md)) is that one command reproduces the
-  analysis. Ad-hoc console work breaks that.
+- **A better editor.** VSCode gives you syntax highlighting, search across the whole `do/` tree,
+  and a side-by-side file view — far easier to navigate a multi-`do` pipeline than Stata's
+  built-in editor. See [Editing Stata in VSCode](editing-stata-vscode.md).
+- **Version history comes for free.** Writing on the laptop keeps the code in git: every change
+  is recoverable, with who changed what and when. See [Git for newcomers](git-for-newcomers.md).
+- **Your editing doesn't depend on the connection.** Edit locally and a laggy or dropped SSH/X11
+  session never touches your editor — you keep typing and sync when you're ready. Edit in a GUI
+  session on the server and a dropped connection can cost you whatever's unsaved in the buffer
+  (and the lag is a nuisance).
 
-Writing in a saved `.do` file — in a real editor — and running it in batch fixes all three at
-once. That's the whole reason I work this way; your mileage may vary.
+Either way, the *authoritative* run is a
+[batch run](working-on-scribe.md#running-stata-batch-vs-gui) of `do/main.do` — that's what's
+reproducible (see [Reproducible pipelines](reproducible-pipelines.md)). Poking at a few lines
+interactively to test is completely fine; just make sure the keepers land in the saved `.do`
+file. That's the whole reason I work this way; your mileage may vary.
 
 !!! tip "Where to go next"
     - [Editing Stata in VSCode](editing-stata-vscode.md) — the editor setup

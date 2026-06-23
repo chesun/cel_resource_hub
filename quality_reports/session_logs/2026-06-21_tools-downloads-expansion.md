@@ -97,4 +97,28 @@ tracked (many committed figure PDFs); the `.gitignore` explicitly air-gaps only 
 `estimates/` ("never push from Scribe to remote"). Broadened the diagram (Scribe node + edge →
 "logs, tables, figures" / "outputs") and the intro sentence, and added the clarification that
 everything flows back *except* `data/`/`estimates/` (which the pre-push hook enforces). Strict
-build clean; mermaid block intact.
+build clean; mermaid block intact. Committed `b2f1fd0`; pushed. User then granted standing
+authorization to push without asking (recorded in project memory `push-without-asking.md`;
+mirrored to claude-config).
+
+## Follow-up (2026-06-22) — fixed a strawman in the "write locally vs on the server" argument
+
+User flagged that the "Why I don't just write code in Stata on the server" section
+(recommended-workflow.md) mischaracterized the alternative: it described people "typing commands
+interactively" with "no reproducible script." In reality everyone writes `.do` files — the real
+alternative is writing them in **Stata's GUI do-file editor on the server** (and running a few
+lines to test), not throwaway console commands. The same strawman appeared in two other places.
+
+Reframed the genuine trade-off in all three: laptop + VSCode + git + connection-independence vs.
+the server GUI editor — both produce saved, reproducible scripts; the authoritative run is still
+batch, and poking at lines to test is fine.
+
+- `recommended-workflow.md` — retitled the section "Why I write code on my laptop, not in the
+  Stata GUI on the server"; three honest reasons (better editor / free version history / editing
+  not hostage to the connection).
+- `editing-stata-vscode.md` — fixed the parallel "habit I'd gently push back on" callout.
+- `working-on-scribe.md` — fixed the GUI callout ("Good for a look, not your main editor"),
+  dropping the "leaves no reproducible script behind" claim.
+
+Swept for other instances (none left; one neutral "interactive console" mention in the `screen`
+section is fine). `mkdocs build --strict` → exit 0, no warnings.
