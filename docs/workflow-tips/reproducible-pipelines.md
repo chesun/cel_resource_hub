@@ -21,6 +21,57 @@ repo with the same mental model.
 - **Automated sanity checks.** A final phase asserts the results are in expected ranges
   (sample sizes, merge rates, value ranges) and **fails loudly** if something upstream broke.
 
+## What `main.do` looks like
+
+The entry point is a thin **orchestrator**: load the paths, set one toggle per phase, then run
+each phase — guarded by its toggle — in dependency order. A skeleton:
+
+```stata
+* ===========================================================================
+* main.do — runs the whole pipeline.  Entry point:  stata-mp -b do do/main.do
+* ===========================================================================
+
+include do/settings.do          // 1. one place for every file path ($datadir, $logdir, …)
+
+* 2. Phase toggles — default every phase ON. Flip one to 0 to skip it
+*    (safe only if that phase's outputs already exist on disk; later phases read them).
+local run_clean     1
+local run_samples   1
+local run_analysis  1
+local run_outputs   1
+local run_checks    1
+
+log using "$logdir/main.smcl", replace      // 3. one master log for the whole run
+
+* 4. Run each phase in dependency order, each guarded by its toggle
+if `run_clean' {
+    do do/clean/clean_raw.do            // raw data -> cleaned dataset
+}
+if `run_samples' {
+    do do/samples/build_samples.do      // cleaned data -> estimation samples
+}
+if `run_analysis' {
+    do do/analysis/estimate.do          // samples -> estimates
+}
+if `run_outputs' {
+    do do/outputs/tables_figures.do     // estimates -> tables & figures
+}
+if `run_checks' {
+    do do/checks/sanity_checks.do       // assert results are in range; fail loudly
+}
+
+log close
+```
+
+Each `do/<phase>/...` file is an ordinary Stata script that reads its inputs from the paths in
+`settings.do` and writes its outputs to project-local folders. `main.do` itself only decides
+**which phases run, and in what order**.
+
+!!! tip "Finer-grained control"
+    Bigger pipelines add a second layer of toggles *inside* a phase (e.g. re-run the estimation
+    but skip sample reconstruction), plus a single "full run" switch that forces every phase back
+    ON for the final, authoritative run. Same idea, more granularity.
+
 ## When you change something
 
 1. Make the edit; save any new output to a project-local path.
@@ -30,18 +81,18 @@ repo with the same mental model.
 
 ## A worked example: re-running one phase
 
-Say you fixed something in the value-added estimation, but the upstream data-prep and
-sample-building phases are unchanged — and those take hours. You don't want to re-run them; their
-outputs are already on disk. So you re-run just the phase you touched, anything downstream of it,
-and the checks.
+Say you fixed something in the **analysis** phase, but the upstream cleaning and sample-building
+phases are unchanged — and those take hours. You don't want to re-run them; their outputs are
+already on disk. So you re-run just the phase you touched, anything downstream of it, and the
+checks.
 
 Near the top of `do/main.do`, set the phase toggles:
 
 ```stata
-local run_dataprep  0    // unchanged — outputs already on disk
+local run_clean     0    // unchanged — outputs already on disk
 local run_samples   0    // unchanged
-local run_va        1    // the phase you edited — re-run it
-local run_va_tables 1    // reads the VA output, so re-run it too
+local run_analysis  1    // the phase you edited — re-run it
+local run_outputs   1    // reads the analysis output, so re-run it too
 local run_checks    1    // always re-run the sanity checks
 ```
 
