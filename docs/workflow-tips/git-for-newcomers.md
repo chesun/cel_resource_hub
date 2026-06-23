@@ -149,6 +149,18 @@ make one once:
 | **conflict** | Git can't auto-merge two changes to the same lines; it asks you to resolve. |
 | **personal access token (PAT)** | A generated secret you paste instead of your password when pushing to GitHub over HTTPS. |
 
+## git on Scribe, not just your laptop
+
+You don't have to use git only locally — **Scribe has git installed too.** You can set up a git repo
+right inside a project folder on the server, commit your changes there, and `push`/`pull` it to GitHub
+straight from the server, exactly as you would on a laptop. (I didn't even realize git was available
+on Scribe until I tried it for [`va_consolidated`](../repositories/va-consolidated.md) — it is.)
+
+That's also how the laptop ↔ Scribe sync works: commit and push on one machine, pull on the other,
+with GitHub in the middle. The full setup — the Scribe-side clone, and the data-safety guard that
+keeps restricted files from ever leaving the server — is on
+**[Local ↔ server sync](local-server-sync.md)**.
+
 ## If something looks wrong
 
 If `git pull` ever reports a **conflict** or any state you don't recognize, **stop and ask**

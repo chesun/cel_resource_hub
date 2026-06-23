@@ -58,3 +58,11 @@ portfolio-nav-link discussion. caffeinate tip still flagged in-text as not Scrib
   rewrites Markdown paths but not raw HTML. Fixed to `../img/...` (commit `2fd6f35`). Autoplay/cache
   were red herrings. **Learning captured** in memory `mkdocs-raw-html-media-paths` + an inline
   comment on the embed.
+- **git page — "git on Scribe" bridge:** the "Common errors and fixes" table (which says the errors
+  "recur on Scribe") landed abruptly with no prior mention that git runs *on* the server. Added a short
+  `## git on Scribe, not just your laptop` section before `## If something looks wrong`: Scribe has git
+  installed; you can `git init` a repo in a project folder there, commit, and push/pull to GitHub
+  straight from the server; many don't realize git is available server-side (I didn't until
+  `va_consolidated`); hands off to **[Local ↔ server sync]** for the full laptop↔Scribe setup + the
+  data-safety hook. Brief pointer, not a re-explanation (consistent with the earlier git/sync dedup).
+  Personal voice (git is my tooling). `mkdocs build --strict` → exit 0, no content warnings.
