@@ -23,6 +23,32 @@ In short: **git** is the program you run; **GitHub** is the place the shared cop
 lab's repos all live under the **`chesun`** account — the
 [Repositories index](../repositories/index.md) lists them all (they're public).
 
+## Why bother with git at all?
+
+If you've ever grown a folder like this —
+
+```
+clean.do
+clean_v2.do
+clean_v2_fixed.do
+clean_FINAL.do
+clean_FINAL_actually_final.do
+clean_FINAL_use_this_one.do
+```
+
+— then you already get the problem git solves. git keeps **one** file (`clean.do`) and quietly
+remembers every version of it behind the scenes, each with a short note on what changed and when. You
+get the whole history — and the ability to jump back to any point — without a single `_FINAL` in sight.
+
+What that buys you:
+
+- **A folder that stays sane** — one `clean.do`, not twelve near-identical copies you're scared to delete.
+- **"What did I change last week?" has an answer** — every change is logged with a message and a date.
+- **Real undo** — recover any earlier version exactly, instead of praying that `clean_v2_fixed` was the good one.
+- **One source of truth** — whoever inherits the project pulls the current code, not "wait, which `.zip` did I email you?"
+
+None of this is required to run the analysis — but it's why I put up with the learning curve.
+
 ## Getting access & a copy from GitHub
 
 Before you can pull or download a repo, you need to be able to **see** it on GitHub:
