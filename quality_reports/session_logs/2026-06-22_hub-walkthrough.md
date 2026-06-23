@@ -50,10 +50,28 @@ in `2026-06-21_tools-downloads-expansion.md`; this file covers the walkthrough i
 deliberate "README to expand" flag. Commits this session: `32d1561`, `6ef87b6`, `682cdbb`,
 `1b3761d`, `7a0d096`, `13f23de` (+ earlier) — all pushed.
 
-## Queued (still open)
+## Post-walkthrough work (all done)
 
-- Open links in a new tab (confirm: all vs external only).
-- Link audit (link references that should be hyperlinked but aren't).
+- **main.do skeleton** added to reproducible-pipelines (user request) — thin-orchestrator
+  template grounded in va_consolidated; aligned the worked-example toggle names to it.
+- **ADR explainer** (user aside — ADRs referenced 8× but never defined): added a "What's a
+  decision record (ADR)?" section on the Offboarding page; cross-linked from reproducible-pipelines.
+- **TODO #1 — open links in a new tab (external only):** `mkdocs-open-in-new-tab` plugin
+  (requirements.txt + mkdocs.yml). JS-based, internal links unaffected, instant-nav-aware.
+  Verified by code inspection (not browser-clicked) — eyeball on live site.
+- **TODO #2 — link audit:** Explore agent flagged candidates; **3 were false positives**
+  (already linked) — caught by verifying each against the files before applying. Added 5 real
+  links (homepage git/Claude Code; va_consolidated first-mentions; ADR cross-links).
+- **TODO #3 — Claude Code intro → my workflow docs:** done during the walkthrough
+  (chesun/claude-research-workflow).
+
+All three queued TODOs complete. Commits this session through `3de778f`, all pushed. Lesson:
+agent link-audit findings need per-file verification — don't apply blind (3/8 were stale).
+
+## Still open (not this session)
+
+- Decide Google Docs hosting approach (per-repo "Related documents").
+- To confirm: calpads `chesun/gsr/` path; caffeinate tip not Scribe-tested.
 
 ## To confirm at leisure
 
