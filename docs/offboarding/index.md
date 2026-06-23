@@ -63,25 +63,11 @@ server run. **Match the rigor to the project; never skip the README and the I/O 
 ## Preserving project documentation
 
 Offboarding also means preserving the project's **written** record (design docs, methodology
-notes, meeting notes, report drafts) before access to lab systems lapses. The hub links to
-that documentation per project — see [Project documents](#project-documents-google-docs) below
-for how, and the **important caveat** about this being a public repo.
+notes, meeting notes, report drafts) before access to lab systems lapses. I keep these in a
+**private folder shared with the lab** — not in this hub.
 
-### Project documents (Google Docs)
-
-As authors leave, their Google Docs can become inaccessible. The plan is to preserve them and
-link to them per project from this hub.
-
-!!! danger "This is a public repository"
-    Do **not** commit documents that contain restricted student data, personally identifiable
-    information, unpublished sensitive results, or internal-only discussion to this repo. Anyone
-    can read it. Triage every doc before it goes anywhere near the hub.
-
-Recommended handling, by sensitivity:
-
-- **Public-safe docs** (methodology notes, published-report drafts, how-tos) → convert to Markdown and host in the hub, so they render and are searchable; or commit the PDF and link it.
-- **Internal / sensitive docs** → keep them in a **private** store (a private repo, lab-owned Drive, or Scribe) and link to them from the hub. The link gates at that store's access; nothing sensitive is published.
-- **Ownership** → before leaving, transfer Drive ownership of anything the lab needs to keep to a lab account, so the docs survive your account.
-
-Once the triage is decided, each repo's detail page gets a **"Related documents"** section
-linking its docs.
+!!! note "Why they're not here"
+    This hub is a **public** repository, and project documents can hold restricted student data,
+    PII, unpublished results, or internal discussion — so they don't belong here. They live in the
+    lab-shared private store, which gates access appropriately. Before you leave, transfer
+    ownership of anything the lab needs to keep to a lab account so the docs survive your departure.

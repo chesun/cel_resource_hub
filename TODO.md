@@ -6,7 +6,6 @@ Last updated: 2026-06-22
 - (nothing blocking — core hub is live; remaining items are content fill-in)
 
 ## Up Next
-- [ ] Decide Google Docs hosting approach (sensitivity triage; public-safe → Markdown in hub, sensitive → private store + link), then add "Related documents" sections to repo pages
 - [ ] Optional: switch `site_url` to `https://christinasun.net/cel_resource_hub/` if the custom domain should be canonical (currently set to the github.io URL, which 301-redirects there)
 
 ## Waiting On
@@ -17,6 +16,7 @@ Last updated: 2026-06-22
 - [ ] Delete the old `cel_offboard` folder (the stray `claude-research-workflow` clone) once happy — **first preserve `master_supporting_docs/lab_guides/`** (source `.docx` onboarding guides, incl. the illustrated Windows XStata walkthrough); their text is distilled into the hub but the originals/screenshots aren't hosted yet
 
 ## Done (recent)
+- [x] Google Docs hosting: decided **out of scope** — project docs go in a private lab-shared folder, not this public hub. Rewrote the offboarding "Preserving project documentation" section to match (dropped the "link them from the hub" plan + the per-repo "Related documents" idea) — 2026-06-22
 - [x] Link audit — added 5 high-value links (homepage git/Claude Code; va_consolidated first-mentions in reproducible-pipelines + git-for-newcomers; ADR cross-links in offboarding index + README template). An Explore agent flagged candidates; 3 were false positives (already linked) and skipped after verification — 2026-06-22
 - [x] External links now open in a new tab (`mkdocs-open-in-new-tab` plugin → requirements.txt + mkdocs.yml). JS-based, internal links unaffected, instant-nav-aware. Eyeball on the live site to confirm the browser behavior — 2026-06-22
 - [x] Added a "What's a decision record (ADR)?" explainer on the Offboarding page (ADRs were referenced 8× but never defined); linked the reproducible-pipelines tip to it — 2026-06-22
