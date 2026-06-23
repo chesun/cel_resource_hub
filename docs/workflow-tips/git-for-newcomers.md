@@ -3,11 +3,12 @@
 **You don't need git to run a CEL pipeline** — the code is already on Scribe and runs as ordinary
 Stata. If you just want to run the analysis, you can skip this page.
 
-So what *is* it? **git** and **GitHub** are the tools *I* use to keep my code online, version it, and
-track every change as I work — the next section explains each one. (It's my own setup, not something
-the lab uses or requires — I'm the only one who versions these repos this way.) You'll want this page
-if you'd like to use the same tools to **get my latest copy of the code** or **save a change you
-made**.
+So what *is* it? **git** is a **version-control** tool — it tracks every change you make to your code
+so you can see what changed, undo to any earlier point, and stop hoarding `_FINAL_v2` files. It's how
+*I* manage my code (my own setup — not something the lab uses or requires; I'm the only one who
+versions these repos this way). **GitHub** is an *optional* add-on: a website where you can also back
+up and share that history online. The next section pins down the two — and you can get real value
+from git with **no GitHub at all**.
 
 ## git vs GitHub
 
@@ -19,9 +20,10 @@ distinction makes everything below clearer:
 | **git** | A *tool* that runs on your own machine (your laptop, or Scribe). It tracks changes to your files and lets you save, undo, and sync them. It needs no internet to work. |
 | **GitHub** | A *website* (`github.com`) that stores a shared copy of a repo online, so people can get the latest code and you control who has access. git is how you talk to it. |
 
-In short: **git** is the program you run; **GitHub** is the place the shared copy lives. The
-lab's repos all live under the **`chesun`** account — the
-[Repositories index](../repositories/index.md) lists them all (they're public).
+In short: **git** is the program you run — and it works fine with nothing but your own machine;
+**GitHub** is an optional online place the shared copy can *also* live. My CEL repos live under my
+own **`chesun`** GitHub account — the [Repositories index](../repositories/index.md) lists the ones
+I'm handing off.
 
 ## Why bother with git at all?
 
@@ -49,72 +51,69 @@ What that buys you:
 
 None of this is required to run the analysis — but it's why I put up with the learning curve.
 
-## Getting access & a copy from GitHub
+## Two ways to use git: on its own, or with GitHub
 
-Before you can pull or download a repo, you need to be able to **see** it on GitHub:
+git is useful **by itself**, and more useful with GitHub. The two are separable, and it helps to know
+which you're doing:
 
-- **The lab's repos are all public**, so you can read or download any of them without an account
-  or a special invite.
-- **If a repo is ever private**, it stays invisible until you're granted access: the owner adds
-  you as a collaborator, then you accept the invite (it arrives by email, or under
-  `github.com/notifications`), using a free GitHub account.
+- **git only (local — no account, no internet).** Run git on the machine where your code lives (your
+  laptop, or Scribe) and it tracks your changes right there; nothing gets pushed anywhere. This alone
+  solves the `_FINAL` graveyard above — **local-only version control is already far better than
+  nothing.** If you never touch GitHub, you still get the full history and undo.
+- **git + GitHub (back up and share online).** Once you're committing locally, you can `push` that
+  history up to GitHub to keep an **off-machine backup**, **sync** the same code between your laptop
+  and Scribe, and hand a clean copy to whoever inherits the project. This is what I do.
 
-To get a copy of the code, you have two options — and you don't have to learn all of git for the
-first one:
+Start local; add GitHub when you want the backup or the sharing.
 
-1. **Download a ZIP (no git).** On the repo's GitHub page, click the green **Code** button →
-   **Download ZIP**, unzip it, and move the files onto Scribe with FileZilla. Simplest if you
-   just want to *read* or *run* the code once.
-2. **Clone it (git).** `git clone …` gives you a live copy that can `pull` updates later — see
-   [First-time setup](#first-time-setup) below.
+!!! note "The code itself is already on Scribe"
+    You don't need GitHub to *get* the code — it's in the project folder on Scribe, which is the
+    canonical copy. git is for **versioning** that code, not for fetching it. (My GitHub copies hold
+    only code, never data — the lab's project folders and restricted data stay secure on Scribe. See
+    [Data safety](data-safety.md).)
 
-!!! tip "Choosing a sync method"
-    There are two ways to move code between your laptop and Scribe — manual file transfer and
-    git. [Local ↔ server sync](local-server-sync.md) compares them side by side with the
-    benefits and costs of each. This page is the git detail: the commands, the common errors,
-    and a glossary.
+## The commands you'll actually use
 
-## Two ways to move code
-
-### Option A — File transfer (no git)
-
-Download the updated files from the GitHub web page and drag them into the Scribe project
-folder with **FileZilla** (or any transfer tool). To save a change, edit on Scribe and send
-the file back the same way. Nothing else to learn.
-
-### Option B — git (what I use)
-
-```bash
-cd /path/to/the/project/on/scribe
-
-# get the latest code from GitHub
-git pull --rebase origin main
-
-# save a change you made, then send it to GitHub
-git add do/path/to/the_file_you_changed.do
-git commit -m "short description of what you changed"
-git push origin main
-```
-
-!!! tip "Why git, briefly"
-    Because data folders aren't tracked, `git pull` brings down **only code, never data** —
-    so it can't make the common mistake of copying restricted data onto a local machine.
-
-## First-time setup
-
-Once per machine:
+**First-time setup** (once per machine):
 
 ```bash
 git config --global user.name "Your Name"
 git config --global user.email "you@example.com"
-git config --global pull.rebase true     # keep history linear on pull
+git config --global pull.rebase true     # keep history linear when you pull
 ```
 
-To get a copy of a repo the first time, **clone** it:
+**The local loop** — this is all of using git on its own, no GitHub required:
 
 ```bash
-git clone https://github.com/chesun/<repo>.git
+cd /path/to/your/project              # wherever the code lives (e.g. on Scribe)
+git init                              # once, if the folder isn't a repo yet
+git add do/the_file_you_changed.do    # stage what you changed
+git commit -m "short description of the change"   # save a labeled snapshot
 ```
+
+Edit → `git add` → `git commit`, as often as you like. Each commit is a snapshot you can return to.
+
+**Syncing with GitHub** (only if you're using it) — send your commits up, bring others' down:
+
+```bash
+git pull --rebase origin main    # bring GitHub's latest into your copy
+git push origin main             # send your local commits up to GitHub
+```
+
+Your first `push` asks for a token instead of your password — see
+[Pushing](#pushing-github-wants-a-token-not-your-password) just below. (For moving code between your
+laptop and Scribe specifically — git vs FileZilla — see [Local ↔ server sync](local-server-sync.md).)
+
+### If you want my GitHub copy
+
+You don't need this — the code's already on Scribe — but if you want *my* latest version from GitHub:
+
+- **Most of my repos are public** (anything without sensitive info, which is all the CEL repos in
+  this hub), so you can grab one without an account: **download a ZIP** (the green **Code** button →
+  **Download ZIP**) to just read or run it, or **`git clone https://github.com/chesun/<repo>.git`**
+  for a live copy you can `pull` updates into later.
+- A repo I keep **private** (when it holds something sensitive) stays invisible until I add you as a
+  collaborator and you accept the invite.
 
 ## Pushing: GitHub wants a token, not your password
 
