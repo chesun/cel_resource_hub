@@ -6,7 +6,7 @@ Last updated: 2026-06-23
 - (nothing blocking — core hub is live; remaining items are content fill-in)
 
 ## Up Next
-- [ ] **Discuss — academic-site portfolio link.** Add a "Code / Research workflow" item to the `chesun.github.io` main nav pairing the [`claude-research-workflow`](https://github.com/chesun/claude-research-workflow) template (the reusable framework) + the CEL Resource Hub (the applied example). Recommended now that the site is no longer job-market-facing — reads as a reproducibility/open-science signal rather than lab ops. Edit lands in `chesun.github.io`, not this repo.
+- (nothing — core hub complete; the academic-site link is handled directly in the `chesun.github.io` site repo)
 
 ## Waiting On
 - (nothing)
@@ -15,6 +15,7 @@ Last updated: 2026-06-23
 - (nothing)
 
 ## Done (recent — older history in git + `quality_reports/session_logs/`)
+- [x] Academic-site portfolio link → Christina will handle it directly in `chesun.github.io` (out of scope for this repo). calpads Scribe path confirmed correct — 2026-06-23
 - [x] **VSCode-Stata demo video** on *Editing Stata in VSCode* — recorded real walkthrough; ffmpeg trim/crop (cropdetect for black margins) + variable-speed cut (~69s) + regress-autocomplete poster; play-on-scroll `<video>` (no chrome, click to pause), full-width. Fixed the grey-box bug: raw-HTML media must use `../img/` on directory-URL pages — captured in memory — 2026-06-23
 - [x] Wired `csac2025` = offboarding complete (real README now the handoff guide): status, Start-with, doc map, index, "What it is" + offboarding note. Cleared the README-expand backlog item — 2026-06-23
 - [x] Project Google Docs: pointed the offboarding page at the Box archive location (folder path only — `California Education Lab - Full Team Access → GSR Exit → Christina → Ed Lab Google Doc Archive`; no drive prefix; access gated by Box) — 2026-06-23
