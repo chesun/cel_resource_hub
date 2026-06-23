@@ -6,7 +6,7 @@ Last updated: 2026-06-22
 - (nothing blocking — core hub is live; remaining items are content fill-in)
 
 ## Up Next
-- [ ] README linkbacks: add a one-line pointer to the hub in each analysis repo's README (the chosen discoverability mechanism — edits live in the analysis repos, not this one). Academic-site link deferred (job-market audience mismatch).
+- [ ] **Discuss — academic-site portfolio link.** Add a "Code / Research workflow" item to the `chesun.github.io` main nav pairing the [`claude-research-workflow`](https://github.com/chesun/claude-research-workflow) template (the reusable framework) + the CEL Resource Hub (the applied example). Recommended now that the site is no longer job-market-facing — reads as a reproducibility/open-science signal rather than lab ops. Edit lands in `chesun.github.io`, not this repo.
 
 ## Waiting On
 - (nothing)
