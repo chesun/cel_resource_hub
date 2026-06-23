@@ -63,11 +63,12 @@ server run. **Match the rigor to the project; never skip the README and the I/O 
 ## Preserving project documentation
 
 Offboarding also means preserving the project's **written** record (design docs, methodology
-notes, meeting notes, report drafts) before access to lab systems lapses. I keep these in a
-**private folder shared with the lab** — not in this hub.
+notes, meeting notes, report drafts) before access to lab systems lapses. I keep these in the
+lab's **Box** drive — under `California Education Lab - Full Team Access` → `GSR Exit` →
+`Christina` → `Ed Lab Google Doc Archive` — not in this hub.
 
 !!! note "Why they're not here"
     This hub is a **public** repository, and project documents can hold restricted student data,
-    PII, unpublished results, or internal discussion — so they don't belong here. They live in the
-    lab-shared private store, which gates access appropriately. Before you leave, transfer
-    ownership of anything the lab needs to keep to a lab account so the docs survive your departure.
+    PII, unpublished results, or internal discussion — so they don't belong here. The Box archive
+    gates access appropriately (lab Box access required). Before you leave, transfer ownership of
+    anything the lab needs to keep to a lab account so the docs survive your departure.

@@ -1,6 +1,6 @@
 # TODO — CEL Resource Hub
 
-Last updated: 2026-06-22
+Last updated: 2026-06-23
 
 ## Active (doing now)
 - (nothing blocking — core hub is live; remaining items are content fill-in)
@@ -15,6 +15,8 @@ Last updated: 2026-06-22
 - (nothing)
 
 ## Done (recent — older history in git + `quality_reports/session_logs/`)
+- [x] Wired `csac2025` = offboarding complete (real README now the handoff guide): status, Start-with, doc map, index, "What it is" + offboarding note. Cleared the README-expand backlog item — 2026-06-23
+- [x] Project Google Docs: pointed the offboarding page at the Box archive location (folder path only — `California Education Lab - Full Team Access → GSR Exit → Christina → Ed Lab Google Doc Archive`; no drive prefix; access gated by Box) — 2026-06-23
 - [x] Voice fix: `gitignore-setup`'s "the lab prefers git over manual transfer" → "I prefer" (nothing in the hub is the lab's position except data security); swept for other lab-as-opinion phrasings (none); saved a `personal-voice-not-lab` memory — 2026-06-22
 - [x] README linkbacks: added a hub pointer atop every analysis repo's README (+ csac2025 `CLAUDE.md`), pushed all six individually — 2026-06-22
 - [x] Canonical `site_url` → `https://christinasun.net/cel_resource_hub/` (github.io redirects there); canonical meta + sitemap verified — 2026-06-22
