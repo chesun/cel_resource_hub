@@ -46,13 +46,12 @@ from laptop to Scribe, and you move code changes back. You never copy data the o
 5. **When the change is good, commit it** so the next person inherits it — see
    [Git for newcomers](git-for-newcomers.md).
 
-```
-  laptop (VSCode, git, no data)                Scribe (data + Stata)
-  ┌───────────────────────────┐               ┌──────────────────────────┐
-  │ edit do/*.do  ── sync ──►  │  FileZilla    │  stata-mp -b do main.do  │
-  │ git commit / push          │   or git      │  reads dta/  writes log/ │
-  │            ◄── pull back ── │               │  data stays here         │
-  └───────────────────────────┘               └──────────────────────────┘
+```mermaid
+flowchart LR
+    L["Your laptop<br/>VSCode + git, no data<br/>edit do/*.do, commit"]
+    S["Scribe<br/>data + Stata<br/>stata-mp -b do do/main.do<br/>reads data, writes log/"]
+    L -- "sync code (FileZilla or git)" --> S
+    S -- "pull changes / logs back" --> L
 ```
 
 ## Why I write code on my laptop, not in the Stata GUI on the server

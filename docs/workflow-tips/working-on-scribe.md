@@ -41,6 +41,20 @@ cd /home/research/ca_ed_lab/projects/<project>/...
     `ssh -o ServerAliveInterval=15 <user>@Scribe.ssds.ucdavis.edu` (the same flag works with
     `scp` / `sftp`).
 
+!!! tip "macOS: keep your laptop awake (`caffeinate`)"
+    A session can also drop simply because your **Mac went to sleep**. `caffeinate` keeps it awake
+    for as long as a wrapped command runs:
+
+    ```bash
+    caffeinate -is ssh <user>@Scribe.ssds.ucdavis.edu   # -i = no idle sleep, -s = no sleep on AC power
+    ```
+
+    Scope it honestly: this only fixes the *laptop-slept* cause. It won't stop a **server-side**
+    idle timeout (that's what the keepalive above is for), and you don't need it for job
+    *survival* — a batch run under `screen` / `nohup` (below) already outlives sleep, drops, and
+    logout. Its real niche is keeping a live `tail -f` streaming overnight. (Standard macOS
+    behaviour; I haven't stress-tested it against Scribe specifically.)
+
 ## Running Stata: batch vs GUI
 
 There are two ways to run Stata on Scribe. **Batch is the recommended one**; the GUI is there
@@ -124,7 +138,3 @@ it.)
     `(Dead ???)` or `(Attached)`). Force-detach a stuck one with `screen -D`, then `screen -r` to
     resume; clear dead ones with `screen -wipe`. To kill a session outright,
     `screen -X -S <session> quit`.
-
-!!! todo "To add"
-    - Where each project lives on Scribe (cross-link from each repo's detail page).
-    - Troubleshooting: `stata-mp not found`, wrong working directory (`r(601)`), missing SSC package (`r(199)`).

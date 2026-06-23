@@ -12,7 +12,7 @@ what's useful and leave the rest.
 ## The workflow, end to end
 
 - [**The recommended workflow**](recommended-workflow.md) — the overview that ties everything together: where you write code, how it gets to Scribe, and how it runs.
-- [**Editing Stata in VSCode**](editing-stata-vscode.md) — write `.do` files locally in a real editor instead of typing into the server's interactive Stata GUI (which loses work when the connection drops).
+- [**Editing Stata in VSCode**](editing-stata-vscode.md) — write `.do` files locally in a real editor (VSCode) rather than in the server's Stata GUI editor — you get git history and your editing doesn't hang on the connection.
 - [**Local ↔ server sync**](local-server-sync.md) — the two ways to move code between laptop and Scribe (FileZilla vs git), with the benefits and costs of each.
 - [**Working on Scribe**](working-on-scribe.md) — getting an account, connecting, running Stata (batch vs GUI), and keeping jobs alive with `screen`.
 - [**Stata GUI on Windows**](xstata-gui-windows.md) — illustrated Xming + PuTTY walkthrough for running the Stata GUI from a Windows machine.
@@ -29,9 +29,10 @@ what's useful and leave the rest.
 - [**Claude Code intro**](claude-code-intro.md) — what the `.claude/` folders and `CLAUDE.md` files are, and whether you need them (you don't, to run the analysis).
 
 !!! info "Status: actively filled in"
-    Several pages started as outlines distilled from my `va_consolidated` handoff. Sections
-    still marked `TODO` need a detail I haven't filled in yet (a contact, a host string). The
-    workflow advice itself reflects how I actually work.
+    Several pages started as outlines distilled from my `va_consolidated` handoff. A few
+    sections still marked `TODO` flag something I haven't finished yet (e.g. a stub README to
+    expand, or a lab-policy detail to confirm). The workflow advice itself reflects how I
+    actually work.
 
 ## The one rule worth memorizing
 
