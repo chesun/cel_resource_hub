@@ -92,7 +92,7 @@ amending or resetting that commit removes it. Rewriting deeper history (`git fil
 `filter-branch`) is destructive and easy to get wrong — **ask before doing it**.
 
 !!! note "The structural fix"
-    The reason the lab prefers [git over manual transfer](local-server-sync.md) for sync is
+    The reason I prefer [git over manual transfer](local-server-sync.md) for sync is
     exactly this: `git pull` only ever brings code down, and a
     [pre-push hook](local-server-sync.md#protecting-data-on-the-server-the-pre-push-hook) can
     refuse a push that carries a data file. A correct `.gitignore` plus git's pull-only-code
