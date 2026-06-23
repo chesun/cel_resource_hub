@@ -12,7 +12,7 @@ Last updated: 2026-06-22
 - (nothing)
 
 ## Backlog
-- [ ] Expand `csac2025`'s one-line stub `README.md` into a proper handoff guide (decided 2026-06-22; until then the hub routes readers to `CLAUDE.md`)
+- (nothing)
 
 ## Done (recent — older history in git + `quality_reports/session_logs/`)
 - [x] Voice fix: `gitignore-setup`'s "the lab prefers git over manual transfer" → "I prefer" (nothing in the hub is the lab's position except data security); swept for other lab-as-opinion phrasings (none); saved a `personal-voice-not-lab` memory — 2026-06-22
