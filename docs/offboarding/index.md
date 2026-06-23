@@ -62,11 +62,12 @@ server run. **Match the rigor to the project; never skip the README and the I/O 
 
 ## Preserving project documentation
 
-Offboarding also means preserving the project's **written** record (design docs, methodology
-notes, meeting notes, report drafts) before access to lab systems lapses. I keep these in the
-lab's **Box** drive, not in this hub — the
+Preserving a project's **written** record — design docs, methodology notes, meeting notes,
+report drafts, the Google Docs — is part of the **lab's offboarding process**: departing
+researchers archive these in the lab's **Box** drive (the GSR Exit area) before their access
+lapses, so the work outlives any one person. Mine are there too — the
 [Offboarding repositories page](../repositories/index.md#project-documents-google-docs) lists the
-exact archive location.
+exact location.
 
 !!! note "Why they're not here"
     This hub is a **public** repository, and project documents can hold restricted student data,
