@@ -33,5 +33,5 @@ Work top to bottom — each step depends on the one above it.
 1. [ ] **DSS VPN** — install OpenVPN Connect and connect to `vpn.dss.ucdavis.edu` (Kerberos login). Needed before you can reach Scribe.
 2. [ ] **Scribe access** — your lab IT contact enables your Kerberos login for the lab's space (host `Scribe.ssds.ucdavis.edu`).
 3. [ ] **Access to the project folder on Scribe** — confirm with the data custodian.
-4. [ ] **GitHub access** to the relevant repo(s) — only needed if any are private (just `csac_2024` is).
+4. [ ] **GitHub account** — optional: all the repos are public, so you can read and clone without one; you only need an account to *push* changes.
 5. [ ] **Stata packages installed** on your Scribe account — each repo lists what it needs.

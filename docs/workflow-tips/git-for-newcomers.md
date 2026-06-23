@@ -16,17 +16,17 @@ distinction makes everything below clearer:
 
 In short: **git** is the program you run; **GitHub** is the place the shared copy lives. The
 lab's repos all live under the **`chesun`** account — the
-[Repositories index](../repositories/index.md) lists them and shows which are public vs private.
+[Repositories index](../repositories/index.md) lists them all (they're public).
 
 ## Getting access & a copy from GitHub
 
 Before you can pull or download a repo, you need to be able to **see** it on GitHub:
 
-- **Public repos** (most of the lab's) are visible to anyone — no account needed just to read or
-  download them.
-- **Private repos** — **`csac_2024`** is the only private one — are invisible until you're granted
-  access. Ask the repo owner to add you as a collaborator, then accept the invite (it arrives by
-  email, or under `github.com/notifications`). You'll need a free GitHub account for this.
+- **The lab's repos are all public**, so you can read or download any of them without an account
+  or a special invite.
+- **If a repo is ever private**, it stays invisible until you're granted access: the owner adds
+  you as a collaborator, then you accept the invite (it arrives by email, or under
+  `github.com/notifications`), using a free GitHub account.
 
 To get a copy of the code, you have two options — and you don't have to learn all of git for the
 first one:

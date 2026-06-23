@@ -1,4 +1,4 @@
-# Common Core Value-Added — `va_consolidated`
+# Value Added (va_consolidated)
 
 The consolidated Stata pipeline behind the *Common Core Value-Added* paper
 (Carrell, Kurlaender, Martorell, Naven, Sun — "Do Schools Matter?"). It cleans the raw

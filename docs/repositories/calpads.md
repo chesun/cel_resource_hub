@@ -1,4 +1,4 @@
-# CALPADS Course-Completion Cleaning — `calpads`
+# CALPADS (calpads)
 
 A per-academic-year Stata cleaning pipeline over CALPADS **End-of-Year 1 (EOY1) Course
 Completion** extracts (internally called `crscomp`), covering school years **2013–14 through

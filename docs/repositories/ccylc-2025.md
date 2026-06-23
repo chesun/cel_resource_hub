@@ -1,4 +1,4 @@
-# Cesar Chavez Youth Leadership Conference 2025 — `ccylc_2025`
+# Cesar Chavez Youth Leadership Conference 2025 (ccylc_2025)
 
 A lightweight analysis of the survey data fielded **after the Cesar Chavez Youth Leadership
 Conference (CCYLC)** in 2025.

@@ -121,4 +121,22 @@ batch, and poking at lines to test is fine.
   dropping the "leaves no reproducible script behind" claim.
 
 Swept for other instances (none left; one neutral "interactive console" mention in the `screen`
-section is fine). `mkdocs build --strict` → exit 0, no warnings.
+section is fine). `mkdocs build --strict` → exit 0, no warnings. Committed `c486bc5`; pushed.
+
+## Follow-up (2026-06-22) — csac_2024 public + uniform repository naming
+
+User made `csac_2024` public and asked to (1) drop the private callout and (2) standardize the
+repository subpage names to `Friendly Name (repo)`. Their in-progress edit had already renamed the
+index table's csac_2024 row to "CSAC 2024 Survey".
+
+- **Privacy:** removed the "Access" warning callout *and* the now-all-"Public" Access column from
+  `repositories/index.md` (folded the "data lives on Scribe" reassurance into the intro); flipped
+  `csac-2024.md`'s GitHub row to public; fixed the leftover "csac_2024 is the only private one"
+  text in `tools.md` (access checklist) and `git-for-newcomers.md` (kept the how-private-access-
+  works info as a general "if a repo is ever private" note).
+- **Uniform naming:** nav titles (`mkdocs.yml`) + each detail-page H1 now use `Name (repo)` —
+  Value Added (va_consolidated), CALPADS (calpads), CSAC 2023/2024/2025 Survey, Cesar Chavez …
+  (ccylc_2025). Index table keeps friendly-name-only in the Project column (it has a dedicated
+  Repo column). Used the real repo name **`ccylc_2025`** (user wrote `ccylc2025`). Left
+  va-consolidated's body reference to "the *Common Core Value-Added* paper" intact (paper name,
+  not project title). `mkdocs build --strict` → exit 0, no warnings.

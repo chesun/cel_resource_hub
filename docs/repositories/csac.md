@@ -1,4 +1,4 @@
-# CSAC 2023 High School Senior Survey — `csac`
+# CSAC 2023 Survey (csac)
 
 Code, outputs, and documentation for the **2023 California high school senior survey**, a
 collaboration between the California Education Lab (UC Davis) and the California Student Aid
