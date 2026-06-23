@@ -7,10 +7,6 @@ The most important rule when working with CEL data:
 CEL projects use restricted student-level administrative data (CALPADS, CSAC, CalSCHLS, NSC,
 etc.). That data must never reach GitHub or a personal laptop.
 
-!!! info "Status: seeded outline"
-    Distilled from `va_consolidated` conventions (ADR-0007). Confirm and expand with any
-    lab-wide data-use-agreement specifics.
-
 ## How the separation is built in
 
 - **`data/`, `estimates/`, and `output/` are gitignored.** Those folders exist only on Scribe
@@ -41,8 +37,3 @@ etc.). That data must never reach GitHub or a personal laptop.
 !!! warning "`codebook` can leak PII"
     Running Stata's `codebook` on identifier crosswalks can print PII into a log. Known repos
     scrub identifiers before such exports — don't remove those scrubs.
-
-!!! todo "To add"
-    - The lab's data-use agreement terms and who owns them.
-    - The exact list of restricted data sources per project.
-    - What to do if data is committed by accident (it's hard to fully remove from git history).

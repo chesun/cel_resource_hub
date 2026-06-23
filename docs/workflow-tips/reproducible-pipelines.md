@@ -1,12 +1,9 @@
 # Reproducible pipelines
 
 CEL pipelines are built so that **one command reproduces the analysis**, and running it the
-same way twice gives the same answer. This page describes the shared pattern so you can read
-any lab repo with the same mental model.
-
-!!! info "Status: seeded outline"
-    Distilled from the `va_consolidated` consolidation. The patterns below recur across the
-    CSAC and CCYLC repos too.
+same way twice gives the same answer. This page describes the shared pattern — distilled from
+`va_consolidated`, but recurring across the CSAC and CCYLC repos too — so you can read any lab
+repo with the same mental model.
 
 ## The shared pattern
 
@@ -31,11 +28,38 @@ any lab repo with the same mental model.
 3. Re-run the checks phase.
 4. **Compare the new outputs against the prior run's outputs** before trusting them.
 
+## A worked example: re-running one phase
+
+Say you fixed something in the value-added estimation, but the upstream data-prep and
+sample-building phases are unchanged — and those take hours. You don't want to re-run them; their
+outputs are already on disk. So you re-run just the phase you touched, anything downstream of it,
+and the checks.
+
+Near the top of `do/main.do`, set the phase toggles:
+
+```stata
+local run_dataprep  0    // unchanged — outputs already on disk
+local run_samples   0    // unchanged
+local run_va        1    // the phase you edited — re-run it
+local run_va_tables 1    // reads the VA output, so re-run it too
+local run_checks    1    // always re-run the sanity checks
+```
+
+Then run it on Scribe as usual:
+
+```bash
+stata-mp -b do do/main.do
+```
+
+Only the `1` phases execute, and they read the on-disk outputs the `0` phases produced earlier.
+Read the log and the checks output, then **compare the new outputs against the prior run** before
+trusting them.
+
+!!! warning "When in doubt, re-run from the change"
+    A phase is safe to skip **only if its outputs already exist** — later phases read them. If
+    you're not sure a skipped phase is still current, turn it back on and re-run from the earliest
+    phase you changed.
+
 !!! tip "Decision records"
     The "why" behind load-bearing choices lives in a repo's `decisions/` folder (ADRs) — read
     those before changing a load-bearing parameter.
-
-!!! todo "To add"
-    - A worked example of a partial re-run.
-    - How each repo names its outputs and where they land.
-    - Per-project gotchas (each repo's `MEMORY.md` collects these).
