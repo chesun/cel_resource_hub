@@ -64,8 +64,9 @@ server run. **Match the rigor to the project; never skip the README and the I/O 
 
 Offboarding also means preserving the project's **written** record (design docs, methodology
 notes, meeting notes, report drafts) before access to lab systems lapses. I keep these in the
-lab's **Box** drive — under `California Education Lab - Full Team Access` → `GSR Exit` →
-`Christina` → `Ed Lab Google Doc Archive` — not in this hub.
+lab's **Box** drive, not in this hub — the
+[Offboarding repositories page](../repositories/index.md#project-documents-google-docs) lists the
+exact archive location.
 
 !!! note "Why they're not here"
     This hub is a **public** repository, and project documents can hold restricted student data,
