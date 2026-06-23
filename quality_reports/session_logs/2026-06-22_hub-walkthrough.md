@@ -94,6 +94,16 @@ agent link-audit findings need per-file verification — don't apply blind (3/8 
   + the hub. Queued in TODO for discussion (edit lands in chesun.github.io).
 - Resolved: Google Docs out of scope; calpads path fixed (server restructuring); /projects/ paths
   confirmed correct; cel_offboard deleted.
+- **Voice fix** — `gitignore-setup`'s "structural fix" note said "the lab prefers git over manual
+  transfer"; reframed to "I prefer" (nothing in the hub is the lab's position except data
+  security). Swept for other lab-as-opinion phrasings — none found. Saved a `personal-voice-not-lab`
+  memory (mirrored to claude-config) so it's applied proactively going forward.
+
+## Housekeeping (end of session)
+
+Working tree clean, everything pushed (hub through `891d5e2`; six analysis-repo linkbacks pushed
+individually). Pruned the TODO's "Done" section to ~10 (older history lives in git + this log and
+the 2026-06-21 log). Hub `mkdocs build --strict` green throughout.
 
 ## Still open
 
