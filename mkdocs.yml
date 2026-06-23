@@ -67,7 +67,7 @@ plugins:
 
 nav:
   - Home: index.md
-  - Repositories:
+  - Offboarding repositories:
       - repositories/index.md
       - Value Added (va_consolidated): repositories/va-consolidated.md
       - CALPADS (calpads): repositories/calpads.md

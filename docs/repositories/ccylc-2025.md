@@ -5,7 +5,7 @@ Conference (CCYLC)** in 2025.
 
 | | |
 |---|---|
-| **GitHub** | <https://github.com/chesun/ccylc_2025> (public) |
+| **GitHub** | <https://github.com/chesun/ccylc_2025> |
 | **Runs on (Scribe)** | `/home/research/ca_ed_lab/projects/ccylc` |
 | **Entry point** | `do/main.do` — runs the full pipeline (`settings` → `clean` → `explore`) |
 | **Status** | Offboarding complete |

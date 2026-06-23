@@ -6,7 +6,7 @@ Completion** extracts (internally called `crscomp`), covering school years **201
 
 | | |
 |---|---|
-| **GitHub** | <https://github.com/chesun/calpads> (public) |
+| **GitHub** | <https://github.com/chesun/calpads> |
 | **Runs on (Scribe)** | `/home/research/ca_ed_lab/users/chesun/gsr/calpads` |
 | **Entry point** | `do/master.do` (note: `master.do`, not `main.do`) |
 | **Status** | Offboarding / handoff; README is the handoff guide |

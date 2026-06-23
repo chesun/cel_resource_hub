@@ -32,13 +32,13 @@ Scribe, or you're the lab's data-management custodian or IT contact. I assume yo
 
 <div class="grid cards" markdown>
 
--   :material-source-repository: **Repositories**
+-   :material-source-repository: **Offboarding repositories**
 
     ---
 
-    Every CEL code repository I'm handing off — links, server locations, status, and how to run each one.
+    Every CEL code repository I'm handing off — links, server locations, status, how to run each one, and where the project's Google Docs are archived.
 
-    [:octicons-arrow-right-24: Browse repositories](repositories/index.md)
+    [:octicons-arrow-right-24: Browse offboarding repositories](repositories/index.md)
 
 -   :material-clipboard-check: **Offboarding standards**
 

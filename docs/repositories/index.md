@@ -1,4 +1,4 @@
-# Repositories
+# Offboarding repositories
 
 Every CEL code repository I'm handing off. Each row links to the GitHub repo and to a detail
 page with how-to-run notes, server location, and status. All the repos are public; confidential
@@ -17,6 +17,15 @@ data is **never** in them — it lives only on Scribe.
     The local folder names and GitHub repo names don't always match the project's short
     name (e.g. `csac_2024` has an underscore; `ccylc_2025` carries the year). The links
     above point to the canonical GitHub repos.
+
+## Project documents (Google Docs)
+
+The **code** lives in these repos. The projects' **written documents** — design notes,
+methodology, report drafts, the Google Docs — do **not**; they're archived in the lab's **Box**
+drive, under `California Education Lab - Full Team Access` → `GSR Exit` → `Christina` →
+`Ed Lab Google Doc Archive` (lab Box access required). See
+[Offboarding → Preserving project documentation](../offboarding/index.md#preserving-project-documentation)
+for why they're kept there and not in this public hub.
 
 ---
 
