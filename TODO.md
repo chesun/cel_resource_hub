@@ -6,6 +6,7 @@ Last updated: 2026-06-23
 - (nothing blocking — core hub is live; remaining items are content fill-in)
 
 ## Up Next
+- [ ] **VSCode-Stata demo video** — Christina records ~12s of real VSCode editing a `.do` (Kap/MP4; dummy code only — public site); drops it at `docs/workflow-tips/img/vscode-stata-demo.mp4`. Then: ffmpeg → optimized MP4+WebM+poster, embed a muted/looping `<video>` near the top of *Editing Stata in VSCode*, build + push. (Embed markup drafted; held until the file exists so the live site isn't broken.)
 - [ ] **Discuss — academic-site portfolio link.** Add a "Code / Research workflow" item to the `chesun.github.io` main nav pairing the [`claude-research-workflow`](https://github.com/chesun/claude-research-workflow) template (the reusable framework) + the CEL Resource Hub (the applied example). Recommended now that the site is no longer job-market-facing — reads as a reproducibility/open-science signal rather than lab ops. Edit lands in `chesun.github.io`, not this repo.
 
 ## Waiting On
