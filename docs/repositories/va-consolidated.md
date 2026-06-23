@@ -31,13 +31,14 @@ On Scribe, from the project folder:
 
 ```bash
 cd /home/research/ca_ed_lab/projects/common_core_va/consolidated
-nohup stata-mp -b do do/main.do &      # full run takes several hours
+nohup stata-mp -b do do/main.do &      # full run ~36–38 hours — plan for two days
 ```
 
 The run executes seven phases in dependency order (data prep → samples → VA estimation →
-VA tables → survey-VA → paper outputs → automated data checks). Phase toggles near the top
-of `do/main.do` let you re-run just part of it. See the HANDOFF for partial-run rules and
-the `m4_acceptance_run` switch.
+VA tables → survey-VA → paper outputs → automated data checks). **VA estimation (Phase 3) is the
+bottleneck and dominates the ~36–38-hour wall-clock total** — plan for two calendar days. Phase
+toggles near the top of `do/main.do` let you re-run just part of it. See the HANDOFF for
+partial-run rules and the `m4_acceptance_run` switch.
 
 ## Documentation map
 
