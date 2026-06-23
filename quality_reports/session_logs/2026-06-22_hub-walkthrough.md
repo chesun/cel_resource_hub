@@ -77,9 +77,27 @@ agent link-audit findings need per-file verification — don't apply blind (3/8 
   hardcoded `$projdir` is stale — flagged on the page with a note. (My earlier derived path came
   from that stale settings.do.)
 
+## Late-session (post-walkthrough)
+
+- **Link audit 2nd pass** — every repo Documentation map now links its artifacts to GitHub
+  (decisions/, quality_reports/, CLAUDE.md, README/MEMORY/CHANGELOG, 20 links) + the public
+  predecessor `caschls`. `va_paper_clone`/`cde_va_project_fork` are 404 (left unlinked).
+- **Canonical URL** → `https://christinasun.net/cel_resource_hub/` (site_url; sitemap + canonical
+  meta verified). christinasun.net is the user's `chesun.github.io` Jekyll site (custom domain).
+- **Discoverability** → chose **README linkbacks** as the mechanism (reaches successors at the
+  repo, not via the academic site). Added a hub pointer to all six repos' READMEs (+ csac2025
+  CLAUDE.md), pushed one-by-one (the combined 6-repo push tripped the auto-mode classifier —
+  cross-repo pushes are outside the hub's push-without-asking grant; single-repo pushes on the
+  user's explicit request went through).
+- **Academic-site link** — user now has a job (site no longer job-market-facing), so flipped my
+  rec to: yes, a main-nav "Code / Research workflow" portfolio link pairing claude-research-workflow
+  + the hub. Queued in TODO for discussion (edit lands in chesun.github.io).
+- Resolved: Google Docs out of scope; calpads path fixed (server restructuring); /projects/ paths
+  confirmed correct; cel_offboard deleted.
+
 ## Still open
 
-- Optional: switch `site_url` to the custom domain.
+- Academic-site portfolio nav link (queued for discussion).
 - caffeinate tip flagged in-text as not Scribe-stress-tested.
 
 ## To confirm at leisure

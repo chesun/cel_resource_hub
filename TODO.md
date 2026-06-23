@@ -15,6 +15,7 @@ Last updated: 2026-06-22
 - [ ] Expand `csac2025`'s one-line stub `README.md` into a proper handoff guide (decided 2026-06-22; until then the hub routes readers to `CLAUDE.md`)
 
 ## Done (recent)
+- [x] README linkbacks: added a hub pointer at the top of every analysis repo's README (+ csac2025 `CLAUDE.md`) and pushed all six (va_consolidated, calpads, csac, csac_2024, csac2025, ccylc_2025). Each links the hub + its own detail page. (Cross-repo pushes are outside the hub's auto-push grant — done one repo at a time on request.) — 2026-06-22
 - [x] Canonical `site_url` → `https://christinasun.net/cel_resource_hub/` (the branded custom-domain URL; github.io redirects there). Canonical meta + sitemap verified — 2026-06-22
 - [x] Link audit (2nd pass): every repo's Documentation map now links its artifacts to GitHub (`decisions/`, `quality_reports/`, `CLAUDE.md`, README/MEMORY/CHANGELOG/etc. — 20 links, all verified) + linked the public predecessor `caschls`. `va_paper_clone` + `cde_va_project_fork` are not public (404) → left unlinked, confirm if they should be private-linked — 2026-06-22
 - [x] Confirmed all `/projects/` Scribe paths correct; `cel_offboard` clone deleted (lab_guides preserved privately) — 2026-06-22
