@@ -4,6 +4,21 @@ Write your Stata code on your **laptop**, in a real editor, and save it to `.do`
 [sync it to Scribe](local-server-sync.md) and [run it in batch](working-on-scribe.md). This
 page explains why, and how to set up the editor.
 
+## See it in action
+
+A quick walkthrough — writing a `.do` file in VSCode (syntax highlighting, autocomplete, and
+auto-indent as you type), then running it through the Stata binary in VSCode's **built-in
+terminal**:
+
+<figure markdown="span">
+  <video controls preload="metadata" playsinline
+         poster="img/vscode-stata-demo-poster.png" style="width:100%;border-radius:8px;">
+    <source src="img/vscode-stata-demo.mp4" type="video/mp4">
+    <a href="img/vscode-stata-demo.mp4">Download the clip</a>.
+  </video>
+  <figcaption>Editing a <code>.do</code> file in VSCode, then running it in the integrated terminal.</figcaption>
+</figure>
+
 !!! warning "The habit I'd gently push back on"
     A lot of folks write their `.do` files in **Stata's do-file editor on the server** (often via
     the GUI over X11). That works — you still get saved scripts — but I'd nudge you to write on

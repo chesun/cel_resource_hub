@@ -12,6 +12,8 @@ __pycache__/
 
 # Local recording aids for the VSCode-Stata demo (scratch; not site content)
 recording-aids/
+# Raw screen recordings (the optimized clip lives under docs/.../img/)
+Screen Recording*.mov
 
 # Hook runtime state (machine-local logs)
 .claude/state/*.log
