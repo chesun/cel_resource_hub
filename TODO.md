@@ -9,13 +9,14 @@ Last updated: 2026-06-22
 - [ ] Optional: switch `site_url` to `https://christinasun.net/cel_resource_hub/` if the custom domain should be canonical (currently set to the github.io URL, which 301-redirects there)
 
 ## Waiting On
-- [ ] From Christina: Scribe run paths per project (to verify end-to-end runs)
+- (nothing)
 
 ## Backlog
 - [ ] Expand `csac2025`'s one-line stub `README.md` into a proper handoff guide (decided 2026-06-22; until then the hub routes readers to `CLAUDE.md`)
-- [ ] Delete the old `cel_offboard` folder (the stray `claude-research-workflow` clone) once happy — **first preserve `master_supporting_docs/lab_guides/`** (source `.docx` onboarding guides, incl. the illustrated Windows XStata walkthrough); their text is distilled into the hub but the originals/screenshots aren't hosted yet
 
 ## Done (recent)
+- [x] Link audit (2nd pass): every repo's Documentation map now links its artifacts to GitHub (`decisions/`, `quality_reports/`, `CLAUDE.md`, README/MEMORY/CHANGELOG/etc. — 20 links, all verified) + linked the public predecessor `caschls`. `va_paper_clone` + `cde_va_project_fork` are not public (404) → left unlinked, confirm if they should be private-linked — 2026-06-22
+- [x] Confirmed all `/projects/` Scribe paths correct; `cel_offboard` clone deleted (lab_guides preserved privately) — 2026-06-22
 - [x] Google Docs hosting: decided **out of scope** — project docs go in a private lab-shared folder, not this public hub. Rewrote the offboarding "Preserving project documentation" section to match (dropped the "link them from the hub" plan + the per-repo "Related documents" idea) — 2026-06-22
 - [x] Link audit — added 5 high-value links (homepage git/Claude Code; va_consolidated first-mentions in reproducible-pipelines + git-for-newcomers; ADR cross-links in offboarding index + README template). An Explore agent flagged candidates; 3 were false positives (already linked) and skipped after verification — 2026-06-22
 - [x] External links now open in a new tab (`mkdocs-open-in-new-tab` plugin → requirements.txt + mkdocs.yml). JS-based, internal links unaffected, instant-nav-aware. Eyeball on the live site to confirm the browser behavior — 2026-06-22

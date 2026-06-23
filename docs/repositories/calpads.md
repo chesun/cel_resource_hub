@@ -40,9 +40,9 @@ From the repo root, in Stata:
 ## Documentation map
 
 - [`README.md`](https://github.com/chesun/calpads/blob/main/README.md) — the handoff guide (start here; §4 do-file map, §6 gotchas, §8 provenance).
-- `CLAUDE.md` — project conventions.
-- `decisions/` — ADRs.
-- `doc/` — reference material (README §7).
+- [`CLAUDE.md`](https://github.com/chesun/calpads/blob/main/CLAUDE.md) — project conventions.
+- [`decisions/`](https://github.com/chesun/calpads/tree/main/decisions) — ADRs.
+- [`doc/`](https://github.com/chesun/calpads/tree/main/doc) — reference material (README §7).
 
 ## Who to ask
 

@@ -21,8 +21,8 @@ data to study the college transition, summer-school enrollment, and financial ai
 ## Documentation map
 
 - [`README.md`](https://github.com/chesun/csac/blob/main/README.md) — project overview and run notes.
-- `CHANGELOG.md`, `SESSION_REPORT.md`, `TODO.md` — history and status.
-- `quality_reports/` — reviews and audits.
+- [`CHANGELOG.md`](https://github.com/chesun/csac/blob/main/CHANGELOG.md), [`SESSION_REPORT.md`](https://github.com/chesun/csac/blob/main/SESSION_REPORT.md), [`TODO.md`](https://github.com/chesun/csac/blob/main/TODO.md) — history and status.
+- [`quality_reports/`](https://github.com/chesun/csac/tree/main/quality_reports) — reviews and audits.
 
 ## Who to ask
 

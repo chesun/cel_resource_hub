@@ -23,7 +23,7 @@ School-level value-added estimates for ~1,400 California high schools across fou
 of 11th-graders (2014–15 through 2017–18), using a CFR-style "value-added with drift"
 estimator, plus a survey-VA mechanism analysis linking the estimates to CalSCHLS
 school-climate indices. It is the consolidated successor to two predecessor codebases
-(`cde_va_project_fork` and `caschls`).
+(`cde_va_project_fork` and [`caschls`](https://github.com/chesun/caschls)).
 
 ## How to run it
 
@@ -43,8 +43,8 @@ the `m4_acceptance_run` switch.
 
 - [`HANDOFF.md`](https://github.com/chesun/va_consolidated/blob/main/HANDOFF.md) — plain-English run & reproduce guide (start here).
 - [`README.md`](https://github.com/chesun/va_consolidated/blob/main/README.md) — fuller technical reference.
-- `decisions/` — numbered ADRs explaining *why* each load-bearing choice was made.
-- `quality_reports/` — review reports and the golden-master reproduction evidence.
+- [`decisions/`](https://github.com/chesun/va_consolidated/tree/main/decisions) — numbered ADRs explaining *why* each load-bearing choice was made.
+- [`quality_reports/`](https://github.com/chesun/va_consolidated/tree/main/quality_reports) — review reports and the golden-master reproduction evidence.
 
 ## Who to ask
 
