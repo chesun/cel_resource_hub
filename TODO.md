@@ -6,6 +6,9 @@ Last updated: 2026-06-22
 - (nothing blocking — core hub is live; remaining items are content fill-in)
 
 ## Up Next
+- [ ] **Open links in a new tab** — make links open in a new browser tab/page (confirm: all links, or external only). Options: `mkdocs-open-in-new-tab` plugin, or a small JS / `attr_list` `{target=_blank}` approach.
+- [ ] **Link audit** — find references that should be hyperlinked but aren't (other hub pages, repos, tools, people) and link them.
+- [ ] **Claude Code intro → my workflow docs** — point `workflow-tips/claude-code-intro.md` at Christina's own Claude Code workflow docs (the `claude-code-my-workflow` repo / its published site — confirm the canonical URL).
 - [ ] Decide Google Docs hosting approach (sensitivity triage; public-safe → Markdown in hub, sensitive → private store + link), then add "Related documents" sections to repo pages
 - [ ] Optional: switch `site_url` to `https://christinasun.net/cel_resource_hub/` if the custom domain should be canonical (currently set to the github.io URL, which 301-redirects there)
 
@@ -13,7 +16,7 @@ Last updated: 2026-06-22
 - [ ] From Christina: Scribe run paths per project (to verify end-to-end runs)
 
 ## Backlog
-- [ ] Decide whether `csac2025`'s minimal README should be expanded or point to its `CLAUDE.md`
+- [ ] Expand `csac2025`'s one-line stub `README.md` into a proper handoff guide (decided 2026-06-22; until then the hub routes readers to `CLAUDE.md`)
 - [ ] Delete the old `cel_offboard` folder (the stray `claude-research-workflow` clone) once happy — **first preserve `master_supporting_docs/lab_guides/`** (source `.docx` onboarding guides, incl. the illustrated Windows XStata walkthrough); their text is distilled into the hub but the originals/screenshots aren't hosted yet
 
 ## Done (recent)

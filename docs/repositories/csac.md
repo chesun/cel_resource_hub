@@ -7,8 +7,8 @@ Commission (CSAC).
 | | |
 |---|---|
 | **GitHub** | <https://github.com/chesun/csac> |
-| **Runs on (Scribe)** | _TODO: confirm Scribe path_ |
-| **Entry point** | `do/` pipeline (Stata) |
+| **Runs on (Scribe)** | `/home/research/ca_ed_lab/projects/csac_survey2023` (`$csacprojdir`, set in `do/do_all.do`) |
+| **Entry point** | `do/do_all.do` (master pipeline) |
 | **Status** | Offboarding complete (per repo README, 2026-06-21) |
 | **Start with** | [`README.md`](https://github.com/chesun/csac/blob/main/README.md) |
 
@@ -26,8 +26,7 @@ data to study the college transition, summer-school enrollment, and financial ai
 
 ## Who to ask
 
-- **Christina Sun** (CS) — `ucsun@ucdavis.edu`
-- **Baiyu Zhou** (BZ) — `baizhou@ucdavis.edu`
+- **Christina Sun** — author (`christinasun101@gmail.com` / `ucsun@ucdavis.edu`).
 
 !!! note
     The entire code pipeline ran successfully on 2026-06-20 and the README was finalized;

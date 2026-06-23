@@ -14,7 +14,7 @@ to git and Claude Code.
 | **GitHub** | <https://github.com/chesun/va_consolidated> |
 | **Runs on (Scribe)** | `/home/research/ca_ed_lab/projects/common_core_va/consolidated` |
 | **Entry point** | `do/main.do` |
-| **Status** | Offboarding deliverable (frozen at the `v1.0-final` tag) |
+| **Status** | Offboarding deliverable — acceptance run in progress |
 | **Start with** | [`HANDOFF.md`](https://github.com/chesun/va_consolidated/blob/main/HANDOFF.md) |
 
 ## What it is
@@ -48,9 +48,7 @@ the `m4_acceptance_run` switch.
 
 ## Who to ask
 
-- **Christina Sun** — author (`christinasun101@gmail.com`).
-- **Kramer** — CEL data-management custodian (Scribe access, restricted-data location).
-- **CEL lab IT** — provisions Scribe SSH accounts.
+- **Christina Sun** — author (`christinasun101@gmail.com` / `ucsun@ucdavis.edu`).
 
 ## Related
 

@@ -7,7 +7,7 @@ Completion** extracts (internally called `crscomp`), covering school years **201
 | | |
 |---|---|
 | **GitHub** | <https://github.com/chesun/calpads> (public) |
-| **Runs on (Scribe)** | Paths are defined in `do/settings.do` (`$projdir` etc.) — _confirm the Scribe location there_ |
+| **Runs on (Scribe)** | `/home/research/ca_ed_lab/chesun/gsr/calpads` (`$projdir`, set in `do/settings.do`) |
 | **Entry point** | `do/master.do` (note: `master.do`, not `main.do`) |
 | **Status** | Offboarding / handoff; README is the handoff guide |
 | **Start with** | [`README.md`](https://github.com/chesun/calpads/blob/main/README.md) |
