@@ -8,7 +8,7 @@ Conference (CCYLC)** in 2025.
 | **GitHub** | <https://github.com/chesun/ccylc_2025> (public) |
 | **Runs on (Scribe)** | `/home/research/ca_ed_lab/projects/ccylc` |
 | **Entry point** | `do/main.do` — runs the full pipeline (`settings` → `clean` → `explore`) |
-| **Status** | Archived — offboarding complete |
+| **Status** | Offboarding complete |
 | **Start with** | The repo's [`README.md`](https://github.com/chesun/ccylc_2025#readme) — the per-file I/O map is there |
 
 ## What it is
@@ -63,5 +63,5 @@ The data files all live on Scribe (never local); this maps what the code reads a
 - [x] `main.do` wired to run the full pipeline (`settings` → `clean` → `explore`).
 - [x] End-to-end server run recorded (2026-06-21) — ran clean on Scribe.
 
-Offboarding is complete; the repo is archived as a clean code handoff. See the
+Offboarding is complete — a clean code handoff. See the
 [offboarding standards](../offboarding/index.md) for what each item means.

@@ -60,7 +60,7 @@ Scribe, or you're the lab's data-management custodian or IT contact. I assume yo
 
     ---
 
-    Who to contact, what tools you need, and how to get access.
+    What tools you need and how to get access.
 
     [:octicons-arrow-right-24: Resources](resources/index.md)
 

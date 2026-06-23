@@ -6,7 +6,6 @@ Last updated: 2026-06-22
 - (nothing blocking — core hub is live; remaining items are content fill-in)
 
 ## Up Next
-- [ ] Author to **commit + push** `csac_2024`'s drafted README (currently local-only) so the hub link resolves
 - [ ] Decide Google Docs hosting approach (sensitivity triage; public-safe → Markdown in hub, sensitive → private store + link), then add "Related documents" sections to repo pages
 - [ ] Optional: switch `site_url` to `https://christinasun.net/cel_resource_hub/` if the custom domain should be canonical (currently set to the github.io URL, which 301-redirects there)
 
@@ -18,6 +17,7 @@ Last updated: 2026-06-22
 - [ ] Delete the old `cel_offboard` folder (the stray `claude-research-workflow` clone) once happy — **first preserve `master_supporting_docs/lab_guides/`** (source `.docx` onboarding guides, incl. the illustrated Windows XStata walkthrough); their text is distilled into the hub but the originals/screenshots aren't hosted yet
 
 ## Done (recent)
+- [x] Status updates (verified against the repos): `csac_2024` offboarding **complete** — README pushed, `main.do` runs the full pipeline (settings→clean→explore→sample→share), verified Scribe run (commit `a2bf2d2`); removed the stale "mid-buildout/not-pushed/incomplete" notes. `ccylc_2025` offboarding **complete** and **no longer described as archived**. Updated both detail pages + the index table — 2026-06-22
 - [x] `csac_2024` is now public: removed the private callout + Access column from the repositories index (all repos public), flipped its detail-page GitHub row to public, and fixed the leftover "csac_2024 is private" mentions in `tools.md` + `git-for-newcomers.md` — 2026-06-22
 - [x] Uniform repository naming `Name (repo)` across nav titles + each detail-page H1; aligned the index table's Project column friendly names (Value Added, CALPADS, …). Used the real repo name `ccylc_2025` (user wrote `ccylc2025`) — 2026-06-22
 - [x] Fixed a strawman in the "write locally vs. on the server" framing across `recommended-workflow.md`, `editing-stata-vscode.md`, and `working-on-scribe.md` — the alternative isn't "throwaway console commands with no saved script"; people write `.do` files in Stata's GUI editor on the server. Reframed the real trade-off as laptop editor + git + connection-independence vs. the server GUI editor — 2026-06-22
