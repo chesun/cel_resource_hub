@@ -35,16 +35,27 @@ in `2026-06-21_tools-downloads-expansion.md`; this file covers the walkthrough i
     - working-on-scribe — scrapped the "To add" block; added a `caffeinate` (macOS keep-awake)
       tip, scoped honestly (fixes only laptop-sleep; not server timeouts; not Scribe-stress-tested).
     - xstata-gui-windows — reviewed, clean (all 6 screenshots present on disk).
-    - **data-safety — IN PROGRESS:** flagged its "To add" block (the "data committed by accident"
-      item is redundant with gitignore-setup; awaiting Christina's call on the two lab-specific
-      items). Uncommitted Workflow-Tips edits not yet pushed.
+    - data-safety — scrapped the "To add" block + stale seeded-outline note.
+    - gitignore-setup, git-for-newcomers — reviewed, no changes (reworked earlier today).
+    - reproducible-pipelines — dropped seeded-outline (folded cross-repo point into intro);
+      replaced the "To add" block with a **worked partial-rerun example** (user wanted an example;
+      scrapped the other two items).
+    - claude-code-intro — **TODO #3 done:** links my template
+      [chesun/claude-research-workflow](https://github.com/chesun/claude-research-workflow)
+      (verified public; I'd first looked at the wrong local clone — `claude-code-my-workflow`,
+      which clones `hugosantanna/clo-author`). Dropped its seeded-outline + To-add notes.
+- **Resources (2 pages)** — index + tools reviewed, no changes (built this session).
 
-## Queued (user TODOs, this session)
+**Walkthrough complete.** Final sweep: the only remaining marker hub-wide is csac-2025's
+deliberate "README to expand" flag. Commits this session: `32d1561`, `6ef87b6`, `682cdbb`,
+`1b3761d`, `7a0d096`, `13f23de` (+ earlier) — all pushed.
 
-Open links in a new tab; link audit (link things that should be linked); point Claude Code intro
-at Christina's own `claude-code-my-workflow` docs.
+## Queued (still open)
 
-## Remaining
+- Open links in a new tab (confirm: all vs external only).
+- Link audit (link references that should be hyperlinked but aren't).
 
-Finish Workflow Tips (data-safety, gitignore-setup, git-for-newcomers, reproducible-pipelines,
-claude-code-intro), then Resources (index + tools). Then the 3 queued TODOs.
+## To confirm at leisure
+
+- calpads Scribe path is under `chesun/gsr/` (not `.../projects/`) — derived from `settings.do`.
+- caffeinate tip on working-on-scribe — not Scribe-stress-tested (flagged as such in the text).
