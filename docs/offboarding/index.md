@@ -25,7 +25,7 @@ A repo is offboarding-ready when all of these are true:
 - [ ] **Code/data separation.** Code, docs, and shippable tables/figures live on GitHub; restricted data lives only on Scribe. Data directories are gitignored; run logs *are* tracked (PII scrubbed) for version history. No credentials or PII in any tracked file.
 - [ ] **Reproducible inputs.** Nothing is downloaded live at run time (pin a local copy instead); seeds are set; scripts write inside the repo's own output folders, not back into raw-data or predecessor locations.
 - [ ] **Automated sanity checks (where feasible).** A final step asserts the results are in-range (sample sizes, merge rates, value ranges) and **fails loudly** if an upstream change breaks something.
-- [ ] **Decision records.** The "why" behind load-bearing choices is written down (ADRs in `decisions/`, or a clearly-labeled section of the README for lightweight projects).
+- [ ] **Decision records.** The "why" behind load-bearing choices is written down ([ADRs](#whats-a-decision-record-adr) in `decisions/`, or a clearly-labeled section of the README for lightweight projects).
 - [ ] **Contacts.** The README names who to ask: the author (offboarding-era email).
 
 ---

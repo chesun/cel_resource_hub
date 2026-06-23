@@ -126,7 +126,7 @@ rather than improvising — a wrong move there can be hard to undo.
 
 ### Common errors and fixes
 
-These recur on Scribe (adapted from the `va_consolidated` Scribe-setup notes):
+These recur on Scribe (adapted from the [`va_consolidated`](../repositories/va-consolidated.md) Scribe-setup notes):
 
 | Error | Cause | Fix |
 |---|---|---|

@@ -18,7 +18,7 @@ Maybe you **inherited one of my CEL projects**, or you're a **GSR or labmate** g
 Scribe, or you're the lab's data-management custodian or IT contact. I assume you:
 
 - are comfortable with **Stata**,
-- may have **never used git or Claude Code**, and
+- may have **never used [git](workflow-tips/git-for-newcomers.md) or [Claude Code](workflow-tips/claude-code-intro.md)**, and
 - run analysis (or are about to) on the lab's **Scribe server over SSH**.
 
 !!! note "Why a personal hub?"

@@ -65,7 +65,7 @@ Pinned packages, vendored `.ado` files, raw data, predecessor-location files, cr
 
 ## 7. Decision records / why it's built this way
 
-Link `decisions/` (ADRs) for a full pipeline, or a short list of load-bearing choices for a
+Link `decisions/` ([ADRs](index.md#whats-a-decision-record-adr)) for a full pipeline, or a short list of load-bearing choices for a
 lightweight one.
 
 ## 8. When something breaks

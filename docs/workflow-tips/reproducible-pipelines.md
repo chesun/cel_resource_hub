@@ -2,7 +2,7 @@
 
 CEL pipelines are built so that **one command reproduces the analysis**, and running it the
 same way twice gives the same answer. This page describes the shared pattern — distilled from
-`va_consolidated`, but recurring across the CSAC and CCYLC repos too — so you can read any lab
+[`va_consolidated`](../repositories/va-consolidated.md), but recurring across the CSAC and CCYLC repos too — so you can read any lab
 repo with the same mental model.
 
 ## The shared pattern
