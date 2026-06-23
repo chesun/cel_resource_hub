@@ -7,10 +7,16 @@ Completion** extracts (internally called `crscomp`), covering school years **201
 | | |
 |---|---|
 | **GitHub** | <https://github.com/chesun/calpads> (public) |
-| **Runs on (Scribe)** | `/home/research/ca_ed_lab/chesun/gsr/calpads` (`$projdir`, set in `do/settings.do`) |
+| **Runs on (Scribe)** | `/home/research/ca_ed_lab/users/chesun/gsr/calpads` |
 | **Entry point** | `do/master.do` (note: `master.do`, not `main.do`) |
 | **Status** | Offboarding / handoff; README is the handoff guide |
 | **Start with** | [`README.md`](https://github.com/chesun/calpads/blob/main/README.md) |
+
+!!! note "Path changed after a server restructuring"
+    The lab's server was reorganized after this project, inserting a `users/` level into the
+    path. `do/settings.do` may still set `$projdir` to the pre-restructuring location
+    (`.../ca_ed_lab/chesun/gsr/calpads`) — use the current path above, and update `settings.do`
+    to match if it hasn't been already.
 
 ## What it is
 

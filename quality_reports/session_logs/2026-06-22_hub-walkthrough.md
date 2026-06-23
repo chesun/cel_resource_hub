@@ -68,10 +68,19 @@ deliberate "README to expand" flag. Commits this session: `32d1561`, `6ef87b6`, 
 All three queued TODOs complete. Commits this session through `3de778f`, all pushed. Lesson:
 agent link-audit findings need per-file verification — don't apply blind (3/8 were stale).
 
-## Still open (not this session)
+## Wrap-up resolutions
 
-- Decide Google Docs hosting approach (per-repo "Related documents").
-- To confirm: calpads `chesun/gsr/` path; caffeinate tip not Scribe-tested.
+- **Google Docs hosting → out of scope.** Docs go to a private lab-shared folder, not this public
+  hub. Rewrote the offboarding "Preserving project documentation" section accordingly.
+- **calpads Scribe path corrected** to `/home/research/ca_ed_lab/users/chesun/gsr/calpads`. The
+  server was restructured after the project (a `users/` level inserted), so `settings.do`'s
+  hardcoded `$projdir` is stale — flagged on the page with a note. (My earlier derived path came
+  from that stale settings.do.)
+
+## Still open
+
+- Optional: switch `site_url` to the custom domain.
+- caffeinate tip flagged in-text as not Scribe-stress-tested.
 
 ## To confirm at leisure
 
