@@ -10,6 +10,8 @@ A quick walkthrough — writing a `.do` file in VSCode (syntax highlighting, aut
 auto-indent as you type), then running it through the Stata binary in VSCode's **built-in
 terminal**:
 
+<!-- Paths here are ../img/ (NOT img/): this page is a directory URL and MkDocs
+     does not rewrite paths inside raw HTML, so img/ would 404 (grey box). -->
 <figure class="md-video">
   <video muted loop playsinline preload="metadata" poster="../img/vscode-stata-demo-poster-v2.png">
     <source src="../img/vscode-stata-demo-v2.mp4" type="video/mp4">

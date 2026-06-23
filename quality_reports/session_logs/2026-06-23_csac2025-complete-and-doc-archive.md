@@ -50,3 +50,11 @@ portfolio-nav-link discussion. caffeinate tip still flagged in-text as not Scrib
   Raw `.mov` gitignored. **Note:** raised `http.postBuffer` to 500 MB — the 1 MB default failed the
   push of the >1 MB video pack (HTTP 400; a `tail -1` had hidden the error behind "up-to-date").
   Same-filename assets mean a hard-refresh is needed to see updates (browser cache).
+- **Demo polish:** variable-speed cut (~7x typing, 1.5x autocomplete, 2x run → ~69s); full-width
+  embed (Material defaults `figure` to `width: fit-content`, which collapsed it — `.md-video` class
+  + CSS); play-on-scroll via `IntersectionObserver` (`javascripts/video-scroll.js`), no native
+  controls (click to pause). **Root-cause of the persistent "grey box":** raw-HTML `<video>` paths
+  were `img/...`, which from a **directory URL** page resolved to `.../<page>/img/...` (404) — MkDocs
+  rewrites Markdown paths but not raw HTML. Fixed to `../img/...` (commit `2fd6f35`). Autoplay/cache
+  were red herrings. **Learning captured** in memory `mkdocs-raw-html-media-paths` + an inline
+  comment on the embed.
