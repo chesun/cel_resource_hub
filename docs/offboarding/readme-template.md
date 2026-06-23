@@ -70,8 +70,7 @@ lightweight one.
 
 ## 8. When something breaks
 
-First places to look (logs, checks output), known failure modes, and contacts: author,
-data-management custodian, lab IT.
+First places to look (logs, checks output), known failure modes, and who to contact (the author).
 ````
 
 ---

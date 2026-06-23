@@ -140,3 +140,29 @@ index table's csac_2024 row to "CSAC 2024 Survey".
   Repo column). Used the real repo name **`ccylc_2025`** (user wrote `ccylc2025`). Left
   va-consolidated's body reference to "the *Common Core Value-Added* paper" intact (paper name,
   not project title). `mkdocs build --strict` → exit 0, no warnings.
+
+## Follow-up (2026-06-22) — page-by-page walkthrough (Home + Repositories section)
+
+User started a page-by-page review of the whole hub. Done so far:
+
+- **Home** — trimmed the Resources card line ("Who to contact…" → "What tools you need…").
+- **csac_2024 / ccylc_2025 statuses** — both now "Offboarding complete" (verified csac_2024
+  against the repo: README pushed, `main.do` full pipeline, commit `a2bf2d2`; ccylc no longer
+  "archived"). Cleaned stale in-progress notes off csac-2024's page.
+- **Repositories pass:**
+    - **Contacts → author-only everywhere.** Dropped va_consolidated's custodian ("Kramer") + lab
+      IT, and csac's co-author (Baiyu Zhou) per user calls; standardized to the common format.
+      Fixed the index "What every detail page covers" line ("author and custodian" → "author").
+    - **Scribe paths** (were TODO placeholders) filled by deriving each repo's `settings.do`:
+      calpads `/home/research/ca_ed_lab/chesun/gsr/calpads` (under `chesun/gsr/`, flagged to
+      confirm), csac `/home/research/ca_ed_lab/projects/csac_survey2023` (+ entry `do/do_all.do`),
+      csac2025 `/home/research/ca_ed_lab/projects/csac_survey2025`.
+    - **va_consolidated status corrected** — claimed "frozen at `v1.0-final` tag" but the repo has
+      **no tags** and HEAD is an acceptance run in progress → "acceptance run in progress".
+    - **csac2025** — status "Offboarding in progress" (user); README kept as a tracked
+      expand-later flag (backlog updated).
+- **Queued 3 user TODOs:** open links in a new tab; link audit; point Claude Code intro at
+  Christina's own `claude-code-my-workflow` docs.
+
+Commits `32d1561` (statuses + Home) and `6ef87b6` (repositories pass); both pushed. Remaining
+walkthrough sections: Offboarding, Workflow Tips, Resources.
