@@ -10,13 +10,12 @@ A quick walkthrough — writing a `.do` file in VSCode (syntax highlighting, aut
 auto-indent as you type), then running it through the Stata binary in VSCode's **built-in
 terminal**:
 
-<figure markdown="span">
-  <video controls preload="metadata" playsinline
-         poster="img/vscode-stata-demo-poster.png" style="width:100%;border-radius:8px;">
+<figure class="md-video">
+  <video controls preload="metadata" playsinline poster="img/vscode-stata-demo-poster.png">
     <source src="img/vscode-stata-demo.mp4" type="video/mp4">
     <a href="img/vscode-stata-demo.mp4">Download the clip</a>.
   </video>
-  <figcaption>Editing a <code>.do</code> file in VSCode, then running it in the integrated terminal.</figcaption>
+  <figcaption>Editing a <code>.do</code> file in VSCode, then running it in the integrated terminal. (Sped up; pause anytime.)</figcaption>
 </figure>
 
 !!! warning "The habit I'd gently push back on"

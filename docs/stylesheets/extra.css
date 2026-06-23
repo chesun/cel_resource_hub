@@ -18,3 +18,15 @@
 .md-nav__item--active > .md-nav__container > a.md-nav__link {
   color: var(--md-typeset-a-color);
 }
+
+/* Demo video: fill the content column. Material defaults figures to
+   `width: fit-content`, which collapses an embedded <video> to a tiny box. */
+.md-typeset figure.md-video {
+  width: 100%;
+}
+.md-typeset figure.md-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
