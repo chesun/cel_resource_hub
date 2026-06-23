@@ -30,6 +30,17 @@ A repo is offboarding-ready when all of these are true:
 
 ---
 
+## What's a decision record (ADR)?
+
+Several of these standards mention **ADRs** in a repo's `decisions/` folder — worth a definition,
+since the repos reference them throughout. An ADR (*Architecture / Any Decision Record*) is a
+short Markdown file capturing **one** load-bearing choice: its context, the decision, and the
+consequences. ADRs are numbered (`0001_slug.md`, `0002_…`) and **append-only** — you don't rewrite
+a past decision, you supersede it with a new one that references it. For a successor they answer
+the question a code diff can't: *why* is it built this way? Read them before changing a
+load-bearing parameter, and add a new one whenever you make a choice the next person would
+otherwise have to reverse-engineer.
+
 ## Scaling to project size
 
 Not every project is `va_consolidated`. A one-month, single-do-file project (see

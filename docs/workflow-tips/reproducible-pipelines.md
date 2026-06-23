@@ -112,5 +112,6 @@ trusting them.
     phase you changed.
 
 !!! tip "Decision records"
-    The "why" behind load-bearing choices lives in a repo's `decisions/` folder (ADRs) — read
-    those before changing a load-bearing parameter.
+    The "why" behind load-bearing choices lives in a repo's `decisions/` folder
+    ([ADRs](../offboarding/index.md#whats-a-decision-record-adr)) — read those before changing a
+    load-bearing parameter.
