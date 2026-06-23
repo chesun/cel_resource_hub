@@ -1,0 +1,13 @@
+/* Section-index links (Material `navigation.indexes`): the clickable section
+   titles (Offboarding repositories, Workflow Tips, Resources, …) otherwise
+   look like plain grey labels. Give them the link/accent colour at rest and
+   an underline on hover so they read as the landing-page links they are.
+   Leaf-page links are untouched. */
+.md-nav__container > a.md-nav__link {
+  color: var(--md-primary-fg-color);
+}
+
+.md-nav__container > a.md-nav__link:hover {
+  color: var(--md-accent-fg-color);
+  text-decoration: underline;
+}
