@@ -157,9 +157,20 @@ straight from the server, exactly as you would on a laptop. (I didn't even reali
 on Scribe until I tried it for [`va_consolidated`](../repositories/va-consolidated.md) — it is.)
 
 That's also how the laptop ↔ Scribe sync works: commit and push on one machine, pull on the other,
-with GitHub in the middle. The full setup — the Scribe-side clone, and the data-safety guard that
-keeps restricted files from ever leaving the server — is on
+with GitHub in the middle. The full setup — the Scribe-side clone and the data-safety guards — is on
 **[Local ↔ server sync](local-server-sync.md)**.
+
+!!! info "“git on the server, talking to the internet — isn't that *worse* for the data?”"
+    It sounds alarming, but with the guardrails in place it's actually **safer** than moving files by
+    hand. git only ever transmits what's **tracked**, and the restricted `data/` and `estimates/`
+    folders aren't tracked — so `git pull` brings down only code, `git push` sends up only code, and
+    the data just stays on Scribe. A **pre-push hook** is the backstop: it refuses any push that would
+    carry a data file off the server, even one force-added with `git add -f`. Compare that to FileZilla,
+    where nothing but your own attention stops you dragging a `dta/` folder onto your laptop. The risk
+    was never the connection — it's *unguarded* file movement, and git is the option with the guards
+    built in. See
+    **[Local ↔ server sync](local-server-sync.md#protecting-data-on-the-server-the-pre-push-hook)** for
+    the hook and **[Data safety](data-safety.md)** for the policy.
 
 ## If something looks wrong
 

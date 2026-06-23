@@ -66,3 +66,10 @@ portfolio-nav-link discussion. caffeinate tip still flagged in-text as not Scrib
   `va_consolidated`); hands off to **[Local ↔ server sync]** for the full laptop↔Scribe setup + the
   data-safety hook. Brief pointer, not a re-explanation (consistent with the earlier git/sync dedup).
   Personal voice (git is my tooling). `mkdocs build --strict` → exit 0, no content warnings.
+- **git page — "safer, not scarier" reassurance:** added an `!!! info` admonition to the git-on-Scribe
+  section addressing the gut reaction that "GitHub on a server holding restricted data = exposing it to
+  the internet." Reframe: the risk was never the connection, it's *unguarded* file movement — git only
+  transmits tracked files (data/estimates aren't tracked), and the pre-push hook refuses any push
+  carrying a data file off the server even when force-added; vs FileZilla where only your own attention
+  stops a `dta/` drag. Links to the hook subsection + Data safety. Data-security framing stated firmly
+  (it's the one lab standard); git setup stays personal voice. Build --strict exit 0, no content warnings.
