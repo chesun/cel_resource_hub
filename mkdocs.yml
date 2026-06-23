@@ -88,12 +88,12 @@ nav:
       - workflow-tips/index.md
       - The recommended workflow: workflow-tips/recommended-workflow.md
       - Editing Stata in VSCode: workflow-tips/editing-stata-vscode.md
+      - Version control using git: workflow-tips/git-for-newcomers.md
       - Local ↔ server sync: workflow-tips/local-server-sync.md
       - Working on Scribe: workflow-tips/working-on-scribe.md
       - Stata GUI on Windows: workflow-tips/xstata-gui-windows.md
       - Data safety: workflow-tips/data-safety.md
       - gitignore setup for data security: workflow-tips/gitignore-setup.md
-      - Git for newcomers: workflow-tips/git-for-newcomers.md
       - Reproducible pipelines: workflow-tips/reproducible-pipelines.md
       - Claude Code intro: workflow-tips/claude-code-intro.md
   - Resources:

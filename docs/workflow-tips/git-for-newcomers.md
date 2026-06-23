@@ -1,4 +1,4 @@
-# Git for newcomers
+# Version control using git
 
 **You don't need git to run a CEL pipeline** — the code is already on Scribe and runs as ordinary
 Stata. If you just want to run the analysis, you can skip this page.

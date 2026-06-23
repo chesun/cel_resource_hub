@@ -16,7 +16,7 @@ Scribe. Each tool links to its official download and to the deeper how-to guide 
 !!! tip "git is recommended, not required"
     You can run a pipeline with just the tools above. **git** ([git-scm.com](https://git-scm.com/downloads))
     adds version history and is the cleaner way to sync code — worth setting up, but optional.
-    See [Git for newcomers](../workflow-tips/git-for-newcomers.md).
+    See [Version control using git](../workflow-tips/git-for-newcomers.md).
 
 ## Situational — only if your setup calls for it
 

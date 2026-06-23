@@ -44,7 +44,7 @@ from laptop to Scribe, and you move code changes back. You never copy data the o
     [Working on Scribe](working-on-scribe.md) for `nohup` (long runs) and the GUI alternative.
 4. **Read the log** that the run produced (`log/...`). Fix, and go back to step 1.
 5. **When the change is good, commit it** so the next person inherits it — see
-   [Git for newcomers](git-for-newcomers.md).
+   [Version control using git](git-for-newcomers.md).
 
 ```mermaid
 flowchart LR
@@ -65,7 +65,7 @@ my laptop and run on Scribe, for three reasons:
   and a side-by-side file view — far easier to navigate a multi-`do` pipeline than Stata's
   built-in editor. See [Editing Stata in VSCode](editing-stata-vscode.md).
 - **Version history comes for free.** Writing on the laptop keeps the code in git: every change
-  is recoverable, with who changed what and when. See [Git for newcomers](git-for-newcomers.md).
+  is recoverable, with who changed what and when. See [Version control using git](git-for-newcomers.md).
 - **Your editing doesn't depend on the connection.** Edit locally and a laggy or dropped SSH/X11
   session never touches your editor — you keep typing and sync when you're ready. Edit in a GUI
   session on the server and a dropped connection can cost you whatever's unsaved in the buffer

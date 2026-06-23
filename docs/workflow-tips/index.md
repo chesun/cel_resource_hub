@@ -13,6 +13,7 @@ what's useful and leave the rest.
 
 - [**The recommended workflow**](recommended-workflow.md) — the overview that ties everything together: where you write code, how it gets to Scribe, and how it runs.
 - [**Editing Stata in VSCode**](editing-stata-vscode.md) — write `.do` files locally in a real editor (VSCode) rather than in the server's Stata GUI editor — you get git history and your editing doesn't hang on the connection.
+- [**Version control using git**](git-for-newcomers.md) — what version control is and why (one file, full history — no more `_FINAL_v2`), the handful of commands, and the optional GitHub bits. Usable locally on its own.
 - [**Local ↔ server sync**](local-server-sync.md) — the two ways to move code between laptop and Scribe (FileZilla vs git), with the benefits and costs of each.
 - [**Working on Scribe**](working-on-scribe.md) — getting an account, connecting, running Stata (batch vs GUI), and keeping jobs alive with `screen`.
 - [**Stata GUI on Windows**](xstata-gui-windows.md) — illustrated Xming + PuTTY walkthrough for running the Stata GUI from a Windows machine.
@@ -24,7 +25,6 @@ what's useful and leave the rest.
 
 ## Reference
 
-- [**Git for newcomers**](git-for-newcomers.md) — the few commands you actually need, first-time setup, a glossary, and common errors.
 - [**Reproducible pipelines**](reproducible-pipelines.md) — the `do/main.do` + `settings.do` pattern, pinning inputs, and automated checks.
 - [**Claude Code intro**](claude-code-intro.md) — what the `.claude/` folders and `CLAUDE.md` files are, and whether you need them (you don't, to run the analysis).
 

@@ -66,16 +66,10 @@ Nothing moves laptop ↔ Scribe directly the way FileZilla does in Method A — 
 through GitHub.** That indirection is exactly what buys you the version history and the safety
 properties below.
 
-```bash
-# On Scribe, get the latest code:
-cd /home/research/ca_ed_lab/projects/<project>
-git pull --rebase origin main
-
-# Save a change (made on either side), then send it to GitHub:
-git add do/path/to/changed_file.do
-git commit -m "short description of the change"
-git push origin main
-```
+The day-to-day rhythm is the everyday git loop — `git pull` to get the latest, `git add` /
+`git commit` to save a change, `git push` to send it up — run from the project folder on whichever
+machine you're on. See **[Version control using git](git-for-newcomers.md)** for what each command
+does, the one-time setup, the glossary, and common errors.
 
 **What you gain:**
 
@@ -86,8 +80,7 @@ git push origin main
 - Every change is versioned and recoverable, with who/when.
 
 **Costs:** a real learning curve, one-time auth setup (a GitHub personal access token for
-pushing), and occasional merge/rebase conflicts. See [Git for newcomers](git-for-newcomers.md)
-for the commands, common errors, and a glossary.
+pushing), and occasional merge/rebase conflicts.
 
 !!! tip "The token lives on a shared server — scope it tightly"
     Pushing from Scribe means caching a GitHub token there (git stores it in plaintext at

@@ -34,7 +34,7 @@ terminal**:
 - **Everything is reproducible.** A saved `.do` file is the thing the next person re-runs. See
   [Reproducible pipelines](reproducible-pipelines.md).
 - **You get version history.** Once the code is in git, every change is recoverable and you can
-  see what changed and when. See [Git for newcomers](git-for-newcomers.md).
+  see what changed and when. See [Version control using git](git-for-newcomers.md).
 - **The editor helps you.** Syntax highlighting, find-across-files, and a side-by-side file
   tree make a multi-`do` pipeline far easier to read than the Stata do-file editor.
 
