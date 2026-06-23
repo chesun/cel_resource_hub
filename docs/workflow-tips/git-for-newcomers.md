@@ -3,10 +3,11 @@
 **You don't need git to run a CEL pipeline** — the code is already on Scribe and runs as ordinary
 Stata. If you just want to run the analysis, you can skip this page.
 
-So what *is* it? **git** and **GitHub** are how the lab's code gets stored online, shared, and
-tracked as it changes — the next section explains each one. You'll want this page when you need to
-do one of two things with that code: **get an updated copy** (when the author has changed something)
-or **save a change you made** (so it's kept, and others can get it).
+So what *is* it? **git** and **GitHub** are the tools *I* use to keep my code online, version it, and
+track every change as I work — the next section explains each one. (It's my own setup, not something
+the lab uses or requires — I'm the only one who versions these repos this way.) You'll want this page
+if you'd like to use the same tools to **get my latest copy of the code** or **save a change you
+made**.
 
 ## git vs GitHub
 
