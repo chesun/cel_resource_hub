@@ -10,6 +10,9 @@ __pycache__/
 # macOS
 .DS_Store
 
+# Local recording aids for the VSCode-Stata demo (scratch; not site content)
+recording-aids/
+
 # Hook runtime state (machine-local logs)
 .claude/state/*.log
 .claude/state/*.log.old
