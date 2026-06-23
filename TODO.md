@@ -6,7 +6,6 @@ Last updated: 2026-06-23
 - (nothing blocking — core hub is live; remaining items are content fill-in)
 
 ## Up Next
-- [ ] **VSCode-Stata demo video** — Christina records ~12s of real VSCode editing a `.do` (Kap/MP4; dummy code only — public site); drops it at `docs/workflow-tips/img/vscode-stata-demo.mp4`. Then: ffmpeg → optimized MP4+WebM+poster, embed a muted/looping `<video>` near the top of *Editing Stata in VSCode*, build + push. (Embed markup drafted; held until the file exists so the live site isn't broken.)
 - [ ] **Discuss — academic-site portfolio link.** Add a "Code / Research workflow" item to the `chesun.github.io` main nav pairing the [`claude-research-workflow`](https://github.com/chesun/claude-research-workflow) template (the reusable framework) + the CEL Resource Hub (the applied example). Recommended now that the site is no longer job-market-facing — reads as a reproducibility/open-science signal rather than lab ops. Edit lands in `chesun.github.io`, not this repo.
 
 ## Waiting On
@@ -16,6 +15,7 @@ Last updated: 2026-06-23
 - (nothing)
 
 ## Done (recent — older history in git + `quality_reports/session_logs/`)
+- [x] **VSCode-Stata demo video** on *Editing Stata in VSCode* — recorded real walkthrough; ffmpeg trim/crop (cropdetect for black margins) + variable-speed cut (~69s) + regress-autocomplete poster; play-on-scroll `<video>` (no chrome, click to pause), full-width. Fixed the grey-box bug: raw-HTML media must use `../img/` on directory-URL pages — captured in memory — 2026-06-23
 - [x] Wired `csac2025` = offboarding complete (real README now the handoff guide): status, Start-with, doc map, index, "What it is" + offboarding note. Cleared the README-expand backlog item — 2026-06-23
 - [x] Project Google Docs: pointed the offboarding page at the Box archive location (folder path only — `California Education Lab - Full Team Access → GSR Exit → Christina → Ed Lab Google Doc Archive`; no drive prefix; access gated by Box) — 2026-06-23
 - [x] Voice fix: `gitignore-setup`'s "the lab prefers git over manual transfer" → "I prefer" (nothing in the hub is the lab's position except data security); swept for other lab-as-opinion phrasings (none); saved a `personal-voice-not-lab` memory — 2026-06-22
