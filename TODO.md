@@ -6,7 +6,6 @@ Last updated: 2026-06-22
 - (nothing blocking — core hub is live; remaining items are content fill-in)
 
 ## Up Next
-- [ ] **Open links in a new tab** — make links open in a new browser tab/page (confirm: all links, or external only). Options: `mkdocs-open-in-new-tab` plugin, or a small JS / `attr_list` `{target=_blank}` approach.
 - [ ] **Link audit** — find references that should be hyperlinked but aren't (other hub pages, repos, tools, people) and link them.
 - [ ] Decide Google Docs hosting approach (sensitivity triage; public-safe → Markdown in hub, sensitive → private store + link), then add "Related documents" sections to repo pages
 - [ ] Optional: switch `site_url` to `https://christinasun.net/cel_resource_hub/` if the custom domain should be canonical (currently set to the github.io URL, which 301-redirects there)
@@ -19,6 +18,9 @@ Last updated: 2026-06-22
 - [ ] Delete the old `cel_offboard` folder (the stray `claude-research-workflow` clone) once happy — **first preserve `master_supporting_docs/lab_guides/`** (source `.docx` onboarding guides, incl. the illustrated Windows XStata walkthrough); their text is distilled into the hub but the originals/screenshots aren't hosted yet
 
 ## Done (recent)
+- [x] External links now open in a new tab (`mkdocs-open-in-new-tab` plugin → requirements.txt + mkdocs.yml). JS-based, internal links unaffected, instant-nav-aware. Eyeball on the live site to confirm the browser behavior — 2026-06-22
+- [x] Added a "What's a decision record (ADR)?" explainer on the Offboarding page (ADRs were referenced 8× but never defined); linked the reproducible-pipelines tip to it — 2026-06-22
+- [x] Reproducible pipelines: added a `main.do` skeleton + toggle walkthrough (grounded in va_consolidated) — 2026-06-22
 - [x] Claude Code intro now links my workflow template — [chesun/claude-research-workflow](https://github.com/chesun/claude-research-workflow) (verified public); dropped the page's stale seeded-outline + To-add notes — 2026-06-22
 - [x] Status updates (verified against the repos): `csac_2024` offboarding **complete** — README pushed, `main.do` runs the full pipeline (settings→clean→explore→sample→share), verified Scribe run (commit `a2bf2d2`); removed the stale "mid-buildout/not-pushed/incomplete" notes. `ccylc_2025` offboarding **complete** and **no longer described as archived**. Updated both detail pages + the index table — 2026-06-22
 - [x] `csac_2024` is now public: removed the private callout + Access column from the repositories index (all repos public), flipped its detail-page GitHub row to public, and fixed the leftover "csac_2024 is private" mentions in `tools.md` + `git-for-newcomers.md` — 2026-06-22
