@@ -1,8 +1,12 @@
 # Git for newcomers
 
-You do **not** need git to run a CEL pipeline — the code is already on Scribe and runs as
-ordinary Stata. You only need this page when you want to **pull a newer version of the code
-from GitHub** or **save a change you made**.
+**You don't need git to run a CEL pipeline** — the code is already on Scribe and runs as ordinary
+Stata. If you just want to run the analysis, you can skip this page.
+
+So what *is* it? **git** and **GitHub** are how the lab's code gets stored online, shared, and
+tracked as it changes — the next section explains each one. You'll want this page when you need to
+do one of two things with that code: **get an updated copy** (when the author has changed something)
+or **save a change you made** (so it's kept, and others can get it).
 
 ## git vs GitHub
 
