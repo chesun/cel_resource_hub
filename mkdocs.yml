@@ -5,9 +5,9 @@ site_description: >-
   recommendations from one researcher, not official lab documentation.
 site_author: California Education Lab, UC Davis
 
-# Canonical URL (GitHub-native project-pages URL; also served at
-# christinasun.net/cel_resource_hub/ via the account custom domain).
-site_url: https://chesun.github.io/cel_resource_hub/
+# Canonical URL (custom-domain path; also reachable at
+# chesun.github.io/cel_resource_hub/, which redirects here).
+site_url: https://christinasun.net/cel_resource_hub/
 
 repo_url: https://github.com/chesun/cel_resource_hub
 repo_name: chesun/cel_resource_hub

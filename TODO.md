@@ -6,7 +6,7 @@ Last updated: 2026-06-22
 - (nothing blocking — core hub is live; remaining items are content fill-in)
 
 ## Up Next
-- [ ] Optional: switch `site_url` to `https://christinasun.net/cel_resource_hub/` if the custom domain should be canonical (currently set to the github.io URL, which 301-redirects there)
+- [ ] README linkbacks: add a one-line pointer to the hub in each analysis repo's README (the chosen discoverability mechanism — edits live in the analysis repos, not this one). Academic-site link deferred (job-market audience mismatch).
 
 ## Waiting On
 - (nothing)
@@ -15,6 +15,7 @@ Last updated: 2026-06-22
 - [ ] Expand `csac2025`'s one-line stub `README.md` into a proper handoff guide (decided 2026-06-22; until then the hub routes readers to `CLAUDE.md`)
 
 ## Done (recent)
+- [x] Canonical `site_url` → `https://christinasun.net/cel_resource_hub/` (the branded custom-domain URL; github.io redirects there). Canonical meta + sitemap verified — 2026-06-22
 - [x] Link audit (2nd pass): every repo's Documentation map now links its artifacts to GitHub (`decisions/`, `quality_reports/`, `CLAUDE.md`, README/MEMORY/CHANGELOG/etc. — 20 links, all verified) + linked the public predecessor `caschls`. `va_paper_clone` + `cde_va_project_fork` are not public (404) → left unlinked, confirm if they should be private-linked — 2026-06-22
 - [x] Confirmed all `/projects/` Scribe paths correct; `cel_offboard` clone deleted (lab_guides preserved privately) — 2026-06-22
 - [x] Google Docs hosting: decided **out of scope** — project docs go in a private lab-shared folder, not this public hub. Rewrote the offboarding "Preserving project documentation" section to match (dropped the "link them from the hub" plan + the per-repo "Related documents" idea) — 2026-06-22
