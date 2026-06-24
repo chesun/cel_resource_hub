@@ -76,3 +76,16 @@ portfolio-nav-link discussion. caffeinate tip still flagged in-text as not Scrib
 - **sync page — one-line mirror:** added a single framing sentence (+ pointer) to the pre-push-hook
   subsection of local-server-sync.md: git-with-guards is structurally safer for the data than manual
   transfer, linking to the git page's fuller "safer, not scarier" reframe. No content duplicated.
+- **New Resources page — LaTeX Beamer templates:** surveyed the `chesun/latex_templates` repo (README +
+  both compiled `*_theme_test.pdf` previews read directly) and added `docs/resources/latex-beamer-templates.md`.
+  Plan approved + persisted to `quality_reports/plans/2026-06-23_latex-beamer-templates-resource-page.md`.
+  Content: orientation + "Unofficial" admonition (mirrors the README disclaimer; CEL theme = port of the
+  lab's official PPT template, UC Davis theme = my own — both unofficial); title-slide preview thumbnails
+  for both brands (generated from the test PDFs via `pdftoppm -singlefile -r 150` → `docs/resources/img/`,
+  945x532, linked to the GitHub sample PDFs); three-theme table (UCD XeLaTeX/pdfLaTeX share `\usetheme{ucdavis}`,
+  CEL = `caedlab`); Overleaf quickstart with the four raw `release`-branch URLs (cited from README); CEL
+  specifics (aspectratio 43/169, auto logo, `\acknowledgement`); local-compile + deep detail → repo README
+  (no duplication). Placed under **Resources** (tooling, not an offboarding pipeline → not in the repos index).
+  Wired into `resources/index.md` + `mkdocs.yml` nav. Markdown image paths (not raw HTML) so MkDocs rewrote
+  `img/` → `../img/` itself — no grey-box gotcha. `mkdocs build --strict` exit 0; confirmed both PNGs render
+  in the built HTML and copied to `site/resources/img/`.

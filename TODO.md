@@ -15,6 +15,7 @@ Last updated: 2026-06-23
 - (nothing)
 
 ## Done (recent — older history in git + `quality_reports/session_logs/`)
+- [x] New Resources page **LaTeX Beamer templates** (`resources/latex-beamer-templates.md`) for the `latex_templates` repo: orientation + unofficial disclaimer, title-slide preview thumbnails (UC Davis + CEL, linked to the sample PDFs), three-theme table, Overleaf quickstart with the raw `.sty` URLs, CEL specifics, pointer to the repo README for local compiles. Wired into Resources index + nav — 2026-06-23
 - [x] git page: added a `git on Scribe, not just your laptop` section before the Scribe error table (was abrupt) — Scribe has git; `git init` a repo in a project folder there + push/pull to GitHub from the server; many don't know it's available server-side; hands off to Local ↔ server sync — 2026-06-23
 - [x] Academic-site portfolio link → Christina will handle it directly in `chesun.github.io` (out of scope for this repo). calpads Scribe path confirmed correct — 2026-06-23
 - [x] **VSCode-Stata demo video** on *Editing Stata in VSCode* — recorded real walkthrough; ffmpeg trim/crop (cropdetect for black margins) + variable-speed cut (~69s) + regress-autocomplete poster; play-on-scroll `<video>` (no chrome, click to pause), full-width. Fixed the grey-box bug: raw-HTML media must use `../img/` on directory-URL pages — captured in memory — 2026-06-23

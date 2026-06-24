@@ -99,3 +99,4 @@ nav:
   - Resources:
       - resources/index.md
       - Tools & access: resources/tools.md
+      - LaTeX Beamer templates: resources/latex-beamer-templates.md

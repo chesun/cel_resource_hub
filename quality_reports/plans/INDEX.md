@@ -5,3 +5,4 @@
 - [2026-06-21_tools-downloads-expansion.md](2026-06-21_tools-downloads-expansion.md) — expand resources/tools.md into a downloads + setup hub, COMPLETED
 - [2026-06-21_git-vs-github-and-usage.md](2026-06-21_git-vs-github-and-usage.md) — add git-vs-GitHub framing + GitHub-usage basics to git-for-newcomers.md, COMPLETED
 - [2026-06-21_sync-page-middleman-and-data-hook.md](2026-06-21_sync-page-middleman-and-data-hook.md) — local-server-sync.md: GitHub-as-middleman diagram, va_consolidated context, pre-push data hook, COMPLETED
+- [2026-06-23_latex-beamer-templates-resource-page.md](2026-06-23_latex-beamer-templates-resource-page.md) — new Resources page for the latex_templates Beamer themes (UC Davis + CEL), with preview thumbnails, COMPLETED
