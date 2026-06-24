@@ -13,9 +13,9 @@ terminal**:
 <!-- Paths here are ../img/ (NOT img/): this page is a directory URL and MkDocs
      does not rewrite paths inside raw HTML, so img/ would 404 (grey box). -->
 <figure class="md-video">
-  <video muted loop playsinline preload="metadata" poster="../img/vscode-stata-demo-poster-v2.png">
-    <source src="../img/vscode-stata-demo-v2.mp4" type="video/mp4">
-    <a href="../img/vscode-stata-demo-v2.mp4">Download the clip</a>.
+  <video muted loop playsinline preload="metadata" poster="../img/vscode-stata-demo-poster-v3.png">
+    <source src="../img/vscode-stata-demo-v3.mp4" type="video/mp4">
+    <a href="../img/vscode-stata-demo-v3.mp4">Download the clip</a>.
   </video>
   <figcaption>Editing a <code>.do</code> file in VSCode, then running it in the integrated terminal. (Plays when it scrolls into view; click the video to pause.)</figcaption>
 </figure>
