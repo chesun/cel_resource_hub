@@ -2,6 +2,8 @@
 
 Three plain-bash scripts for running DVC on a shared analysis server **without Claude Code** — built for the CEL Scribe setup but parameterized for any site. They make `dvc push` safe for restricted data and catch the dangling-pointer failure mode. Full usage guide: **[Versioning data with DVC](../docs/workflow-tips/versioning-data-with-dvc.md)** in this repo.
 
+> **Source of truth — this is a vendored copy.** These scripts are developed and tested upstream in `templates/dvc/` of the `claude-research-workflow` repo; this directory is a copy so the hub can host them. **Edit and re-test upstream, then re-vendor here — don't change these copies in place** (in-place edits will be lost the next time they're re-vendored).
+
 All require `bash` + `dvc` (and `setup-dvc-server.sh` requires a git repo). Validated 2026-06-23: 14 carve-out cases (real data blocked; pointers/`.gitignore`/contract/code allowed) + a 15-step end-to-end Scribe simulation (git + on-server remote + the real hook: pointer pushes through, `dvc push` to on-server remote, real-data push blocked, off-server remote blocked, old-version restore survives `dvc gc -A`).
 
 ## Operational gotchas (worth surfacing in the guide)

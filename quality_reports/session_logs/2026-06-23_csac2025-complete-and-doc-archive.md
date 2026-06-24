@@ -105,3 +105,7 @@ portfolio-nav-link discussion. caffeinate tip still flagged in-text as not Scrib
   to point at the hub guide. **ADR-0004** records the inclusion + the script-vendoring precedent + the
   remote-on-Scribe rule. Nav + index wired under "Keeping data safe". `mkdocs build --strict` exit 0; mermaid
   renders (1 block); `dvc-scripts/` absent from `site/`; scripts kept 100755.
+- **DVC follow-up:** added a "Source of truth — this is a vendored copy" blockquote to
+  `dvc-scripts/README.md` (edit/test upstream in `claude-research-workflow/templates/dvc/`, re-vendor here;
+  don't edit copies in place) — makes ADR-0004's re-vendor caveat explicit for future-me. README is outside
+  `docs/`, so the site build is unaffected.
