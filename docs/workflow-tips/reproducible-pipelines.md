@@ -21,6 +21,12 @@ repo with the same mental model.
 - **Automated sanity checks.** A final phase asserts the results are in expected ranges
   (sample sizes, merge rates, value ranges) and **fails loudly** if something upstream broke.
 
+!!! tip "Versioning the data, not just the steps"
+    These patterns reproduce the *steps*. To also pin the exact *inputs* a run used — so you can ask
+    "which dataset produced these numbers?" and get it back — see
+    [Versioning data with DVC](versioning-data-with-dvc.md). Optional, and only worth it for data that
+    actually evolves.
+
 ## What `main.do` looks like
 
 The entry point is a thin **orchestrator**: load the paths, set one toggle per phase, then run

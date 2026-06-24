@@ -89,3 +89,19 @@ portfolio-nav-link discussion. caffeinate tip still flagged in-text as not Scrib
   Wired into `resources/index.md` + `mkdocs.yml` nav. Markdown image paths (not raw HTML) so MkDocs rewrote
   `img/` → `../img/` itself — no grey-box gotcha. `mkdocs build --strict` exit 0; confirmed both PNGs render
   in the built HTML and copied to `site/resources/img/`.
+- **New workflow-tips page — Versioning data with DVC:** surveyed the `claude-research-workflow` source
+  (`dvc-guide-draft.md`, `dvc-setup-learnings.md`, the tested `templates/dvc/` scripts) — that repo is a
+  fork of a collaborator's (`hugosantanna/clo-author`), so the scripts had no public home. Plan approved +
+  persisted (`quality_reports/plans/2026-06-23_dvc-data-versioning-page.md`). **Hosting decision (user):**
+  vendor the scripts into the hub at top-level `dvc-scripts/` (outside `docs/` → excluded from the site
+  build; verified). Wrote `docs/workflow-tips/versioning-data-with-dvc.md` from the draft, stripped its
+  porting note, and enriched for "useful + thought-provoking": reproducibility tie-in (data = the other
+  half of `reproducible-pipelines`), a collapsible `??? note` on the gitignore root-vs-nested "won't descend
+  into a wholesale-ignored dir" rule (links `gitignore-setup`), and a "two scales to use this at" invitation
+  (project folder vs whole datastore — genericized; the internal "Kramer" naming dropped). Setup section
+  rewritten for the vendored scripts (curl from raw URLs → `REMOTE_PATH=... ./dvc-scripts/setup-dvc-server.sh`),
+  derived by reading the actual script. Inbound links added from `reproducible-pipelines.md` + `data-safety.md`
+  (the "second channel to guard" note). Fixed the vendored README's dangling `quality_reports/...` reference
+  to point at the hub guide. **ADR-0004** records the inclusion + the script-vendoring precedent + the
+  remote-on-Scribe rule. Nav + index wired under "Keeping data safe". `mkdocs build --strict` exit 0; mermaid
+  renders (1 block); `dvc-scripts/` absent from `site/`; scripts kept 100755.

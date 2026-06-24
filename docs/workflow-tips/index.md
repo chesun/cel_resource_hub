@@ -22,6 +22,7 @@ what's useful and leave the rest.
 
 - [**Data safety**](data-safety.md) — keeping confidential student data on Scribe and out of GitHub, and how the repos enforce it.
 - [**gitignore setup for data security**](gitignore-setup.md) — the concrete `.gitignore`, how to verify nothing leaked, and what to do if data was committed by accident.
+- [**Versioning data with DVC**](versioning-data-with-dvc.md) — an optional power tool to version the *data* too, not just code — keeping every byte on Scribe. The two-push rhythm, the on-Scribe remote rule, and the guard scripts.
 
 ## Reference
 

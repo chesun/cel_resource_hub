@@ -15,6 +15,7 @@ Last updated: 2026-06-23
 - (nothing)
 
 ## Done (recent — older history in git + `quality_reports/session_logs/`)
+- [x] New workflow-tips page **Versioning data with DVC** (`versioning-data-with-dvc.md`): ported the tested draft from `claude-research-workflow`, enriched (reproducibility tie-in, gitignore root-vs-nested aside, two-scales invitation), genericized voice (no named person). Vendored the 4 tested scripts + README into top-level `dvc-scripts/` (excluded from the site build); inbound cross-links from reproducible-pipelines + data-safety; ADR-0004; nav + index wired — 2026-06-23
 - [x] New Resources page **LaTeX Beamer templates** (`resources/latex-beamer-templates.md`) for the `latex_templates` repo: orientation + unofficial disclaimer, title-slide preview thumbnails (UC Davis + CEL, linked to the sample PDFs), three-theme table, Overleaf quickstart with the raw `.sty` URLs, CEL specifics, pointer to the repo README for local compiles. Wired into Resources index + nav — 2026-06-23
 - [x] git page: added a `git on Scribe, not just your laptop` section before the Scribe error table (was abrupt) — Scribe has git; `git init` a repo in a project folder there + push/pull to GitHub from the server; many don't know it's available server-side; hands off to Local ↔ server sync — 2026-06-23
 - [x] Academic-site portfolio link → Christina will handle it directly in `chesun.github.io` (out of scope for this repo). calpads Scribe path confirmed correct — 2026-06-23

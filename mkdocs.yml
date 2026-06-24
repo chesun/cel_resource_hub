@@ -94,6 +94,7 @@ nav:
       - Stata GUI on Windows: workflow-tips/xstata-gui-windows.md
       - Data safety: workflow-tips/data-safety.md
       - gitignore setup for data security: workflow-tips/gitignore-setup.md
+      - Versioning data with DVC: workflow-tips/versioning-data-with-dvc.md
       - Reproducible pipelines: workflow-tips/reproducible-pipelines.md
       - Claude Code intro: workflow-tips/claude-code-intro.md
   - Resources:

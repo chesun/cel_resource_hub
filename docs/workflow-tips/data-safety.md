@@ -28,6 +28,11 @@ etc.). That data must never reach GitHub or a personal laptop.
   `refusing to push — restricted data files...` — that's the guard working). See
   [the pre-push hook](local-server-sync.md#protecting-data-on-the-server-the-pre-push-hook).
 
+!!! note "Versioning data adds a second channel to guard"
+    If you version data with [DVC](versioning-data-with-dvc.md), `dvc push` is a **separate** channel
+    this git pre-push hook can't see — so a DVC remote must stay on Scribe, enforced by its own egress
+    guard. Same rule, second door: restricted data never leaves the server.
+
 ## Things that should never be committed
 
 - Any file under `data/raw/` or `data/cleaned/`.
