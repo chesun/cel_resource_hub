@@ -57,3 +57,12 @@ frame 60s, and on a frame pulled from the *encoded* v3 file).
 - The crop is the **maximum safe** one: making the code visibly *larger* would require clipping
   the full-width line-33/37 instructional comments in the finale — declined (user chose "clip
   nothing"). Flagged this to the user.
+
+## Follow-up — grey pillarbox bars (same day)
+
+After deploy, user reported grey bars left/right of the clip. Cause: `extra.css` `.md-video video`
+hardcodes `aspect-ratio` to reserve height pre-load — it was still the old `1280 / 1098`, wider
+than the new `1186 / 1044` clip, so `object-fit: contain` pillarboxed it (the `background` showed
+through). Fixed → `aspect-ratio: 1186 / 1044` and tightened the comment to flag that it MUST track
+the clip's pixel dims. `mkdocs build --strict` exit 0; built `site/stylesheets/extra.css` carries
+the new value. **Gotcha for next re-crop: update this aspect-ratio whenever the clip dims change.**

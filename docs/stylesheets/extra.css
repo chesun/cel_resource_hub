@@ -28,7 +28,7 @@
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 1280 / 1098;   /* reserve the right height before load (no grey-box collapse) */
+  aspect-ratio: 1186 / 1044;   /* MUST match the clip's pixel dims (reserves height pre-load; mismatch = grey pillarbox bars) */
   border-radius: 8px;
   cursor: pointer;             /* click toggles play/pause (no native controls) */
   background: var(--md-default-fg-color--lightest);
