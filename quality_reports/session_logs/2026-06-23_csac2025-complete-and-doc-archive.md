@@ -109,3 +109,7 @@ portfolio-nav-link discussion. caffeinate tip still flagged in-text as not Scrib
   `dvc-scripts/README.md` (edit/test upstream in `claude-research-workflow/templates/dvc/`, re-vendor here;
   don't edit copies in place) — makes ADR-0004's re-vendor caveat explicit for future-me. README is outside
   `docs/`, so the site build is unaffected.
+- **Make the live site obvious:** replaced the README's stale "_set after Pages created_" placeholder with
+  the real canonical link (prominent `### 📖 Live site →` under the title + the redirect note), and set the
+  GitHub **About → Website** field via `gh repo edit --homepage https://christinasun.net/cel_resource_hub/`
+  (was empty). Both now point at the live docs site.

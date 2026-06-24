@@ -1,15 +1,15 @@
 # CEL Resource Hub
 
+### 📖 Live site → <https://christinasun.net/cel_resource_hub/>
+
 A hub I (**Christina Sun**) built while offboarding from the **California Education Lab (UC
 Davis)**. It links the CEL code repositories I'm handing off and collects the workflows I've
 leaned on for getting research done here. None of it is official lab policy — just what's worked
 for me; take what's useful and leave the rest.
 
 The content lives in [`docs/`](docs/) and is published as a [MkDocs Material](https://squidfunk.github.io/mkdocs-material/)
-site via GitHub Pages.
-
-> **Live site:** _set after the GitHub repo + Pages are created_ —
-> `https://chesun.github.io/cel_resource_hub/`
+site via GitHub Pages at **<https://christinasun.net/cel_resource_hub/>** (the
+`chesun.github.io/cel_resource_hub/` address redirects there).
 
 ---
 
