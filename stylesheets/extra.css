@@ -1,0 +1,35 @@
+/* Section-index links (Material `navigation.indexes`) are clickable landing
+   pages but render as plain grey labels. Two refinements:
+
+   1. A hover affordance (accent colour + underline) so they read as links.
+   2. Highlight the *active trail* only — the current page (handled by
+      Material's own `--active` styling) and its parent section index —
+      rather than colouring every section index at once. */
+
+.md-nav__container > a.md-nav__link:hover {
+  color: var(--md-accent-fg-color);
+  text-decoration: underline;
+}
+
+/* Parent section index of the current page. Material marks the section's
+   <li> with `--active` when the current page is that section's index or one
+   of its children; leaf items have no `.md-nav__container`, so only the
+   active section's index link matches — not every section. */
+.md-nav__item--active > .md-nav__container > a.md-nav__link {
+  color: var(--md-typeset-a-color);
+}
+
+/* Demo video: fill the content column. Material defaults figures to
+   `width: fit-content`, which collapses an embedded <video> to a tiny box. */
+.md-typeset figure.md-video {
+  width: 100%;
+}
+.md-typeset figure.md-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1186 / 1044;   /* MUST match the clip's pixel dims (reserves height pre-load; mismatch = grey pillarbox bars) */
+  border-radius: 8px;
+  cursor: pointer;             /* click toggles play/pause (no native controls) */
+  background: var(--md-default-fg-color--lightest);
+}
